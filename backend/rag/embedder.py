@@ -1,43 +1,57 @@
 """
-Singleton wrapper around the BAAI/bge-m3 sentence embedding model.
-Ensures the (large) model is loaded into memory only once per process.
+Dynamic Ollama embedder.
+Reads configuration from environment variables and automatically detects
+the vector dimension without hardcoded values.
 """
-import threading
-from typing import List
-
-import numpy as np
-from sentence_transformers import SentenceTransformer
-
-_MODEL_NAME = "BAAI/bge-m3"
-
+import os
+from typing import List, Optional
+import requests
 
 class Embedder:
     _instance = None
-    _lock = threading.Lock()
+    _dimension: Optional[int] = None
 
     def __new__(cls):
         if cls._instance is None:
-            with cls._lock:
-                if cls._instance is None:
-                    instance = super().__new__(cls)
-                    instance._model = SentenceTransformer(_MODEL_NAME)
-                    cls._instance = instance
+            cls._instance = super().__new__(cls)
         return cls._instance
 
-    def encode(self, texts: List[str]) -> np.ndarray:
-        """Encode a list of strings into L2-normalized embedding vectors."""
+    @property
+    def base_url(self) -> str:
+        return os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+
+    @property
+    def model(self) -> str:
+        model_name = os.getenv("OLLAMA_EMBED_MODEL")
+        if not model_name:
+            raise ValueError("OLLAMA_EMBED_MODEL is not set in environment variables.")
+        return model_name
+
+    def encode(self, texts: List[str]) -> List[List[float]]:
         if not texts:
-            return np.zeros((0, self._model.get_sentence_embedding_dimension()))
-        embeddings = self._model.encode(
-            texts,
-            normalize_embeddings=True,
-            convert_to_numpy=True,
-            show_progress_bar=False,
+            return []
+
+        response = requests.post(
+            f"{self.base_url}/api/embed",
+            json={"model": self.model, "input": texts},
+            timeout=120,
         )
+        response.raise_for_status()
+
+        embeddings = response.json().get("embeddings", [])
+        if embeddings and self._dimension is None:
+            self._dimension = len(embeddings[0])
+
         return embeddings
 
     def encode_one(self, text: str) -> List[float]:
-        return self.encode([text])[0].tolist()
+        return self.encode([text])[0]
+
+    def get_dimension(self) -> int:
+        """Returns the embedding vector dimension by probing the model if not yet cached."""
+        if self._dimension is None:
+            self._dimension = len(self.encode_one("dimension_probe"))
+        return self._dimension
 
 
 _embedder_singleton = None

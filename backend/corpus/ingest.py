@@ -32,7 +32,9 @@ def main():
         sections = json.load(f)
     print(f"Loaded {len(sections)} sections.")
 
-    print("Embedding sections with BAAI/bge-m3 and upserting to Pinecone (this may take a minute the first time)...")
+    # New line
+    embed_model = os.getenv("OLLAMA_EMBED_MODEL", "bge-m3")
+    print(f"Embedding sections with {embed_model} and upserting to Pinecone (this may take a minute the first time)...")
     count = index_sections(sections)
     print(f"Indexed {count} sections into the Pinecone index.")
 
