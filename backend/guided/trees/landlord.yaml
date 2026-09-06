@@ -1,0 +1,168 @@
+id: landlord
+title: Landlord Dispute
+steps:
+  - id: start
+    question: "What is your main issue with your landlord?"
+    options:
+      - text: "Not returning security deposit"
+        next: deposit_issue
+      - text: "Illegal eviction / being forced to vacate"
+        next: eviction_issue
+      - text: "Landlord refusing essential repairs"
+        next: repairs_issue
+      - text: "Rent increase dispute"
+        next: rent_issue
+
+  - id: deposit_issue
+    question: "How long ago did you vacate the property?"
+    options:
+      - text: "Less than 1 month ago"
+        next: final_deposit_recent
+      - text: "More than 1 month ago"
+        next: final_deposit_old
+      - text: "I have not vacated yet"
+        next: final_deposit_notice
+
+  - id: final_deposit_recent
+    question: null
+    result: |
+      Under Section 106 of the Transfer of Property Act, 1882, and standard
+      rent-control laws, your landlord is generally required to refund your
+      security deposit within a reasonable time after you vacate (commonly
+      30 days, per your state's Rent Control Act).
+
+      Your rights:
+      - You are entitled to the full deposit minus any documented, lawful deductions (unpaid rent, verified damage beyond normal wear and tear).
+      - The landlord cannot withhold the deposit indefinitely or without justification.
+
+      Recommended next steps:
+      1. Send a written reminder (email/WhatsApp) requesting the refund and keep proof of delivery.
+      2. If ignored, send a formal legal notice demanding the deposit within 15 days.
+      3. Approach your state's Rent Authority or Rent Control Court if the notice is ignored.
+      4. File a consumer/civil suit for recovery of the deposit with interest if needed.
+      5. Keep the rental agreement, vacate notice, and photos of the property as evidence.
+
+      Consulting a lawyer is recommended if the amount is significant or the landlord is unresponsive.
+
+  - id: final_deposit_old
+    question: null
+    result: |
+      Under Section 106 of the Transfer of Property Act, 1882, an
+      unreasonable delay in refunding a security deposit (well beyond the
+      30-45 day norm) is generally actionable.
+
+      Your rights:
+      - You can claim the deposit along with reasonable interest for the delay in many states.
+      - Prolonged withholding without cause may amount to unjust enrichment on the landlord's part.
+
+      Recommended next steps:
+      1. Send a formal legal notice via registered post demanding immediate refund.
+      2. File a complaint with the Rent Control Authority or in a civil/small-causes court.
+      3. Consider a Consumer Court complaint if the tenancy involved a service element.
+      4. Preserve the rental agreement, rent receipts, and any communication as evidence.
+      5. Compute and claim reasonable interest on the withheld amount.
+
+      Given the delay, consulting a lawyer is strongly recommended.
+
+  - id: final_deposit_notice
+    question: null
+    result: |
+      Since you have not yet vacated, you should proceed carefully to
+      protect your deposit rights before handing over possession.
+
+      Your rights:
+      - You are entitled to a full refund of your deposit, subject to lawful deductions, once you vacate as per Section 106 of the Transfer of Property Act, 1882.
+      - You cannot be pressured into forfeiting your deposit as a condition of vacating.
+
+      Recommended next steps:
+      1. Do a joint inspection of the property with the landlord before vacating and document its condition (photos/video).
+      2. Get a written acknowledgment of vacating and the property's condition.
+      3. Clearly state in writing that you expect the deposit within 30 days of vacating.
+      4. Retain copies of the rental agreement and all rent receipts.
+      5. If the landlord threatens to withhold the deposit unfairly, send a legal notice.
+
+      Consulting a lawyer before vacating can help if a large deposit is at stake.
+
+  - id: eviction_issue
+    question: "Has the landlord given you any written eviction notice?"
+    options:
+      - text: "Yes, I received a written notice"
+        next: final_eviction_notice
+      - text: "No, they are trying to forcibly evict me"
+        next: final_eviction_forced
+
+  - id: final_eviction_notice
+    question: null
+    result: |
+      Under Section 106 of the Transfer of Property Act, 1882 and your
+      state's Rent Control Act, a landlord must follow due legal process
+      to evict a tenant — a written notice alone does not authorize
+      forcible eviction.
+
+      Your rights:
+      - You cannot be evicted without a valid legal ground (e.g., non-payment of rent, bona fide requirement) and due process through a competent court/Rent Controller.
+      - The notice period specified in your agreement or state law must be honored.
+
+      Recommended next steps:
+      1. Read the notice carefully and note the stated ground and notice period.
+      2. Respond in writing if you dispute the grounds for eviction.
+      3. Do not vacate under pressure; eviction requires a court/Rent Controller order.
+      4. File a reply/appearance before the Rent Controller if the landlord initiates proceedings.
+      5. Consult a lawyer immediately to protect your tenancy rights.
+
+      Given the legal stakes, consulting a lawyer is strongly advised.
+
+  - id: final_eviction_forced
+    question: null
+    result: |
+      Forcible eviction without a court order is illegal under Indian law.
+      Self-help eviction (changing locks, cutting utilities, using force) is
+      not permitted even for the rightful landlord.
+
+      Your rights:
+      - Under Section 441/448 of the IPC (criminal trespass) and tenancy law, forceful eviction without due process is unlawful.
+      - You have the right to police protection and to seek an injunction from a civil court.
+
+      Recommended next steps:
+      1. Call the local police immediately and file a complaint (Section 154 CrPC) if force is used or threatened.
+      2. File for a court injunction restraining the landlord from forcible eviction.
+      3. Document all incidents with photos, videos, and witness statements.
+      4. Send a legal notice to the landlord citing the illegality of self-help eviction.
+      5. Consult a lawyer urgently to file an injunction suit.
+
+      This situation requires urgent legal consultation.
+
+  - id: repairs_issue
+    question: null
+    result: |
+      Under most State Rent Control Acts, landlords are obligated to
+      maintain the property in a habitable condition and carry out
+      essential structural repairs.
+
+      Your rights:
+      - You can request repairs in writing and, in many states, deduct verified repair costs from rent if the landlord fails to act after notice.
+      - Persistent failure to repair can be grounds for rent reduction claims before the Rent Controller.
+
+      Recommended next steps:
+      1. Send a written repair request with a reasonable deadline (e.g., 15-30 days).
+      2. Document the disrepair with photos/videos and dated correspondence.
+      3. If ignored, send a formal legal notice.
+      4. File a complaint with the local Rent Control Authority or municipal body.
+      5. Consider consulting a lawyer if the disrepair affects habitability or safety.
+
+  - id: rent_issue
+    question: null
+    result: |
+      Rent increases are generally governed by your state's Rent Control
+      Act and the terms of your rental agreement.
+
+      Your rights:
+      - A landlord cannot increase rent arbitrarily or outside the terms agreed in the rental agreement/registered lease.
+      - Most states cap the frequency and percentage of rent increases for regulated tenancies.
+
+      Recommended next steps:
+      1. Review your rental agreement for any rent-escalation clause.
+      2. Check your state Rent Control Act for permissible increase limits and notice periods.
+      3. Respond in writing if the increase violates the agreement or law.
+      4. Negotiate directly, referencing the applicable legal cap.
+      5. Approach the Rent Controller if the landlord insists on an unlawful increase.

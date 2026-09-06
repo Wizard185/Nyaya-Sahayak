@@ -1,0 +1,39 @@
+[
+  {
+    "id": "bail_application",
+    "name": "Bail Application",
+    "aliases": ["bail", "anticipatory bail", "regular bail", "application for bail"],
+    "description": "Application seeking regular bail before a Sessions/Magistrate court.",
+    "docx_template": "bail_application.docx",
+    "fields": [
+      { "key": "court_name", "label": "Court Name", "type": "text", "placeholder": "e.g. Court of the Sessions Judge, Bengaluru" },
+      { "key": "case_no", "label": "Case / Sessions Number", "type": "text" },
+      { "key": "fir_no", "label": "FIR Number", "type": "text" },
+      { "key": "police_station", "label": "Police Station", "type": "text" },
+      { "key": "sections_charged", "label": "Sections Charged (e.g. IPC 420, 406)", "type": "text" },
+      { "key": "applicant_name", "label": "Applicant Name", "type": "text" },
+      { "key": "applicant_address", "label": "Applicant Address", "type": "textarea" },
+      { "key": "filed_against", "label": "Filed Against (e.g. State of Karnataka)", "type": "text" },
+      { "key": "date_of_arrest", "label": "Date of Arrest / FIR", "type": "text" },
+      { "key": "grounds_for_bail", "label": "Grounds for Bail", "type": "textarea", "narrative": true, "placeholder": "Briefly explain why bail should be granted, in your own words" },
+      { "key": "filing_place", "label": "Filing Place", "type": "text" },
+      { "key": "filing_date", "label": "Filing Date", "type": "text" }
+    ]
+  },
+  {
+    "id": "affidavit",
+    "name": "Affidavit",
+    "aliases": ["sworn statement", "general affidavit", "affidavit of facts"],
+    "description": "General sworn affidavit of facts for use before a court, notary, or government office.",
+    "docx_template": "affidavit.docx",
+    "fields": [
+      { "key": "deponent_name", "label": "Deponent Name", "type": "text" },
+      { "key": "deponent_relation", "label": "Relation (e.g. S/o Ram Kumar)", "type": "text" },
+      { "key": "deponent_age", "label": "Age", "type": "text" },
+      { "key": "deponent_address", "label": "Address", "type": "textarea" },
+      { "key": "statement_content", "label": "Statement of Facts", "type": "textarea", "narrative": true, "placeholder": "Describe the facts you are swearing to, in your own words" },
+      { "key": "place", "label": "Place", "type": "text" },
+      { "key": "date", "label": "Date", "type": "text" }
+    ]
+  }
+]

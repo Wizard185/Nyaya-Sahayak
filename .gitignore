@@ -1,0 +1,157 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+myenv/
+
+# Python testing / coverage
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Python packaging
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+wheels/
+pip-wheel-metadata/
+
+
+# =========================
+# Node / JavaScript
+# =========================
+
+node_modules/
+jspm_packages/
+
+# Build output
+dist/
+build/
+
+# TypeScript
+*.tsbuildinfo
+
+# npm / yarn / pnpm
+.npm
+.yarn/
+.pnp.*
+.yarn-integrity
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node caches
+.eslintcache
+.nyc_output/
+.cache/
+.parcel-cache/
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+
+# Test coverage
+coverage/
+*.lcov
+
+
+# =========================
+# Environment variables
+# =========================
+
+.env
+.env.test
+.env.production
+
+
+# =========================
+# Project generated data
+# =========================
+
+backend/corpus/bm25_corpus.json
+backend/drafts_storage/
+
+
+# =========================
+# Logs
+# =========================
+
+logs/
+*.log
+
+
+# =========================
+# Editor / IDE
+# =========================
+
+.vscode/
+.idea/
+.vscode-test/
+
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+
+
+# =========================
+# Other Python tools
+# =========================
+
+.ipynb_checkpoints/
+.pybuilder/
+.tox/
+.nox/
+.scrapy/
+.webassets-cache/
+.pytest_cache/
+.ropeproject/
+.spyderproject
+.spyproject
+
+# Jupyter / IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Sphinx
+docs/_build/
+
+# MkDocs
+/site

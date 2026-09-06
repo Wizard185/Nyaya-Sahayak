@@ -1,0 +1,140 @@
+id: consumer
+title: Consumer Complaint
+steps:
+  - id: start
+    question: "What kind of consumer issue are you facing?"
+    options:
+      - text: "Defective product"
+        next: defective_issue
+      - text: "Service not delivered as promised"
+        next: service_issue
+      - text: "Overcharging / billing dispute"
+        next: billing_issue
+      - text: "Online purchase / e-commerce issue"
+        next: ecommerce_issue
+
+  - id: defective_issue
+    question: "Have you already contacted the seller/manufacturer about the defect?"
+    options:
+      - text: "Yes, but they refused to help"
+        next: final_defective_refused
+      - text: "No, I haven't contacted them yet"
+        next: final_defective_notyet
+
+  - id: final_defective_refused
+    question: null
+    result: |
+      Under Sections 2(6), 35 and 38 of the Consumer Protection Act, 2019,
+      selling a defective product and refusing redress amounts to an unfair
+      trade practice and a deficiency in goods.
+
+      Your rights:
+      - You are entitled to replacement, repair, refund, or compensation for a defective product.
+      - You can file a complaint before the District Consumer Disputes Redressal Commission for claims, generally without needing a lawyer.
+
+      Recommended next steps:
+      1. Gather your invoice, warranty card, and any written communication with the seller.
+      2. Send a final written complaint via email/registered post giving 15 days to resolve.
+      3. File a complaint under Section 35 of the Consumer Protection Act, 2019 before the District Consumer Commission.
+      4. Use the National Consumer Helpline (1915) or e-Daakhil portal to file online.
+      5. Claim compensation for financial loss and mental agony, if applicable.
+
+      For claims below typical monetary thresholds you can generally proceed without a lawyer; consult one for high-value or complex claims.
+
+  - id: final_defective_notyet
+    question: null
+    result: |
+      Before escalating, Indian consumer law expects you to first attempt
+      resolution with the seller, though this is not mandatory.
+
+      Your rights:
+      - Under the Consumer Protection Act, 2019, you have the right to seek repair, replacement, or refund for defective goods.
+      - Sellers cannot refuse legitimate warranty claims.
+
+      Recommended next steps:
+      1. Contact the seller/manufacturer in writing (email is best for a paper trail) describing the defect.
+      2. Attach photos/videos of the defect and copies of your invoice/warranty.
+      3. Give them a reasonable deadline (e.g., 15 days) to resolve.
+      4. If unresolved, escalate to the District Consumer Disputes Redressal Commission under Section 35.
+      5. Use the National Consumer Helpline (1915) for free guidance.
+
+  - id: service_issue
+    question: null
+    result: |
+      Under Section 2(11) and Section 35 of the Consumer Protection Act,
+      2019, failure to deliver a paid-for service as promised is a
+      "deficiency in service" and is actionable.
+
+      Your rights:
+      - You can seek a refund, completion of service, or compensation for loss caused by the deficiency.
+      - This applies to services like repairs, travel, construction, insurance, and more.
+
+      Recommended next steps:
+      1. Collect the service agreement, payment receipts, and communication records.
+      2. Send a written complaint to the service provider demanding resolution within 15 days.
+      3. File a complaint before the District Consumer Disputes Redressal Commission.
+      4. Use the e-Daakhil online portal or call the National Consumer Helpline (1915).
+      5. Claim compensation for financial loss and harassment where applicable.
+
+  - id: billing_issue
+    question: null
+    result: |
+      Overcharging beyond the MRP or agreed price is prohibited and can be
+      challenged under Section 2(47) (unfair trade practice) and Section
+      35 of the Consumer Protection Act, 2019.
+
+      Your rights:
+      - You cannot be charged more than the MRP or the price agreed/displayed at the time of sale.
+      - You are entitled to a refund of the excess amount charged.
+
+      Recommended next steps:
+      1. Keep the bill/receipt showing the overcharge as evidence.
+      2. Raise the issue with the seller/establishment in writing first.
+      3. Report to the local Legal Metrology / Weights & Measures department if it involves MRP violation.
+      4. File a complaint before the District Consumer Disputes Redressal Commission for a refund and compensation.
+      5. Use the National Consumer Helpline (1915) to lodge a formal complaint.
+
+  - id: ecommerce_issue
+    question: "What went wrong with your online purchase?"
+    options:
+      - text: "Item never delivered / wrong item delivered"
+        next: final_ecommerce_delivery
+      - text: "Refund not processed after return/cancellation"
+        next: final_ecommerce_refund
+
+  - id: final_ecommerce_delivery
+    question: null
+    result: |
+      E-commerce platforms and sellers are bound by the Consumer
+      Protection (E-Commerce) Rules, 2020, in addition to the Consumer
+      Protection Act, 2019.
+
+      Your rights:
+      - You are entitled to a refund, replacement, or delivery of the correct item you paid for.
+      - E-commerce platforms must have a functioning grievance redressal mechanism and grievance officer.
+
+      Recommended next steps:
+      1. Raise a formal complaint via the platform's grievance/help center and note the ticket number.
+      2. Escalate to the platform's designated Grievance Officer (contact details are legally required to be published) if unresolved.
+      3. File a complaint on the National Consumer Helpline (1915) or INGRAM/e-Daakhil portal.
+      4. File before the District Consumer Disputes Redressal Commission if the platform refuses redress.
+      5. Preserve order confirmation, payment proof, and all chat/email correspondence.
+
+  - id: final_ecommerce_refund
+    question: null
+    result: |
+      Under the Consumer Protection (E-Commerce) Rules, 2020 and Section 35
+      of the Consumer Protection Act, 2019, a platform/seller must process a
+      valid refund within a reasonable time once a return or cancellation is
+      accepted.
+
+      Your rights:
+      - You are entitled to a full refund as per the platform's stated policy once a return/cancellation is confirmed.
+      - Indefinite delay or denial of a due refund is a deficiency in service.
+
+      Recommended next steps:
+      1. Check the refund status and timeline promised in the platform's policy.
+      2. Raise a formal ticket with the platform's customer support citing the order ID.
+      3. Escalate to the platform's Grievance Officer if the refund is delayed beyond the promised window.
+      4. File a complaint via the National Consumer Helpline (1915) or e-Daakhil portal.
+      5. File before the District Consumer Disputes Redressal Commission for recovery with compensation.

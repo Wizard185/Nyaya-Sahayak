@@ -1,0 +1,143 @@
+id: employment
+title: Employment Issue
+steps:
+  - id: start
+    question: "What is your main employment-related issue?"
+    options:
+      - text: "Unpaid salary / wages withheld"
+        next: salary_issue
+      - text: "Wrongful termination"
+        next: termination_issue
+      - text: "Workplace harassment"
+        next: harassment_issue
+      - text: "Denied statutory benefits (PF, gratuity, leave)"
+        next: benefits_issue
+
+  - id: salary_issue
+    question: "How long has your salary been withheld?"
+    options:
+      - text: "Less than 1 month"
+        next: final_salary_recent
+      - text: "More than 1 month"
+        next: final_salary_prolonged
+
+  - id: final_salary_recent
+    question: null
+    result: |
+      Under the Payment of Wages Act, 1936 and the Code on Wages, 2019,
+      employers are legally required to pay wages within a prescribed
+      period after the wage period ends.
+
+      Your rights:
+      - You are entitled to timely payment of your full agreed wages.
+      - Unauthorized deductions beyond those permitted by law are not allowed.
+
+      Recommended next steps:
+      1. Send a written reminder to HR/employer requesting immediate payment.
+      2. Keep your offer letter, payslips, and attendance records as evidence.
+      3. If unresolved within a few weeks, file a claim with the Labour Commissioner's office.
+      4. You may also send a formal legal notice demanding payment with interest.
+      5. Consider approaching the Payment of Wages Authority for adjudication.
+
+  - id: final_salary_prolonged
+    question: null
+    result: |
+      A prolonged, unexplained delay in wage payment is a serious
+      violation under the Payment of Wages Act, 1936 / Code on Wages, 2019,
+      and may also indicate broader financial distress at the company.
+
+      Your rights:
+      - You can claim the withheld wages along with compensation for delayed payment.
+      - You may resign citing non-payment and still claim dues for work already performed.
+
+      Recommended next steps:
+      1. Send a formal legal notice demanding payment of all outstanding wages.
+      2. File a complaint before the Labour Commissioner / Payment of Wages Authority.
+      3. Consider filing a criminal complaint under Section 406 IPC (criminal breach of trust) in serious cases.
+      4. Explore filing a claim in the Labour Court for recovery with interest.
+      5. Retain all employment documents, payslips, and correspondence as evidence.
+
+      Given the prolonged delay, consulting a labour lawyer is recommended.
+
+  - id: termination_issue
+    question: "Were you given any written notice or reason for termination?"
+    options:
+      - text: "Yes, but I believe it's unjustified"
+        next: final_termination_unjustified
+      - text: "No, I was terminated without any notice"
+        next: final_termination_nonotice
+
+  - id: final_termination_unjustified
+    question: null
+    result: |
+      Termination must follow the process outlined in the Industrial
+      Disputes Act, 1947 (for workmen) or your employment contract /
+      applicable Shops & Establishments Act (for others).
+
+      Your rights:
+      - You are entitled to a fair inquiry and valid grounds before termination for misconduct.
+      - You may be entitled to notice pay or severance if terminated without cause.
+
+      Recommended next steps:
+      1. Request the termination order and stated reasons in writing.
+      2. Review your appointment letter/contract for the termination clause and notice period.
+      3. Send a written representation disputing the grounds if you believe they are unjustified.
+      4. File a complaint with the Labour Commissioner if you qualify as a "workman" under the Industrial Disputes Act, 1947.
+      5. Consult an employment lawyer to assess a wrongful termination claim.
+
+  - id: final_termination_nonotice
+    question: null
+    result: |
+      Termination without notice or due process may violate the Industrial
+      Disputes Act, 1947 and/or your contract's notice period clause.
+
+      Your rights:
+      - You are generally entitled to notice or pay in lieu of notice as specified in your contract or applicable law.
+      - Summary termination without inquiry (for alleged misconduct) is usually unlawful.
+
+      Recommended next steps:
+      1. Request a written termination letter stating reasons and effective date.
+      2. Send a legal notice demanding notice pay, dues, and reinstatement consideration.
+      3. File a complaint with the Labour Commissioner's office.
+      4. Approach the Labour Court/Industrial Tribunal if you qualify as a "workman."
+      5. Consult a lawyer promptly, as some claims have limitation periods.
+
+  - id: harassment_issue
+    question: null
+    result: |
+      Workplace harassment, including sexual harassment, is addressed
+      under the Sexual Harassment of Women at Workplace (Prevention,
+      Prohibition and Redressal) Act, 2013 (POSH Act) and general criminal
+      law (IPC Sections 354, 354A, 509).
+
+      Your rights:
+      - Every workplace with 10+ employees must have an Internal Complaints Committee (ICC) to address harassment complaints.
+      - You have the right to a safe workplace and to file a complaint confidentially.
+
+      Recommended next steps:
+      1. Document each incident with dates, details, and any witnesses.
+      2. File a written complaint with your organization's Internal Complaints Committee (ICC).
+      3. If there is no ICC or it is unresponsive, approach the Local Complaints Committee (LCC) set up by the district.
+      4. File a police complaint under relevant IPC sections (354, 354A, 509) for criminal harassment.
+      5. Consult a lawyer, especially if the employer retaliates or the ICC process is inadequate.
+
+      Given the sensitivity of harassment cases, professional legal support is strongly recommended.
+
+  - id: benefits_issue
+    question: null
+    result: |
+      Statutory benefits like Provident Fund (PF), gratuity, and leave
+      encashment are protected under the Employees' Provident Funds Act,
+      1952 and the Payment of Gratuity Act, 1972.
+
+      Your rights:
+      - You are entitled to your accumulated PF balance and employer contributions upon leaving employment.
+      - Gratuity is payable after 5 years of continuous service under the Payment of Gratuity Act, 1972.
+      - Unused earned leave is generally payable as per company policy/state Shops & Establishments Act.
+
+      Recommended next steps:
+      1. Request your PF passbook/UAN details and gratuity settlement statement from HR.
+      2. File an online PF withdrawal/transfer claim via the EPFO portal if delayed.
+      3. Send a written request for gratuity settlement citing the Payment of Gratuity Act, 1972.
+      4. Escalate unresolved PF issues to the Regional PF Commissioner.
+      5. File a complaint with the Labour Commissioner if benefits are unlawfully denied.
