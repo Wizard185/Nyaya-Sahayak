@@ -42,7 +42,7 @@ client.interceptors.response.use(
 );
 
 // Q&A calls can legitimately take longer than the default timeout.
-const longClient = axios.create({ timeout: 120000 });
+const longClient = axios.create({ timeout: 180000 });
 longClient.interceptors.request.use((config) => {
   const token = getToken();
   if (token) config.headers.Authorization = `Bearer ${token}`;

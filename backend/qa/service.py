@@ -1,12 +1,3 @@
-"""
-Shared async QA pipeline: translate-in -> hybrid retrieval -> LLM generation
--> hallucination check -> translate-out.
-
-Every blocking step (translation, Pinecone/BM25 retrieval, Ollama generation)
-runs off the event loop via asyncio.to_thread and is wrapped in its own
-asyncio.wait_for + try/except, so a failure anywhere produces a specific,
-actionable HTTPException detail instead of a generic frontend catch-all.
-"""
 import asyncio
 import os
 from typing import Dict, List
@@ -26,6 +17,15 @@ RETRIEVAL_TIMEOUT_SECONDS = float(os.getenv("RETRIEVAL_TIMEOUT_SECONDS", "8"))
 GENERATION_TIMEOUT_SECONDS = float(os.getenv("GENERATION_TIMEOUT_SECONDS", "25"))
 TRANSLATION_TIMEOUT_SECONDS = float(os.getenv("TRANSLATION_TIMEOUT_SECONDS", "6"))
 
+LANG_MAP = {
+    "hi": "hi",
+    "ka": "kn",
+    "kn": "kn",
+    "en": "en",
+    "mr": "hi",
+    "ne": "hi"
+}
+
 
 async def _translate_to_english(text: str, source_lang: str) -> str:
     try:
@@ -34,8 +34,6 @@ async def _translate_to_english(text: str, source_lang: str) -> str:
             timeout=TRANSLATION_TIMEOUT_SECONDS,
         )
     except Exception:
-        # translate_to_english already falls back to the original text on
-        # internal errors; a hard timeout here just means "use as-is".
         return text
 
 
@@ -54,7 +52,7 @@ async def run_qa(query: str, language: str = "auto") -> Dict:
         raise HTTPException(status_code=400, detail="Query cannot be empty.")
 
     detected = await asyncio.to_thread(detect_language, query) if language == "auto" else language
-    working_lang = detected
+    working_lang = LANG_MAP.get(detected, detected)
 
     query_en = await _translate_to_english(query, working_lang)
 
