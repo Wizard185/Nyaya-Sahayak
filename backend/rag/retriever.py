@@ -1,11 +1,17 @@
 """
-Hybrid retrieval over the local legal corpus.
+Hybrid retrieval over two separate knowledge bases:
 
-Combines:
-  - Dense retrieval (BGE-M3 embeddings against a Pinecone index)
-  - Sparse retrieval (BM25Okapi over the same corpus, kept local — no
-    external dependency for this half of the search)
-  - Reciprocal Rank Fusion (RRF) to merge the two ranked lists.
+  USER QUERY -> RETRIEVER -> ACT KB   ("what law applies?")
+                           -> CASE KB  ("how has it been applied?" -> similar
+                                        cases / precedents)
+
+Each side combines:
+  - Dense retrieval (Ollama embeddings against its own Pinecone namespace)
+  - Sparse retrieval (BM25Okapi over its own local JSON corpus)
+  - Reciprocal Rank Fusion (RRF) to merge the two ranked lists
+
+Both result sets are handed to the LLM together so it can answer with both
+the governing law and how courts have actually applied it.
 """
 import json
 import os
@@ -15,11 +21,12 @@ from typing import Dict, List
 from rank_bm25 import BM25Okapi
 
 from rag.embedder import get_embedder
-from rag.indexer import get_pinecone_index
+from rag.indexer import ACTS_NAMESPACE, CASES_NAMESPACE, get_pinecone_index
 
 _CORPUS_DIR = os.path.join(os.path.dirname(__file__), "..", "corpus")
 _ONTOLOGY_PATH = os.path.join(_CORPUS_DIR, "ontology.json")
-_BM25_CORPUS_PATH = os.path.join(_CORPUS_DIR, "bm25_corpus.json")
+_BM25_ACTS_PATH = os.path.join(_CORPUS_DIR, "bm25_acts.json")
+_BM25_CASES_PATH = os.path.join(_CORPUS_DIR, "bm25_cases.json")
 
 _TOKEN_RE = re.compile(r"[a-zA-Z0-9]+")
 
@@ -46,14 +53,100 @@ def _tokenize(text: str) -> List[str]:
     return [t for t in _TOKEN_RE.findall(text.lower()) if t not in _STOPWORDS]
 
 
+class _SparseIndex:
+    """A single BM25 index + id/text/metadata store, loaded from one bm25_*.json file."""
+
+    def __init__(self, path: str):
+        self.ids: List[str] = []
+        self.texts: List[str] = []
+        self.metadata_by_id: Dict[str, dict] = {}
+        self.bm25 = None
+        self._load(path)
+
+    def _load(self, path: str):
+        if not os.path.exists(path):
+            return
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        self.ids = data.get("ids", [])
+        self.texts = data.get("texts", [])
+        metadatas = data.get("metadatas", [])
+        for doc_id, meta in zip(self.ids, metadatas):
+            self.metadata_by_id[doc_id] = meta
+        if self.texts:
+            self.bm25 = BM25Okapi([_tokenize(t) for t in self.texts])
+
+    def search(self, query: str, n: int) -> List[dict]:
+        if not self.bm25 or not self.ids:
+            return []
+        tokens = _tokenize(query)
+        scores = self.bm25.get_scores(tokens)
+        ranked_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:n]
+        hits = []
+        for idx in ranked_indices:
+            doc_id = self.ids[idx]
+            meta = dict(self.metadata_by_id.get(doc_id, {}))
+            meta["id"] = doc_id
+            meta.setdefault("text", self.texts[idx])
+            hits.append(meta)
+        return hits
+
+
+
+# The corpus is heavily skewed toward BSA (evidence-law boilerplate: "Opinion
+# as to X, when relevant" repeated dozens of times) and CPA (mostly short
+# generic definitions). Both flood BM25 with keyword collisions on common
+# words ("opinion", "relevant", "government") regardless of what the query
+# is actually about, badly outranking the real answer in the sparse list.
+# Dense (embedding) search doesn't have this problem to nearly the same
+# degree, so it's weighted far more heavily in the fusion — sparse still
+# contributes (helps exact-term lookups like a specific section number) but
+# can no longer single-handedly drag an off-topic BSA/CPA section to the
+# top. Tuned empirically against a small set of known-answer test queries
+# (see the KB-quality test notes) — 10:1 fixed 4/5 known failures without
+# regressing anything that was already correct. Raised further to 80:1
+# after adding BNSS (560 total act sections) reintroduced a similar failure
+# for the thin 5-section RTI Act getting edged out by BSA on both dense
+# (close second) and sparse; 80:1 fixed that too with no further
+# regressions found. This is a coarse, empirically-tuned knob, not a
+# principled fix — a proper fix would be a reranking stage or trimming the
+# still-oversized BSA/CPA sections (see corpus-quality notes) rather than
+# pushing this weight indefinitely higher every time a new thin act is added.
+_DENSE_WEIGHT = 80.0
+_SPARSE_WEIGHT = 1.0
+
+
+def _reciprocal_rank_fusion(dense_hits: List[dict], sparse_hits: List[dict], k: int = 60) -> List[dict]:
+    """Fuse two ranked lists (each a list of metadata dicts with an 'id' key) using weighted RRF."""
+    scores: Dict[str, float] = {}
+    doc_lookup: Dict[str, dict] = {}
+
+    for rank, hit in enumerate(dense_hits):
+        key = hit["id"]
+        scores[key] = scores.get(key, 0.0) + _DENSE_WEIGHT / (k + rank + 1)
+        doc_lookup[key] = hit
+
+    for rank, hit in enumerate(sparse_hits):
+        key = hit["id"]
+        scores[key] = scores.get(key, 0.0) + _SPARSE_WEIGHT / (k + rank + 1)
+        doc_lookup.setdefault(key, hit)
+
+    fused = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)
+    results = []
+    for key, score in fused:
+        doc = dict(doc_lookup[key])
+        doc["score"] = score
+        results.append(doc)
+    return results
+
+
 class HybridRetriever:
     def __init__(self):
         self._pinecone_index = None
-        self._bm25 = None
-        self._bm25_ids: List[str] = []
-        self._bm25_texts: List[str] = []
-        self._metadata_by_id: Dict[str, dict] = {}
-        self._load_sparse_corpus()
+        self._acts_sparse = _SparseIndex(_BM25_ACTS_PATH)
+        self._cases_sparse = _SparseIndex(_BM25_CASES_PATH)
+        self._act_ontology: Dict[str, dict] = {}
+        self._load_ontology()
 
     @property
     def pinecone_index(self):
@@ -61,118 +154,87 @@ class HybridRetriever:
             self._pinecone_index = get_pinecone_index()
         return self._pinecone_index
 
-    def _load_sparse_corpus(self):
-        """Build the BM25 index from bm25_corpus.json (falls back to ontology.json)."""
-        self._metadata_by_id = {}
+    # kept for the /admin/ingest/status route, which reports how many BM25
+    # rows are loaded
+    @property
+    def _bm25_ids(self) -> List[str]:
+        return self._acts_sparse.ids + self._cases_sparse.ids
 
-        if os.path.exists(_BM25_CORPUS_PATH):
-            with open(_BM25_CORPUS_PATH, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            self._bm25_ids = data.get("ids", [])
-            self._bm25_texts = data.get("texts", [])
-            metadatas = data.get("metadatas", [])
-            for section_id, meta in zip(self._bm25_ids, metadatas):
-                self._metadata_by_id[section_id] = meta
-        elif os.path.exists(_ONTOLOGY_PATH):
-            with open(_ONTOLOGY_PATH, "r", encoding="utf-8") as f:
-                ontology = json.load(f)
-            for section_id, entry in ontology.items():
-                self._bm25_ids.append(section_id)
-                self._bm25_texts.append(entry.get("text", entry.get("title", "")))
-        else:
-            self._bm25_ids = []
-            self._bm25_texts = []
-
-        if self._bm25_texts:
-            tokenized = [_tokenize(t) for t in self._bm25_texts]
-            self._bm25 = BM25Okapi(tokenized)
-
-        # ontology.json enriches/overrides metadata (adds cross_refs, curated titles)
+    def _load_ontology(self):
+        """ontology.json enriches/overrides act metadata (adds cross_refs, curated titles)."""
+        self._act_ontology = {}
         if os.path.exists(_ONTOLOGY_PATH):
             with open(_ONTOLOGY_PATH, "r", encoding="utf-8") as f:
-                ontology = json.load(f)
-            for section_id, entry in ontology.items():
-                self._metadata_by_id.setdefault(section_id, {})
-                self._metadata_by_id[section_id].update(entry)
+                self._act_ontology = json.load(f)
 
     def reload(self):
-        """Re-read corpus files and rebuild the BM25 index (e.g. after ingest)."""
-        self._bm25 = None
-        self._bm25_ids = []
-        self._bm25_texts = []
-        self._metadata_by_id = {}
-        self._load_sparse_corpus()
+        """Re-read corpus files and rebuild both BM25 indexes (e.g. after ingest)."""
+        self._acts_sparse = _SparseIndex(_BM25_ACTS_PATH)
+        self._cases_sparse = _SparseIndex(_BM25_CASES_PATH)
+        self._load_ontology()
 
-    def _dense_search(self, query: str, n: int = 10) -> List[dict]:
+    def _dense_search(self, query: str, namespace: str, n: int) -> List[dict]:
         embedder = get_embedder()
         query_vec = embedder.encode_one(query)
-        response = self.pinecone_index.query(vector=query_vec, top_k=n, include_metadata=True)
+        response = self.pinecone_index.query(
+            vector=query_vec, top_k=n, include_metadata=True, namespace=namespace
+        )
         hits = []
         for match in response.get("matches", []):
-            meta = match.get("metadata") or {}
-            hits.append({
-                "id": match["id"],
-                "text": meta.get("text", ""),
-                "section_id": meta.get("section_id", match["id"]),
-                "act": meta.get("act", ""),
-                "title": meta.get("title", ""),
-            })
+            meta = dict(match.get("metadata") or {})
+            meta["id"] = match["id"]
+            hits.append(meta)
         return hits
 
-    def _sparse_search(self, query: str, n: int = 10) -> List[dict]:
-        if not self._bm25 or not self._bm25_ids:
-            return []
-        tokens = _tokenize(query)
-        scores = self._bm25.get_scores(tokens)
-        ranked_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:n]
-        hits = []
-        for idx in ranked_indices:
-            section_id = self._bm25_ids[idx]
-            text = self._bm25_texts[idx]
-            meta = self._metadata_by_id.get(section_id, {})
-            hits.append({
-                "id": section_id,
-                "text": text,
-                "section_id": section_id,
-                "act": meta.get("act", ""),
-                "title": meta.get("title", ""),
-            })
-        return hits
+    def _act_hit(self, doc: dict) -> dict:
+        section_id = doc.get("section_id", doc.get("id", ""))
+        enrichment = self._act_ontology.get(section_id, {})
+        return {
+            "kind": "act",
+            "section_id": section_id,
+            "act": doc.get("act", ""),
+            "title": enrichment.get("title", doc.get("title", "")),
+            "text": doc.get("text", ""),
+            "score": doc.get("score", 0.0),
+        }
 
     @staticmethod
-    def _reciprocal_rank_fusion(dense_hits: List[dict], sparse_hits: List[dict], k: int = 60) -> List[dict]:
-        """Fuse two ranked lists using RRF: score = sum(1 / (k + rank))."""
-        scores: Dict[str, float] = {}
-        doc_lookup: Dict[str, dict] = {}
+    def _case_hit(doc: dict) -> dict:
+        return {
+            "kind": "case",
+            "case_id": doc.get("case_id", doc.get("id", "")),
+            "case_name": doc.get("case_name", ""),
+            "citation": doc.get("citation", ""),
+            "court": doc.get("court", ""),
+            "year": doc.get("year", ""),
+            "act": doc.get("act", ""),
+            "sections": doc.get("sections", []),
+            "ratio_decidendi": doc.get("ratio_decidendi", ""),
+            "summary": doc.get("summary", ""),
+            "text": doc.get("text", doc.get("summary", "")),
+            "score": doc.get("score", 0.0),
+        }
 
-        for rank, hit in enumerate(dense_hits):
-            key = hit["section_id"]
-            scores[key] = scores.get(key, 0.0) + 1.0 / (k + rank + 1)
-            doc_lookup[key] = hit
+    def search_acts(self, query: str, n: int = 6) -> List[dict]:
+        """ACT KB: 'what law applies?' — statute/section text."""
+        dense_hits = self._dense_search(query, ACTS_NAMESPACE, n=10)
+        sparse_hits = self._acts_sparse.search(query, n=10)
+        fused = _reciprocal_rank_fusion(dense_hits, sparse_hits, k=60)
+        return [self._act_hit(d) for d in fused[:n]]
 
-        for rank, hit in enumerate(sparse_hits):
-            key = hit["section_id"]
-            scores[key] = scores.get(key, 0.0) + 1.0 / (k + rank + 1)
-            doc_lookup.setdefault(key, hit)
+    def search_cases(self, query: str, n: int = 3) -> List[dict]:
+        """CASE KB: 'how was it used?' — similar cases / precedents."""
+        dense_hits = self._dense_search(query, CASES_NAMESPACE, n=10)
+        sparse_hits = self._cases_sparse.search(query, n=10)
+        fused = _reciprocal_rank_fusion(dense_hits, sparse_hits, k=60)
+        return [self._case_hit(d) for d in fused[:n]]
 
-        fused = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)
-        results = []
-        for key, score in fused:
-            doc = doc_lookup[key]
-            results.append({
-                "text": doc["text"],
-                "section_id": doc["section_id"],
-                "act": doc["act"],
-                "title": doc["title"],
-                "score": score,
-            })
-        return results
-
-    def get_hybrid_results(self, query: str, n: int = 6) -> List[dict]:
-        dense_hits = self._dense_search(query, n=10)
-        sparse_hits = self._sparse_search(query, n=10)
-        fused = self._reciprocal_rank_fusion(dense_hits, sparse_hits, k=60)
-        return fused[:n]
+    def get_hybrid_results_by_kb(self, query: str, n_acts: int = 6, n_cases: int = 3) -> Dict[str, List[dict]]:
+        """Retriever -> {acts: [...], cases: [...]}, matching the ACT KB / CASE KB split."""
+        return {
+            "acts": self.search_acts(query, n=n_acts),
+            "cases": self.search_cases(query, n=n_cases),
+        }
 
 
 _retriever_singleton = None

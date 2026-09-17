@@ -8,6 +8,7 @@ my own laptop next to Ollama" deployment target.
 import os
 from typing import Optional
 
+import certifi
 from motor.motor_asyncio import AsyncIOMotorClient
 
 MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017")
@@ -19,7 +20,14 @@ _client: Optional[AsyncIOMotorClient] = None
 def get_client() -> AsyncIOMotorClient:
     global _client
     if _client is None:
-        _client = AsyncIOMotorClient(MONGO_URL, serverSelectionTimeoutMS=5000)
+        # mongodb+srv:// (Atlas) connections are TLS. macOS python.org builds
+        # don't ship a system CA bundle, so SSL verification fails unless we
+        # point it at certifi's bundle explicitly — this makes it work in
+        # every terminal/shell regardless of SSL_CERT_FILE being set.
+        kwargs = {"serverSelectionTimeoutMS": 5000}
+        if MONGO_URL.startswith("mongodb+srv://"):
+            kwargs["tlsCAFile"] = certifi.where()
+        _client = AsyncIOMotorClient(MONGO_URL, **kwargs)
     return _client
 
 

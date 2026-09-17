@@ -35,9 +35,9 @@ def get_llm() -> OllamaLLM:
     return _llm_singleton
 
 
-def _format_context(chunks: List[dict]) -> str:
+def _format_act_context(chunks: List[dict]) -> str:
     if not chunks:
-        return "No relevant legal context was found."
+        return "No relevant statute sections were found."
     blocks = []
     for c in chunks:
         blocks.append(
@@ -46,18 +46,40 @@ def _format_context(chunks: List[dict]) -> str:
     return "\n\n".join(blocks)
 
 
-def generate_answer(query: str, context_chunks: List[dict], language: str = "en") -> str:
+def _format_case_context(chunks: List[dict]) -> str:
+    if not chunks:
+        return "No directly relevant case law was found."
+    blocks = []
+    for c in chunks:
+        blocks.append(
+            f"[{c.get('case_name', '')} ({c.get('citation', '')}) - {c.get('court', '')}]\n"
+            f"Ratio decidendi: {c.get('ratio_decidendi', '')}\n"
+            f"Summary: {c.get('summary', '')}"
+        )
+    return "\n\n".join(blocks)
+
+
+def generate_answer(
+    query: str,
+    act_chunks: List[dict],
+    case_chunks: List[dict] = None,
+    language: str = "en",
+) -> str:
     """
     Builds the QA chain (PromptTemplate | llm) and generates a grounded
-    answer for `query` using the retrieved `context_chunks`.
+    answer for `query` using the retrieved ACT KB (`act_chunks`) and CASE KB
+    (`case_chunks`) results — what the law says, and how it's been applied.
     """
     prompt = PromptTemplate(
-        input_variables=["context", "question"],
+        input_variables=["act_context", "case_context", "question"],
         template=QA_PROMPT,
     )
     llm = get_llm()
     chain = prompt | llm
 
-    context_text = _format_context(context_chunks)
-    result = chain.invoke({"context": context_text, "question": query})
+    act_context_text = _format_act_context(act_chunks)
+    case_context_text = _format_case_context(case_chunks or [])
+    result = chain.invoke(
+        {"act_context": act_context_text, "case_context": case_context_text, "question": query}
+    )
     return result.strip() if isinstance(result, str) else str(result).strip()

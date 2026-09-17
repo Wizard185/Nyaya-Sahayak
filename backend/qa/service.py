@@ -1,3 +1,12 @@
+"""
+Shared async QA pipeline: translate-in -> hybrid retrieval -> LLM generation
+-> hallucination check -> translate-out.
+
+Every blocking step (translation, Pinecone/BM25 retrieval, Ollama generation)
+runs off the event loop via asyncio.to_thread and is wrapped in its own
+asyncio.wait_for + try/except, so a failure anywhere produces a specific,
+actionable HTTPException detail instead of a generic frontend catch-all.
+"""
 import asyncio
 import os
 from typing import Dict, List
@@ -17,15 +26,6 @@ RETRIEVAL_TIMEOUT_SECONDS = float(os.getenv("RETRIEVAL_TIMEOUT_SECONDS", "8"))
 GENERATION_TIMEOUT_SECONDS = float(os.getenv("GENERATION_TIMEOUT_SECONDS", "25"))
 TRANSLATION_TIMEOUT_SECONDS = float(os.getenv("TRANSLATION_TIMEOUT_SECONDS", "6"))
 
-LANG_MAP = {
-    "hi": "hi",
-    "ka": "kn",
-    "kn": "kn",
-    "en": "en",
-    "mr": "hi",
-    "ne": "hi"
-}
-
 
 async def _translate_to_english(text: str, source_lang: str) -> str:
     try:
@@ -34,6 +34,8 @@ async def _translate_to_english(text: str, source_lang: str) -> str:
             timeout=TRANSLATION_TIMEOUT_SECONDS,
         )
     except Exception:
+        # translate_to_english already falls back to the original text on
+        # internal errors; a hard timeout here just means "use as-is".
         return text
 
 
@@ -52,14 +54,14 @@ async def run_qa(query: str, language: str = "auto") -> Dict:
         raise HTTPException(status_code=400, detail="Query cannot be empty.")
 
     detected = await asyncio.to_thread(detect_language, query) if language == "auto" else language
-    working_lang = LANG_MAP.get(detected, detected)
+    working_lang = detected
 
     query_en = await _translate_to_english(query, working_lang)
 
     retriever = get_retriever()
     try:
-        chunks: List[dict] = await asyncio.wait_for(
-            asyncio.to_thread(retriever.get_hybrid_results, query_en, 6),
+        kb_results: Dict[str, List[dict]] = await asyncio.wait_for(
+            asyncio.to_thread(retriever.get_hybrid_results_by_kb, query_en, 6, 3),
             timeout=RETRIEVAL_TIMEOUT_SECONDS,
         )
     except asyncio.TimeoutError:
@@ -73,9 +75,12 @@ async def run_qa(query: str, language: str = "auto") -> Dict:
             detail=f"Could not reach the legal database (Pinecone). Check PINECONE_API_KEY and your internet connection. ({e})",
         )
 
+    act_chunks = kb_results["acts"]
+    case_chunks = kb_results["cases"]
+
     try:
         answer_en = await asyncio.wait_for(
-            asyncio.to_thread(generate_answer, query_en, chunks, working_lang),
+            asyncio.to_thread(generate_answer, query_en, act_chunks, case_chunks, working_lang),
             timeout=GENERATION_TIMEOUT_SECONDS,
         )
     except asyncio.TimeoutError:
@@ -89,17 +94,31 @@ async def run_qa(query: str, language: str = "auto") -> Dict:
             detail=f"Could not reach the AI model. Is Ollama running at the configured OLLAMA_BASE_URL? ({e})",
         )
 
-    citations = [
+    act_citations = [
         {
+            "kind": "act",
             "section_id": c["section_id"],
             "act": c["act"],
             "title": c["title"],
             "excerpt": (c["text"][:280] + "...") if len(c["text"]) > 280 else c["text"],
         }
-        for c in chunks
+        for c in act_chunks
     ]
+    case_citations = [
+        {
+            "kind": "case",
+            "case_id": c["case_id"],
+            "case_name": c["case_name"],
+            "citation": c["citation"],
+            "court": c["court"],
+            "act": c["act"],
+            "excerpt": (c["summary"][:280] + "...") if len(c["summary"]) > 280 else c["summary"],
+        }
+        for c in case_chunks
+    ]
+    citations = act_citations + case_citations
 
-    flags = hallucination_check(answer_en, citations)
+    flags = hallucination_check(answer_en, act_citations, case_citations)
 
     final_answer = (
         await _translate_from_english(answer_en, working_lang)

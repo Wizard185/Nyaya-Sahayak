@@ -1,0 +1,451 @@
+[
+  {
+    "case_id": "CASE_CPA2019_01",
+    "case_name": "Imperia Structures Ltd. v. Anil Patni",
+    "citation": "(2020) 10 SCC 783; decided 2 November 2020",
+    "court": "Supreme Court of India",
+    "year": 2020,
+    "act": "Consumer Protection Act, 2019",
+    "facts": "Anil Patni and other buyers booked apartments in Imperia Structures' 'Esfera' project at Gurugram between 2011 and 2013 and paid substantial instalments. The builder had undertaken to hand over possession within forty-two months of the commencement of construction, but failed to deliver even years after the promised date. The buyers filed complaints before the National Commission seeking refund of the amounts paid together with interest and compensation. The builder resisted on the ground that the project had since been registered under the Real Estate (Regulation and Development) Act, 2016, that section 79 of RERA barred any other proceeding, and that the allottees were obliged to pursue their remedy before the RERA authority alone; it further contended that the buyers were investors and not consumers.",
+    "issues": [
+      "Whether a person who books an apartment and pays consideration to a builder is a 'consumer', and whether the builder's failure to hand over possession within the committed period amounts to a deficiency in service.",
+      "Whether section 79 of the RERA Act, 2016 bars the institution or continuation of a complaint under the Consumer Protection Act.",
+      "Whether registration of a real-estate project under RERA, or the availability of remedies under sections 18 and 71 of RERA, takes away the allottee's remedy before the consumer fora.",
+      "Whether the allottees were entitled to refund of the amounts paid with interest, rather than being compelled to await possession."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 2(1)(d) (consumer)",
+      "Consumer Protection Act, 1986 - Section 2(1)(g) (deficiency)",
+      "Consumer Protection Act, 1986 - Section 2(1)(o) (service)",
+      "Consumer Protection Act, 1986 - Section 21 (jurisdiction of National Commission)",
+      "Consumer Protection Act, 2019 - Section 100 (Act not in derogation of any other law)",
+      "RERA Act, 2016 - Sections 18, 71, 79, 88 and 89"
+    ],
+    "ratio_decidendi": "The remedy under the consumer legislation is an additional remedy and is not in derogation of any other law. Section 88 of RERA expressly declares that the provisions of RERA are in addition to, and not in derogation of, the provisions of any other law in force, and section 89 gives RERA overriding effect only in the event of inconsistency, of which there is none here. Section 79 of RERA bars the jurisdiction of a 'civil court', and a Consumer Forum or Commission, though it exercises judicial functions, is not a civil court within the meaning of that bar. Consequently an allottee is entitled to elect his remedy: the mere registration of the project under RERA, or the existence of a parallel remedy under sections 18 and 71 of RERA, neither ousts nor suspends the jurisdiction of the consumer fora. A person who books a flat for his own residence is a consumer, and failure to deliver possession within the committed period is a deficiency in service entitling the allottee to refund with interest; he cannot be compelled to wait indefinitely for possession.",
+    "summary": "Flat buyers of Imperia's Esfera project sought refund before the National Commission after possession was delayed far beyond the forty-two month commitment. Rejecting the builder's plea that RERA had displaced the consumer remedy, the Supreme Court held that the consumer remedy is additional and concurrent: section 88 of RERA preserves other laws, section 79 bars only civil courts and not consumer fora, and an allottee may choose the forum. The buyers were held to be consumers, the delay a deficiency in service, and refund with interest was upheld. This is the leading authority on the coexistence of CPA and RERA remedies for homebuyers."
+  },
+  {
+    "case_id": "CASE_CPA2019_02",
+    "case_name": "Ireo Grace Realtech Pvt. Ltd. v. Abhishek Khanna",
+    "citation": "(2021) 3 SCC 241; decided 11 January 2021",
+    "court": "Supreme Court of India",
+    "year": 2021,
+    "act": "Consumer Protection Act, 2019",
+    "facts": "Apartment buyers in Ireo Grace Realtech's 'The Corridors' project at Gurugram entered into Apartment Buyer's Agreements under which possession was to be offered within forty-two months from the date of approval of the building plans or grant of the fire NOC, whichever was later, with a further grace period of one hundred and twenty days. Possession was delayed by several years. The buyers approached the National Commission seeking refund of the amounts paid with interest. The developer relied on the terms of the Agreement, pleaded force majeure and administrative delays in obtaining approvals, contended that many complainants were investors rather than genuine consumers, and argued that on cancellation the buyers could at most obtain refund subject to the forfeiture and delay-compensation clauses of the Agreement.",
+    "issues": [
+      "Whether the complainants were 'consumers' or mere investors who had booked apartments for resale or commercial gain.",
+      "Whether the terms of the Apartment Buyer's Agreement, in particular those relating to the commencement of the possession period, delay compensation and forfeiture, were one-sided and unfair, and whether the buyers were bound by them.",
+      "From what date the forty-two month possession period was to be computed.",
+      "Whether the developer could invoke force majeure for delays attributable to its own failure to obtain approvals in time.",
+      "Whether the allottees were entitled to refund with interest or could be compelled to take delayed possession with contractual compensation."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 2(1)(d) (consumer)",
+      "Consumer Protection Act, 1986 - Section 2(1)(g) (deficiency)",
+      "Consumer Protection Act, 1986 - Section 2(1)(r) (unfair trade practice)",
+      "Consumer Protection Act, 2019 - Section 2(46) (unfair contract) and Section 2(47) (unfair trade practice)",
+      "RERA Act, 2016 - Sections 18 and 88",
+      "Indian Contract Act, 1872 - Section 74"
+    ],
+    "ratio_decidendi": "The incorporation of one-sided, unfair and unreasonable clauses in an Apartment Buyer's Agreement constitutes an unfair trade practice, and a builder cannot seek to bind the buyer to such stipulations. Following Pioneer Urban Land and Infrastructure Ltd. v. Govindan Raghavan, the Court held that a term which entitles the developer to a long grace period and nominal delay compensation, while imposing forfeiture and automatic cancellation on the buyer, is not enforceable against the consumer merely because it appears in a standard-form contract signed by him. Where possession is delayed far beyond the committed date for reasons attributable to the developer, the allottee cannot be compelled to wait indefinitely and is entitled to refund of the amounts paid with reasonable interest; force majeure cannot be pleaded to cover delay caused by the developer's own default in obtaining statutory approvals. Buyers who have booked apartments for residence remain consumers, the onus of showing that a particular buyer purchased for a commercial purpose being on the developer.",
+    "summary": "Buyers of Ireo's 'The Corridors' apartments sought refund after years of delay. The Supreme Court held one-sided clauses in builder-buyer agreements to be an unfair trade practice that cannot bind the consumer, refused the developer's force majeure plea for delays of its own making, and held that an allottee faced with inordinate delay is entitled to refund with interest rather than being obliged to accept late possession on the developer's contractual terms. Read with Pioneer Urban and Godrej Projects v. Anil Karlekar, it is a cornerstone of the law on unfair builder-buyer contracts."
+  },
+  {
+    "case_id": "CASE_CPA2019_03",
+    "case_name": "Neena Aneja v. Jai Prakash Associates Ltd.",
+    "citation": "(2021) 2 SCC 671; decided 16 March 2021",
+    "court": "Supreme Court of India",
+    "year": 2021,
+    "act": "Consumer Protection Act, 2019",
+    "facts": "The complainants instituted a consumer complaint before the National Commission under the Consumer Protection Act, 1986, when the pecuniary limits of that Act placed their claim within the National Commission's jurisdiction. While the complaint was pending, the Consumer Protection Act, 2019 came into force on 20 July 2020, substantially raising the pecuniary thresholds of all three Commissions. The National Commission took the view that, on the enhanced thresholds, the complaint now fell within the jurisdiction of the State Commission, and directed that it be filed before that forum. The complainants appealed, contending that a pending proceeding could not be uprooted by a change in pecuniary jurisdiction.",
+    "issues": [
+      "Whether proceedings instituted before 20 July 2020 under the Consumer Protection Act, 1986 must be transferred to the forum which, under the enhanced pecuniary limits of the Consumer Protection Act, 2019, would have jurisdiction.",
+      "Whether the provisions of the 2019 Act altering pecuniary jurisdiction operate retrospectively on pending complaints.",
+      "What is the effect of the repeal and savings provision in section 107 of the 2019 Act, read with section 6 of the General Clauses Act, 1897, on pending proceedings."
+    ],
+    "sections": [
+      "Consumer Protection Act, 2019 - Sections 34, 47 and 58 (pecuniary jurisdiction)",
+      "Consumer Protection Act, 2019 - Section 107 (repeal and savings)",
+      "Consumer Protection Act, 1986 - Sections 11, 17 and 21",
+      "General Clauses Act, 1897 - Section 6"
+    ],
+    "ratio_decidendi": "A statute which alters the forum or the pecuniary jurisdiction of a tribunal is not to be construed as retrospective in the absence of express words or necessary intendment, particularly where the effect would be to destroy or disturb proceedings already validly instituted. Section 107(2) of the 2019 Act, read with section 6 of the General Clauses Act, 1897, preserves anything done and any action taken under the repealed 1986 Act. Accordingly, complaints instituted before the commencement of the 2019 Act continue before the very fora in which they were instituted under the 1986 Act, and are not liable to be transferred merely because the enhanced pecuniary limits would have placed them before a different Commission.",
+    "summary": "The Supreme Court held that the enhanced pecuniary thresholds of the Consumer Protection Act, 2019 do not apply retrospectively to complaints already pending on 20 July 2020. Such complaints continue before the forum in which they were validly filed under the 1986 Act, because a change of forum is presumed prospective and because section 107(2) with section 6 of the General Clauses Act saves pending proceedings. This is the governing authority on the 1986-to-2019 transition."
+  },
+  {
+    "case_id": "CASE_CPA2019_04",
+    "case_name": "Manohar Infrastructure & Constructions Pvt. Ltd. v. Sanjeev Kumar Sharma",
+    "citation": "Decided 7 December 2021 (Supreme Court of India)",
+    "court": "Supreme Court of India",
+    "year": 2021,
+    "act": "Consumer Protection Act, 2019",
+    "facts": "The State Commission directed the builders, Manohar Infrastructure and TDI Infrastructure, to refund amounts to homebuyers. The builders appealed to the National Commission and applied for stay of those orders. The National Commission granted conditional stay, but in doing so required the appellants to deposit the entire decretal amount, going well beyond the fifty per cent deposit stipulated by the second proviso to section 51(1) of the Consumer Protection Act, 2019, and did so without recording reasons. The builders challenged these conditional stay orders before the Supreme Court, contending that the statute fixed fifty per cent as the deposit and that the Commission could not demand more.",
+    "issues": [
+      "Whether the fifty per cent deposit under the second proviso to section 51(1) of the Consumer Protection Act, 2019 is merely a pre-condition for entertaining an appeal, or also fixes the outer limit of what may be required while staying the order appealed against.",
+      "Whether the National Commission, while granting a conditional stay, can direct deposit of the whole or of more than fifty per cent of the decretal amount.",
+      "Whether such a direction can be made mechanically, or must be supported by reasons."
+    ],
+    "sections": [
+      "Consumer Protection Act, 2019 - Section 51 and the second proviso to sub-section (1) (appeal to National Commission; fifty per cent deposit)",
+      "Consumer Protection Act, 2019 - Section 41 (analogous proviso on appeal to State Commission)",
+      "Code of Civil Procedure, 1908 - Order XLI Rule 5 (stay of money decrees)"
+    ],
+    "ratio_decidendi": "The deposit of fifty per cent required by the second proviso to section 51(1) is a statutory pre-condition for the entertainment of the appeal itself, and is conceptually distinct from the discretion which the appellate Commission exercises when asked to stay the operation of the order under challenge. The statutory floor therefore does not cap the conditions of stay, and the National Commission is competent, while granting a conditional stay, to direct deposit of the whole or of a larger part of the amount awarded. That discretion must, however, be exercised judicially: the Commission must pass a reasoned, speaking order after hearing both sides and considering the prima facie case, the balance of convenience and the facts of the case, and cannot impose such a condition mechanically.",
+    "summary": "The Supreme Court clarified the relationship between the fifty per cent deposit that section 51 makes a pre-condition to appeal and the separate power to impose conditions while staying a State Commission's order. The fifty per cent figure is a threshold for entertaining the appeal, not a ceiling on stay conditions, so the National Commission may require a larger or even full deposit; but it must record reasons for doing so. The conditional stay orders were set aside and the stay applications remitted for fresh reasoned consideration. Note: the source spreadsheet describes this case as one on real-estate deficiency and compensation; its actual holding is on appellate deposit and stay conditions."
+  },
+  {
+    "case_id": "CASE_CPA2019_05",
+    "case_name": "Brigade Enterprises Ltd. v. Anil Kumar Virmani",
+    "citation": "Decided 17 December 2021 (Supreme Court of India)",
+    "court": "Supreme Court of India",
+    "year": 2021,
+    "act": "Consumer Protection Act, 2019",
+    "facts": "Ninety-one purchasers of fifty-one apartments in a Brigade Enterprises project filed a consumer complaint which purported to be brought on behalf of, and to represent, more than a thousand apartment owners in the development. The grievances were not uniform across the complainants and the group they claimed to represent: different residential blocks had suffered different periods of delay and a substantial body of purchasers had not joined or authorised the proceeding. The developer objected that the complaint could not be maintained in a representative capacity, and the matter reached the Supreme Court on the question of the character of the complaint.",
+    "issues": [
+      "Whether a group of identified purchasers can maintain a complaint in a representative capacity on behalf of a far larger body of apartment owners.",
+      "What is the test of 'numerous consumers having the same interest' for a representative complaint under section 35(1)(c) of the Consumer Protection Act, 2019 (section 12(1)(c) of the 1986 Act).",
+      "Whether a joint complaint by several identified consumers seeking relief for themselves is the same thing as a representative complaint, and whether the permission of the Commission and compliance with Order I Rule 8 CPC are required for it."
+    ],
+    "sections": [
+      "Consumer Protection Act, 2019 - Section 35(1)(c) (complaint by one or more consumers on behalf of numerous consumers having the same interest)",
+      "Consumer Protection Act, 2019 - Section 38(11) (application of Order I Rule 8 CPC)",
+      "Consumer Protection Act, 1986 - Section 12(1)(c) and Section 13(6)",
+      "Code of Civil Procedure, 1908 - Order I Rule 8"
+    ],
+    "ratio_decidendi": "A representative complaint under section 35(1)(c) is available only where there are numerous consumers having the same interest, and sameness of interest must be demonstrable between the complainants and the entire body they seek to represent; a broad factual similarity is not enough, so that where different groups have suffered differently the requirement is not satisfied. Such a complaint requires the permission of the Commission and attracts the procedure of Order I Rule 8 CPC. A joint complaint by identified consumers who seek relief only for themselves is a distinct and legitimate species of proceeding, and does not need permission or the representative procedure. Where the representative character fails, the complaint does not fall to the ground but may proceed as a joint complaint confined to the actual complainants.",
+    "summary": "Ninety-one apartment purchasers sought to litigate on behalf of over eleven hundred owners whose grievances differed block by block. The Supreme Court drew a clear line between a joint complaint and a representative or class complaint: the latter, under section 35(1)(c), demands identity of interest across the whole represented class plus the Commission's permission and Order I Rule 8 procedure, while the former needs neither. Finding no sameness of interest, the Court allowed the developer's appeal and permitted the proceeding to continue as a joint complaint limited to the ninety-one purchasers."
+  },
+  {
+    "case_id": "CASE_CPA2019_06",
+    "case_name": "Prakash Corporates v. Dee Vee Projects Ltd.",
+    "citation": "Decided 14 February 2022 (Supreme Court of India)",
+    "court": "Supreme Court of India",
+    "year": 2022,
+    "act": "Consumer Protection Act, 2019 (procedural principle applied to consumer proceedings; the judgment itself arose under the Commercial Courts Act, 2015)",
+    "facts": "This appeal arose from a commercial suit for recovery of alleged excess payments, governed by the Commercial Courts Act, 2015. The defendant did not file its written statement within the thirty days prescribed by the amended Order VIII Rule 1 CPC nor within the outer limit of one hundred and twenty days, which expired on 6 May 2021, during the second wave of the COVID-19 pandemic. The written statement was tendered on 7 July 2021. The trial court refused to accept it, holding that the right to file had been forfeited by the statutory outer limit, and the High Court upheld that refusal. The defendant contended that the Supreme Court's suo motu orders extending limitation on account of the pandemic covered the period in question.",
+    "issues": [
+      "Whether the outer limit of one hundred and twenty days for filing a written statement in a commercial suit is affected by the Supreme Court's suo motu orders in In Re: Cognizance for Extension of Limitation.",
+      "Whether those orders apply only to the institution of proceedings, or also to intervening procedural time limits such as the time for filing a written statement.",
+      "Whether the defendant's right to file the written statement had been irretrievably forfeited."
+    ],
+    "sections": [
+      "Code of Civil Procedure, 1908 - Order V Rule 1 and Order VIII Rules 1 and 10 (as amended for commercial suits)",
+      "Commercial Courts Act, 2015 - Section 16",
+      "Limitation Act, 1963 - Sections 4 and 12 to 15",
+      "In Re: Cognizance for Extension of Limitation, Suo Motu Writ Petition (C) No. 3 of 2020"
+    ],
+    "ratio_decidendi": "The suo motu orders excluding the period from 15 March 2020 onwards were not confined to the period of limitation for instituting proceedings; they operate on the time prescribed for taking any step, including the time for filing a written statement in a commercial suit. The excluded pandemic period must therefore be left out of account in computing the thirty-day and one-hundred-and-twenty-day periods, and the written statement filed within the extended reckoning was liable to be accepted rather than treated as barred by forfeiture.",
+    "summary": "A commercial-suit defendant whose written statement fell outside the one-hundred-and-twenty-day outer limit was held entitled to the benefit of the Supreme Court's COVID-19 limitation orders, which extend to intervening procedural deadlines and not merely to the institution of proceedings. Important caveat for this knowledge base: the judgment does not arise under, and does not interpret, the Consumer Protection Act; the source spreadsheet classifies it as a CPA 2019 case. Its relevance to consumer practice is by analogy, since the same pandemic exclusion has been applied to the timelines for filing a version under section 38 and appeals under sections 41, 51 and 67 of the 2019 Act."
+  },
+  {
+    "case_id": "CASE_CPA2019_07",
+    "case_name": "Ibrat Faizan v. Omaxe Buildhome Pvt. Ltd.",
+    "citation": "2022 LiveLaw (SC) 481; decided 13 May 2022",
+    "court": "Supreme Court of India",
+    "year": 2022,
+    "act": "Consumer Protection Act, 2019",
+    "facts": "A flat purchaser who had paid the full consideration but had not been given possession obtained an order from the State Commission directing delivery of possession together with compensation by way of simple interest at nine per cent. The builder, Omaxe Buildhome, appealed to the National Commission, which entertained the appeal subject to the statutory deposit condition. Aggrieved by the National Commission's order in that appeal, the builder invoked the supervisory jurisdiction of the High Court under Article 227 of the Constitution. The consumer, Ibrat Faizan, contended before the Supreme Court that no writ petition lay against an order of the National Commission and that the High Court ought not to have entertained it.",
+    "issues": [
+      "Whether a writ petition under Article 227 of the Constitution is maintainable before the High Court against an order passed by the National Commission in an appeal under section 58(1)(a)(iii) of the Consumer Protection Act, 2019.",
+      "Whether the availability of a remedy under Article 136 before the Supreme Court excludes recourse to the High Court under Article 227.",
+      "Whether the National Commission is a 'tribunal' amenable to the supervisory jurisdiction of the High Court."
+    ],
+    "sections": [
+      "Consumer Protection Act, 2019 - Section 58(1)(a)(iii) (appeals to National Commission against State Commission orders)",
+      "Consumer Protection Act, 2019 - Section 67 (appeal to Supreme Court, confined to orders under section 58(1)(a)(i) and (ii))",
+      "Consumer Protection Act, 2019 - Section 51 (appeal to National Commission and deposit)",
+      "Constitution of India - Articles 227 and 136"
+    ],
+    "ratio_decidendi": "Section 67 confers a statutory appeal to the Supreme Court only against orders of the National Commission passed in exercise of its original jurisdiction under section 58(1)(a)(i) and (ii); no appeal is provided against an order made by the National Commission in an appeal under section 58(1)(a)(iii). The National Commission is a tribunal within the meaning of Article 227, and since no further statutory remedy exists, a writ petition under Article 227 before the High Court is maintainable against such an order. Access to the High Court is also more affordable and accessible to the litigant than invoking Article 136, which serves the object of meaningful access to justice; but the High Court must keep within the limited supervisory scope of Article 227 and not treat the petition as an appeal on merits.",
+    "summary": "The Supreme Court held that an order of the National Commission made in an appeal under section 58(1)(a)(iii) can be challenged by a writ petition under Article 227 before the High Court, because section 67 gives no statutory appeal against such orders and the National Commission is a tribunal subject to the High Court's supervisory jurisdiction. The consumer's appeal was dismissed and the matter remitted to the High Court to be decided on merits within the confined scope of Article 227."
+  },
+  {
+    "case_id": "CASE_CPA2019_08",
+    "case_name": "Bar of Indian Lawyers through its President Jasbir Singh Malik v. D.K. Gandhi PS National Institute of Communicable Diseases",
+    "citation": "2024 INSC 410; decided 14 May 2024",
+    "court": "Supreme Court of India",
+    "year": 2024,
+    "act": "Consumer Protection Act, 2019",
+    "facts": "D.K. Gandhi engaged an advocate to prosecute a complaint under section 138 of the Negotiable Instruments Act. The accused agreed to pay twenty thousand rupees towards the cheque amount and five thousand rupees as expenses, and handed over the instruments to the advocate. The advocate is alleged to have withheld the money from his client and to have demanded a further five thousand rupees as his fee before releasing it. Gandhi filed a consumer complaint alleging deficiency in service. The District Forum dismissed the complaint but the State Commission and thereafter the National Commission held that the services of an advocate fall within the Consumer Protection Act, so that such a complaint was maintainable. The Bar of Indian Lawyers and other bodies of the legal profession appealed to the Supreme Court.",
+    "issues": [
+      "Whether the legislature intended to include the services rendered by professionals within the ambit of the Consumer Protection Act.",
+      "Whether the legal profession is sui generis, so that advocates cannot be equated with traders or service providers engaged in business or commerce.",
+      "Whether the service rendered by an advocate to his client is a service under 'a contract of personal service', which is expressly excluded from the statutory definition of service.",
+      "Whether the ruling in Indian Medical Association v. V.P. Shantha, which brought medical practitioners within the Act, requires reconsideration."
+    ],
+    "sections": [
+      "Consumer Protection Act, 2019 - Section 2(42) (service; exclusion of service under a contract of personal service)",
+      "Consumer Protection Act, 2019 - Section 2(7) (consumer), Section 2(11) (deficiency) and Section 2(47) (unfair trade practice)",
+      "Consumer Protection Act, 1986 - Section 2(1)(o)",
+      "Advocates Act, 1961"
+    ],
+    "ratio_decidendi": "The object and purpose of the consumer legislation is to protect consumers against unfair trade practices and unethical business practices of traders, manufacturers and commercial service providers; it was not enacted to bring the professions within its net. A profession, requiring advanced education, specialised mental skill and adherence to an ethical code administered by its own regulator, stands on a different footing from business or trade, so that a professional cannot be equated with a businessman nor his client with a consumer in the statutory sense. The relationship between an advocate and his client is one of agency in which the client exercises a substantial measure of direction and control over the manner in which the advocate acts, and the advocate is bound by his client's instructions and owes fiduciary duties; such service is therefore rendered under 'a contract of personal service', which the definition of service in section 2(42) expressly excludes. Accordingly a complaint against an advocate alleging deficiency in service is not maintainable under the Act. The correctness of Indian Medical Association v. V.P. Shantha, in so far as it treats the professional services of medical practitioners as covered, was doubted and referred for consideration by a larger Bench, but that decision continues to hold the field until reconsidered.",
+    "summary": "The Supreme Court held that advocates' services are outside the Consumer Protection Act: the legislation targets traders and commercial service providers rather than the professions, and the advocate-client relationship is a contract of personal service expressly excluded from the definition of 'service'. A client's remedy for professional negligence therefore lies in a civil action or before the Bar Council, not in the consumer fora. The Court also doubted the reasoning of Indian Medical Association v. V.P. Shantha and referred it to a larger Bench, so the position of medical professionals remains governed by Shantha for the present."
+  },
+  {
+    "case_id": "CASE_CPA2019_09",
+    "case_name": "Godrej Projects Development Ltd. v. Anil Karlekar",
+    "citation": "2025 INSC 143; decided 3 February 2025",
+    "court": "Supreme Court of India",
+    "year": 2025,
+    "act": "Consumer Protection Act, 2019",
+    "facts": "On 10 January 2014 the respondents booked an apartment in the 'Godrej Summit' project at Gurugram, paying ten lakh rupees as application money, and an allotment letter of 20 June 2014 gave rise to an Apartment Buyer Agreement with a Basic Sale Price of Rs. 1,70,81,400. The project received its Occupation Certificate on 20 June 2017 and possession was offered on 28 June 2017. The buyers declined possession and sought cancellation, citing a recession in the market and the availability of comparable property at lower prices, and demanded refund of the Rs. 51,12,310 they had paid. The developer, relying on the forfeiture clause of the Agreement, offered to refund only Rs. 4,22,845 after forfeiting twenty per cent of the Basic Sale Price as earnest money. The consumer fora ordered refund and the developer appealed.",
+    "issues": [
+      "Whether the contractual clause permitting forfeiture of twenty per cent of the Basic Sale Price as earnest money was enforceable or unreasonable.",
+      "What extent of forfeiture of earnest money is reasonable in a real-estate transaction, and when forfeiture becomes a penalty attracting section 74 of the Indian Contract Act.",
+      "Whether the incorporation of one-sided forfeiture and cancellation clauses in an apartment buyer agreement amounts to an unfair trade practice or an unfair contract.",
+      "Whether the buyers, who had themselves sought cancellation on account of market conditions and not because of any breach by the developer, were entitled to interest on the refunded amount."
+    ],
+    "sections": [
+      "Consumer Protection Act, 2019 - Section 2(46) (unfair contract)",
+      "Consumer Protection Act, 1986 - Section 2(1)(r) (unfair trade practice)",
+      "Indian Contract Act, 1872 - Section 74 (penalty)",
+      "RERA Act, 2016"
+    ],
+    "ratio_decidendi": "Forfeiture of earnest money that is reasonable in amount does not amount to a penalty within section 74 of the Indian Contract Act, but an unreasonable forfeiture does. Following the consistent view of the National Commission in DLF Ltd. v. Bhagwanti Narula, ten per cent of the Basic Sale Price is a reasonable amount liable to be forfeited as earnest money, and forfeiture of twenty per cent was disproportionate. Cases such as Satish Batra v. Sudhir Rawal and Desh Raj v. Rohtash Singh, which upheld forfeiture, involved parties bargaining on equal and reciprocal terms; where the agreement is ex facie one-sided and tilted in favour of the developer, permitting it to delay completion against nominal compensation while visiting the buyer with automatic cancellation and heavy forfeiture, such clauses are unfair and unreasonable, and their incorporation constitutes an unfair trade practice which the Court will not enforce against the consumer. Interest on the refund was, however, declined, because the cancellation was sought by the buyers on account of market conditions after possession had been validly offered, and not by reason of any default of the developer.",
+    "summary": "Buyers who refused an offered apartment because the market had fallen sought a full refund, while the builder claimed to forfeit twenty per cent of the Basic Sale Price. The Supreme Court held one-sided forfeiture clauses in builder-buyer agreements to be an unfair trade practice, fixed ten per cent of the Basic Sale Price as the reasonable measure of earnest money that may be forfeited, and reduced the forfeiture accordingly, directing refund of Rs. 34,04,170. Interest was refused because the buyers, not the developer, had occasioned the cancellation. This is the leading recent authority on earnest-money forfeiture and section 2(46) unfair contracts."
+  },
+  {
+    "case_id": "CASE_CPA2019_10",
+    "case_name": "Rutu Mihir Panchal v. Union of India",
+    "citation": "2025 INSC 593; decided 29 April 2025",
+    "court": "Supreme Court of India",
+    "year": 2025,
+    "act": "Consumer Protection Act, 2019",
+    "facts": "Two sets of claimants challenged the scheme of pecuniary jurisdiction introduced by the Consumer Protection Act, 2019, under which the competent Commission is determined by the value of the consideration paid for the goods or service rather than by the compensation claimed. In the first matter, the petitioner's husband died when the family's motor vehicle, purchased for about Rs. 31.19 lakh, caught fire; she claimed compensation of about Rs. 51.49 crore, but on the consideration-based test her complaint lay only before the District Commission. In the second matter, the appellant's husband, a Lions Club District Governor, died of COVID-19 and she claimed about Rs. 14.94 crore under an insurance policy on which a comparatively small premium had been paid; the National Commission declined jurisdiction on the ground that the consideration paid fell below its threshold. Both contended that they were being confined to the lower fora despite claiming very large sums.",
+    "issues": [
+      "Whether determining the pecuniary jurisdiction of the consumer Commissions by reference to the consideration paid, rather than the compensation claimed, is arbitrary and violative of Article 14 of the Constitution.",
+      "Whether the classification so made rests on an intelligible differentia bearing a rational nexus with the object of the legislation.",
+      "Whether the scheme is inconsistent with the wide definition of 'consumer' in section 2(7) and with the hierarchy of remedies contemplated by the Act.",
+      "Whether sections 34, 47 and 58 of the Consumer Protection Act, 2019 are constitutionally valid."
+    ],
+    "sections": [
+      "Consumer Protection Act, 2019 - Section 34(1) (jurisdiction of District Commission)",
+      "Consumer Protection Act, 2019 - Section 47(1)(a)(i) (jurisdiction of State Commission)",
+      "Consumer Protection Act, 2019 - Section 58(1)(a)(i) (jurisdiction of National Commission)",
+      "Consumer Protection Act, 2019 - Section 2(7) (consumer)",
+      "Constitution of India - Article 14"
+    ],
+    "ratio_decidendi": "Applying the twin test of permissible classification, consideration is integral both to the formation of the contract and to the statutory definition of 'consumer', and therefore furnishes an intelligible differentia; and the value of the consideration paid for the goods or service is more closely and readily relatable to the compensation properly payable than a self-assessed claim for damages, so that the classification bears a rational nexus with the object of the Act. A consumer has no unrestricted claim to compensation, the amount being always subject to determination by the forum, and keying jurisdiction to consideration guards against exaggerated and inflated claims while redistributing the caseload from an overburdened National Commission to the District and State Commissions. The Commissions also retain inherent power to prevent abuse by scrutinising overvalued claims. Sections 34, 47 and 58 are accordingly constitutional and not violative of Article 14.",
+    "summary": "The Supreme Court upheld the consideration-based test of pecuniary jurisdiction under the Consumer Protection Act, 2019 against a challenge under Article 14 brought by claimants whose very large compensation claims arose from modest transactions. Consideration is a valid basis of classification because it is integral to the consumer relationship and is a more reliable proxy for compensation than a self-assessed claim, and the scheme serves the legitimate objects of curbing inflated claims and easing the National Commission's docket. The writ petition and appeal were dismissed, with a direction to the Central Consumer Protection Council and the Central Consumer Protection Authority to audit the working of the provisions and advise the Government on measures for effective redressal."
+  },
+  {
+    "case_id": "CASE_CPA1986_01",
+    "case_name": "Lucknow Development Authority v. M.K. Gupta",
+    "citation": "(1994) 1 SCC 243",
+    "court": "Supreme Court of India",
+    "year": 1994,
+    "act": "Consumer Protection Act, 1986",
+    "facts": "Complaints were filed against development authorities, including the Lucknow Development Authority and the Ghaziabad Development Authority, by allottees of houses and flats who had paid the price but suffered long delays in delivery of possession, incomplete or defective construction, and demands for additional amounts. The authorities contended that they were statutory bodies performing statutory and sovereign functions in discharge of a public duty rather than rendering any 'service' for consideration, that housing construction was not a service within the Act, and that the consumer fora had no jurisdiction to entertain such complaints or to award compensation against them.",
+    "issues": [
+      "Whether a statutory development authority engaged in housing construction and development renders a 'service' within the meaning of the Consumer Protection Act, 1986.",
+      "Whether a person who applies for and is allotted a house or flat by such an authority is a 'consumer'.",
+      "Whether delay in delivery of possession, defective construction or unauthorised demands amount to a deficiency in service.",
+      "Whether the consumer fora can award compensation for harassment, mental agony and misfeasance, and whether the amount so awarded can be recovered from the officers responsible."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 2(1)(d) (consumer)",
+      "Consumer Protection Act, 1986 - Section 2(1)(o) (service)",
+      "Consumer Protection Act, 1986 - Section 2(1)(g) (deficiency)",
+      "Consumer Protection Act, 1986 - Section 14(1)(d) (compensation)",
+      "Consumer Protection Act, 1986 - Section 3 (Act not in derogation of any other law)"
+    ],
+    "ratio_decidendi": "The definition of 'service' in section 2(1)(o) is expressed in the widest terms and, being consumer-oriented welfare legislation, must be construed liberally in favour of the consumer; housing construction and development activity undertaken for consideration falls squarely within it, and a statutory authority carrying on such activity is not exempt merely because it is a public body discharging statutory functions, for when it undertakes to build and allot houses for a price it renders a service like any other builder. An allottee who pays the price is therefore a consumer, and delay in delivering possession, defective or incomplete construction, or an illegal demand for additional payment constitutes a deficiency in service. The power to award compensation under section 14(1)(d) is wide enough to cover not merely pecuniary loss but harassment, mental agony and the consequences of arbitrary or capricious official action, and where the loss results from the misfeasance or oppressive conduct of an identified officer, the authority may recover the compensation so paid from that officer, since compensation ultimately borne by the public exchequer for an officer's malfeasance would otherwise burden the taxpayer.",
+    "summary": "The foundational decision bringing statutory development authorities and housing construction within the Consumer Protection Act. The Supreme Court read 'service' expansively, held that an authority allotting houses for consideration renders a service and that its allottees are consumers, treated delay, defective construction and illegal demands as deficiency, and recognised the power of the consumer fora to award compensation for harassment and mental agony, with liberty to the authority to recover such compensation from the erring officer personally."
+  },
+  {
+    "case_id": "CASE_CPA1986_02",
+    "case_name": "Indian Medical Association v. V.P. Shantha",
+    "citation": "(1995) 6 SCC 651",
+    "court": "Supreme Court of India",
+    "year": 1995,
+    "act": "Consumer Protection Act, 1986",
+    "facts": "A batch of matters raised the question whether medical practitioners and hospitals are amenable to the Consumer Protection Act. The Indian Medical Association and others contended that medicine is a profession and not a trade or business, that a doctor's service is rendered under a contract of personal service and is therefore expressly excluded from the definition of 'service', that medical practitioners are governed by their own disciplinary regime under the Medical Council legislation, and that questions of professional negligence are too complex for the summary procedure of the consumer fora. Patients and consumer bodies contended that medical services rendered for a fee fall within the Act.",
+    "issues": [
+      "Whether the service rendered by a medical practitioner or hospital is 'service' within section 2(1)(o) of the Consumer Protection Act, 1986.",
+      "Whether such service is rendered under 'a contract of personal service' and therefore excluded from the definition.",
+      "Whether services rendered free of charge, or at a nominal charge, or in a government hospital, fall within the Act.",
+      "Whether the position differs where the patient's charges are borne by an employer or an insurer, and where a hospital renders free service to some patients and charges others."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 2(1)(o) (service; exclusions for free service and contract of personal service)",
+      "Consumer Protection Act, 1986 - Section 2(1)(d) (consumer)",
+      "Consumer Protection Act, 1986 - Section 2(1)(g) (deficiency)",
+      "Indian Medical Council Act, 1956"
+    ],
+    "ratio_decidendi": "Service rendered by a medical practitioner or hospital for a fee is 'service' within section 2(1)(o), for the definition excludes only service which is free of charge or given under a contract of personal service, and neither exclusion ordinarily applies. The expression 'contract of personal service' denotes a relationship of master and servant involving a right of the employer to control the manner of the work, and must be distinguished from a 'contract for personal service' under which a professional is engaged; a doctor consulted by a patient renders service under a contract for service, not of service, and the exclusion therefore does not apply. Where medical service is rendered entirely free of charge to everybody it falls outside the Act; but where a hospital charges some patients and renders free service to others, the free service is also covered, since the institution's charges sustain the whole activity; and where the charges are paid by an employer or under an insurance policy, the patient remains a beneficiary and hence a consumer. The existence of disciplinary control under the Medical Council legislation does not oust the jurisdiction of the consumer fora, and complexity of the issues is no reason to deny the statutory remedy.",
+    "summary": "The landmark ruling that brought the medical profession within consumer law. Paid medical service is 'service'; a doctor-patient engagement is a contract *for* service and not the excluded contract *of* personal service; wholly gratuitous service is outside the Act, but free treatment in a hospital that charges other patients is covered, as is treatment paid for by an employer or insurer. Note for currency: in Bar of Indian Lawyers v. D.K. Gandhi (2024) the Supreme Court doubted the reasoning of this decision and referred it to a larger Bench, but Shantha continues to govern medical services until reconsidered."
+  },
+  {
+    "case_id": "CASE_CPA1986_03",
+    "case_name": "Laxmi Engineering Works v. P.S.G. Industrial Institute",
+    "citation": "(1995) 3 SCC 583",
+    "court": "Supreme Court of India",
+    "year": 1995,
+    "act": "Consumer Protection Act, 1986",
+    "facts": "Laxmi Engineering Works, a sole proprietary concern registered as a small-scale industry, purchased a machine from P.S.G. Industrial Institute for use in its manufacturing business. The machine was supplied late and was alleged to be defective, and the purchaser complained of loss of production and consequent loss of profit. The State Commission allowed the complaint, but the question arose whether a purchaser who buys a machine for use in a manufacturing enterprise is a consumer at all, having regard to the exclusion of goods obtained for a 'commercial purpose', an expression whose scope had been altered by the amendment introducing the explanation about self-employment.",
+    "issues": [
+      "Whether a person who purchases goods for use in a manufacturing or business activity buys them for a 'commercial purpose' and is therefore excluded from the definition of consumer.",
+      "What is the meaning and effect of the explanation which saves goods bought and used by a person exclusively for earning his livelihood by means of self-employment.",
+      "Whether the test is the size or registration of the enterprise, or the purpose of the purchase.",
+      "Whether claims for loss of profit arising out of a commercial venture are within the purview of the consumer fora."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 2(1)(d) and the explanation thereto (commercial purpose; self-employment)",
+      "Consumer Protection Act, 1986 - Section 2(1)(f) (defect)",
+      "Consumer Protection Act, 2019 - Section 2(7) and its Explanation (corresponding provision)"
+    ],
+    "ratio_decidendi": "Whether goods have been bought for a commercial purpose is always a question of fact turning on the purpose for which the purchase was made, and not on the size, turnover or statutory registration of the buyer's enterprise. Goods bought and used for carrying on an activity on a large scale with a view to earning profit are bought for a commercial purpose and the buyer is not a consumer. The explanation carves out a narrow exception for a person who buys and uses the goods himself, exclusively for earning his livelihood by means of self-employment, and it is the character of self-employment for livelihood, rather than the label of small-scale industry, that attracts the exception; the employment of a small number of assistants does not by itself take a case outside it. The consumer fora are not the forum for adjudicating claims of loss of profit arising out of a commercial venture.",
+    "summary": "The leading authority on the 'commercial purpose' exclusion. The Supreme Court held that whether a purchase is for a commercial purpose depends on the purpose of the buyer and not on the scale or registration of his business, and that the self-employment explanation protects only one who buys and uses the goods himself exclusively to earn his livelihood. A small-scale industry that bought a machine to manufacture for profit was therefore not a consumer. The same reasoning now applies to the identical Explanation to section 2(7) of the 2019 Act."
+  },
+  {
+    "case_id": "CASE_CPA1986_04",
+    "case_name": "Bharathi Knitting Co. v. DHL Worldwide Express Courier",
+    "citation": "(1996) 4 SCC 704",
+    "court": "Supreme Court of India",
+    "year": 1996,
+    "act": "Consumer Protection Act, 1986",
+    "facts": "Bharathi Knitting Company entrusted a consignment of documents to DHL Worldwide Express for delivery abroad. The consignment was not delivered, and the consignor claimed to have suffered a substantial loss of business as a result. The contract of carriage, contained in the consignment note which the consignor had signed, limited the carrier's liability for loss of a shipment to a specified sum. The consumer fora awarded compensation and the question arose whether the limitation of liability agreed between the parties bound the consumer fora, or whether they could award compensation for the actual loss notwithstanding the agreed ceiling.",
+    "issues": [
+      "Whether a clause in the contract limiting the service provider's liability to a stipulated amount binds the consumer and the consumer fora.",
+      "Whether the consumer fora, exercising a statutory jurisdiction to award compensation for loss or injury, can award more than the agreed contractual limit.",
+      "Whether a party who has signed a contract containing such a limitation can resile from it on the ground that the actual loss was greater."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 2(1)(g) (deficiency)",
+      "Consumer Protection Act, 1986 - Section 2(1)(o) (service)",
+      "Consumer Protection Act, 1986 - Section 14(1)(d) (compensation)",
+      "Indian Contract Act, 1872"
+    ],
+    "ratio_decidendi": "Where the parties have, by a contract freely entered into, agreed to limit the liability of the service provider to a specified amount, that limitation governs the claim, and the consumer fora adjudicating a complaint arising out of that very contract are bound by it and cannot award compensation in excess of the agreed ceiling. A party who has signed the contract and accepted its terms cannot claim damages beyond the stipulated limit merely because the loss actually suffered is greater. The position is different where the term is itself vitiated, and the remedy of a claimant who disputes the limitation on such grounds lies elsewhere; the consumer fora, whose jurisdiction arises from the contract, must give effect to it as it stands.",
+    "summary": "The Supreme Court held that a contractual clause limiting a courier's liability for a lost consignment binds both the consumer and the consumer fora, so that compensation cannot exceed the agreed ceiling even if the actual business loss was larger. The decision is the principal authority on limitation-of-liability clauses in consumer contracts, and is to be read today alongside the later line of cases on unfair contracts and one-sided terms, and with section 2(46) of the 2019 Act."
+  },
+  {
+    "case_id": "CASE_CPA1986_05",
+    "case_name": "Spring Meadows Hospital v. Harjol Ahluwalia",
+    "citation": "(1998) 4 SCC 39",
+    "court": "Supreme Court of India",
+    "year": 1998,
+    "act": "Consumer Protection Act, 1986",
+    "facts": "A young child, Harjol Ahluwalia, was admitted to Spring Meadows Hospital and was diagnosed as suffering from typhoid. A nurse employed by the hospital directed the child's father to obtain an injection, which she then administered intravenously without the supervision of a qualified doctor; the child suffered cardiac arrest and consequent severe and irreversible brain damage, leaving him in a condition requiring lifelong care. The parents, who had engaged and paid the hospital, complained of medical negligence and claimed compensation both for the injury to the child and for the anguish caused to themselves. The hospital contended that only the child, as the person who received the service, could be a complainant.",
+    "issues": [
+      "Whether the parents who engaged and paid for the treatment of their minor child are 'consumers', and whether the child is a beneficiary of the service.",
+      "Whether both the child and the parents can claim compensation in the same complaint.",
+      "Whether compensation is payable to the parents for mental agony and the anguish of seeing their child reduced to a vegetative condition.",
+      "Whether the hospital is liable for negligence of its nurse and for permitting an unqualified person to administer treatment."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 2(1)(d) (consumer, including a beneficiary of service)",
+      "Consumer Protection Act, 1986 - Section 2(1)(o) (service)",
+      "Consumer Protection Act, 1986 - Section 2(1)(g) (deficiency)",
+      "Consumer Protection Act, 1986 - Section 14(1)(d) (compensation)",
+      "Consumer Protection Act, 2019 - Section 2(7) (corresponding definition of consumer)"
+    ],
+    "ratio_decidendi": "The definition of consumer is wide enough to cover both the person who hires or avails of the service for consideration and the beneficiary of that service, so that where parents engage a hospital for the treatment of their minor child, the parents are consumers as the persons who availed of the service and the child is a consumer as its beneficiary; both may therefore maintain a claim in the same complaint. Compensation may accordingly be awarded to the child for the injury and lifelong incapacity caused to him, and separately to the parents for the acute mental agony and the life-long care and anguish that the tragedy has visited upon them. A hospital is liable for the negligence of the staff it employs and for allowing a person without the requisite qualification to administer treatment without the supervision of a qualified doctor.",
+    "summary": "A child suffered irreversible brain damage after a nurse administered an injection intravenously without medical supervision. The Supreme Court held that both the parents, who engaged and paid the hospital, and the child, as beneficiary, were consumers entitled to claim in one complaint, and upheld separate awards to the child for the injury and to the parents for mental agony. It remains the leading authority on the beneficiary limb of the definition of consumer and on compensation for mental agony in medical negligence."
+  },
+  {
+    "case_id": "CASE_CPA1986_06",
+    "case_name": "Charan Singh v. Healing Touch Hospital",
+    "citation": "(2000) 7 SCC 668",
+    "court": "Supreme Court of India",
+    "year": 2000,
+    "act": "Consumer Protection Act, 1986",
+    "facts": "The complainant underwent surgery at the Healing Touch Hospital and alleged that the operation was performed negligently, causing him prolonged suffering, further surgical intervention, expense and harassment. The consumer fora found deficiency in service but awarded a comparatively small sum by way of compensation. The complainant appealed to the Supreme Court contending that the compensation awarded bore no relation to the loss, suffering and harassment he had endured, and that a token award defeats the purpose of the legislation.",
+    "issues": [
+      "Whether compensation awarded under the Act must be commensurate with the loss and injury suffered, or may be a token or nominal amount.",
+      "What considerations should guide the consumer fora in quantifying compensation.",
+      "Whether compensation can include amounts for mental agony, harassment and the expense of remedial treatment, and whether it should carry a deterrent element."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 14(1)(d) (compensation for loss or injury due to negligence)",
+      "Consumer Protection Act, 1986 - Section 2(1)(g) (deficiency)",
+      "Consumer Protection Act, 2019 - Section 39(1)(d) (corresponding power to award compensation, including punitive damages)"
+    ],
+    "ratio_decidendi": "The power to award compensation is intended to provide real and effective redress, and the amount awarded must be adequate and commensurate with the loss and injury actually suffered; a token or nominal award defeats the object of the legislation, while an unreasonably high award is equally to be avoided. In quantifying compensation the forum must apply its mind to the facts and take into account the several heads of loss, including the expense already incurred and to be incurred on remedial treatment, the pain, suffering and mental agony caused, the loss of earnings or earning capacity, and the harassment occasioned, and must strike a balance between the claim and the capacity of the opposite party so that the award is neither a windfall nor an empty gesture. Compensation so assessed also serves to deter the negligent provider from repeating such conduct, and the forum should record how it has arrived at the figure.",
+    "summary": "Finding the compensation awarded for negligent surgery inadequate, the Supreme Court held that awards under the Act must be commensurate with the injury and not token, and set out the heads a consumer forum should weigh in quantification: expenses incurred and to be incurred, pain and suffering, mental agony, loss of earning capacity and harassment, balanced so as to be neither a windfall nor illusory. It is the standard authority cited on the assessment of compensation in consumer cases."
+  },
+  {
+    "case_id": "CASE_CPA1986_07",
+    "case_name": "Dr. J.J. Merchant v. Shrinath Chaturvedi",
+    "citation": "(2002) 6 SCC 635",
+    "court": "Supreme Court of India",
+    "year": 2002,
+    "act": "Consumer Protection Act, 1986",
+    "facts": "In a complaint alleging medical negligence, the opposite party doctors contended that the consumer fora, which follow a summary procedure, were not competent to decide complicated questions of medical negligence requiring expert evidence and elaborate cross-examination, and that such claims should be relegated to the civil court. A further question arose about the time allowed to the opposite party to file its written version: whether the period of thirty days, extendable by not more than fifteen days, prescribed for filing the version is mandatory, or whether the fora may grant further time at their discretion.",
+    "issues": [
+      "Whether the consumer fora are competent to adjudicate complaints of medical negligence involving complicated questions of fact and expert evidence, or whether such complaints must be relegated to the civil court.",
+      "Whether the period of thirty days, extendable by a maximum of fifteen days, for filing the written version is mandatory.",
+      "Whether the fora can receive evidence by affidavit and expert evidence, and how they should regulate the taking of evidence so as to achieve speedy disposal."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 13(2)(a) (time for filing version) and Section 13(4) (powers of the fora)",
+      "Consumer Protection Act, 1986 - Section 2(1)(g) and Section 2(1)(o)",
+      "Consumer Protection Act, 2019 - Section 38(2)(a) and Section 38(9) (corresponding provisions)"
+    ],
+    "ratio_decidendi": "The Act was enacted to provide speedy and inexpensive redress, and the consumer fora, which are presided over by judicially trained persons and are empowered to summon and examine witnesses, to receive evidence on affidavit and to requisition expert reports, are fully competent to decide complaints of medical negligence; the mere complexity of the questions involved is no ground for refusing to exercise jurisdiction or for driving the consumer to a civil suit, since that would frustrate the purpose of the statute. The period prescribed for filing the written version, namely thirty days extendable by not more than fifteen days, is mandatory and the fora have no power to extend it beyond the outer limit, the legislative intent being to prevent the delay which the statute was designed to avoid.",
+    "summary": "The Supreme Court rejected the contention that medical negligence claims are too complex for the consumer fora, holding that they are competent to try such cases with the aid of affidavit and expert evidence, and that relegating consumers to civil suits would defeat the Act's promise of speedy redress. It also held the thirty plus fifteen day limit for filing the written version to be mandatory. On this second point the law was unsettled for years by the contrary view in Topline Shoes, until the Constitution Bench in New India Assurance Co. Ltd. v. Hilli Multipurpose Cold Storage (2020) affirmed that the limit is mandatory."
+  },
+  {
+    "case_id": "CASE_CPA1986_08",
+    "case_name": "Topline Shoes Ltd. v. Corporation Bank",
+    "citation": "(2002) 6 SCC 33",
+    "court": "Supreme Court of India",
+    "year": 2002,
+    "act": "Consumer Protection Act, 1986",
+    "facts": "In a complaint before the State Commission, the opposite party, Corporation Bank, did not file its written version within the period of thirty days prescribed by section 13(2)(a), and sought further time. The State Commission granted time beyond the maximum extension of fifteen days contemplated by the provision and took the version on record. Topline Shoes challenged that course, contending that the outer limit was mandatory and that the State Commission had no jurisdiction to entertain a version filed after it, so that the case ought to have been decided on the complainant's material alone.",
+    "issues": [
+      "Whether the period of thirty days, extendable by not more than fifteen days, for filing the written version under section 13(2)(a) is mandatory or directory.",
+      "Whether a consumer forum has discretion to accept a written version filed after the expiry of the maximum period.",
+      "Whether the consequence of default is a bar to the forum receiving the version at all."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 13(2)(a) (time for filing version)",
+      "Consumer Protection Act, 1986 - Section 13(3A) (endeavour to decide within three or five months)",
+      "Consumer Protection Act, 2019 - Section 38(2)(a) (corresponding provision)"
+    ],
+    "ratio_decidendi": "The provision prescribing thirty days, extendable by such period not exceeding fifteen days as may be granted, does not provide for any penal consequence on failure to file the version within that time, and it is intended to expedite and not to defeat the hearing of the case on its merits; the requirement is therefore directory rather than mandatory, and the forum retains a measure of discretion, to be exercised for sufficient reason and consistently with the principles of natural justice, to accept a version filed beyond the outer limit. Important note on currency: this view was doubted in Dr. J.J. Merchant v. Shrinath Chaturvedi and the conflict was resolved against Topline Shoes by the Constitution Bench in New India Assurance Co. Ltd. v. Hilli Multipurpose Cold Storage Pvt. Ltd. (2020), which held that the period is mandatory and cannot be extended beyond forty-five days; the reasoning of Topline Shoes therefore no longer represents the law on this point.",
+    "summary": "The Supreme Court held that the thirty plus fifteen day period for filing a written version under section 13(2)(a) was directory and not mandatory, since the provision imposes no penalty for default and is meant to speed up rather than shut out a hearing on merits, leaving the forum a discretion to condone delay for sufficient reason. This position was later overruled: the Constitution Bench in New India Assurance v. Hilli Multipurpose Cold Storage (2020) held the limit mandatory. The case is retained here for the development of the law and should not be cited as the current rule."
+  },
+  {
+    "case_id": "CASE_CPA1986_09",
+    "case_name": "Ghaziabad Development Authority v. Balbir Singh",
+    "citation": "(2004) 5 SCC 65",
+    "court": "Supreme Court of India",
+    "year": 2004,
+    "act": "Consumer Protection Act, 1986",
+    "facts": "A large number of complaints were filed against the Ghaziabad Development Authority by allottees of plots and houses who had deposited money but to whom possession was never given, or was given after long delay, or who were allotted property different from that promised, or from whom excess amounts were recovered. The consumer fora, following the earlier ruling in Lucknow Development Authority v. M.K. Gupta, had in many of these cases awarded refund with interest at a uniform rate of eighteen per cent by way of compensation, treating that rate as a rule of thumb applicable to all such claims. The Authority appealed, contending that compensation could not be awarded mechanically at a flat rate irrespective of the facts.",
+    "issues": [
+      "Whether compensation in cases of delayed or non-delivery of possession by a development authority can be awarded at a uniform rate of interest in all cases.",
+      "How the consumer fora should compute compensation where money has been deposited and possession delayed, denied, or given in respect of different property.",
+      "Whether interest may be awarded both as restitution for the deprivation of money and additionally as compensation for harassment and mental agony."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 14(1)(d) (compensation)",
+      "Consumer Protection Act, 1986 - Section 2(1)(g) (deficiency) and Section 2(1)(o) (service)",
+      "Consumer Protection Act, 2019 - Section 39(1)(c) and (d) (refund with interest; compensation)"
+    ],
+    "ratio_decidendi": "Compensation under section 14(1)(d) must be assessed on the facts of each case and cannot be granted mechanically at a uniform rate of interest, and the observations in Lucknow Development Authority v. M.K. Gupta were not intended to lay down a flat rate of eighteen per cent for all cases. Where an allottee's money has been retained without delivery of possession, interest is awardable by way of restitution to compensate him for the deprivation of the use of his money, and the rate must reflect the circumstances; where in addition the allottee has suffered harassment, or has been given possession of a different or inferior property, or has had to bear escalation, a further sum may be awarded under distinct heads, each supported by reasons. The forum must therefore identify the heads of loss and quantify each, rather than apply a single conventional figure.",
+    "summary": "Correcting the practice of awarding a flat eighteen per cent interest in development-authority cases, the Supreme Court held that compensation must be computed case by case on the material before the forum: interest by way of restitution for money withheld, assessed at a rate appropriate to the facts, with any further amounts for harassment or for allotment of different property awarded separately and with reasons. It clarified that Lucknow Development Authority v. M.K. Gupta laid down no uniform rate."
+  },
+  {
+    "case_id": "CASE_CPA1986_10",
+    "case_name": "State Bank of India v. B.S. Agricultural Industries (I)",
+    "citation": "(2009) 5 SCC 121",
+    "court": "Supreme Court of India",
+    "year": 2009,
+    "act": "Consumer Protection Act, 1986",
+    "facts": "B.S. Agricultural Industries filed a consumer complaint against the State Bank of India in respect of a transaction in which the cause of action had arisen well over two years before the complaint was instituted. No application for condonation of delay was made and no explanation for the delay was furnished, and the consumer fora proceeded to decide the complaint on merits without adverting to the question of limitation. The Bank contended in appeal that the complaint was barred by the two-year period in section 24A and that the fora had no jurisdiction to entertain it at all.",
+    "issues": [
+      "Whether the two-year period of limitation in section 24A of the Consumer Protection Act, 1986 is mandatory, so that a complaint filed beyond it cannot be admitted.",
+      "Whether a consumer forum is bound to consider the question of limitation even if it is not raised by the opposite party.",
+      "Whether delay can be condoned without an application and without the forum recording reasons for condonation."
+    ],
+    "sections": [
+      "Consumer Protection Act, 1986 - Section 24A (limitation period; condonation of delay)",
+      "Consumer Protection Act, 2019 - Section 69 (corresponding limitation provision)"
+    ],
+    "ratio_decidendi": "Section 24A is peremptory in terms: it expressly commands that the forum shall not admit a complaint unless it is filed within two years of the accrual of the cause of action, and the proviso permits a complaint to be entertained thereafter only if the complainant satisfies the forum that he had sufficient cause for the delay and the forum records its reasons for condoning it. The provision therefore casts a duty on the consumer forum to examine, whether or not the point is raised by the opposite party, whether the complaint has been filed within the prescribed period, and it has no jurisdiction to entertain a barred complaint in the absence of an application for condonation supported by sufficient cause and a reasoned order condoning the delay. A decision on the merits of a complaint which was time-barred and in which delay was never condoned cannot be sustained.",
+    "summary": "The Supreme Court held the two-year limitation in section 24A to be mandatory and jurisdictional: a consumer forum must satisfy itself on limitation of its own motion, even if the opposite party does not plead it, and can entertain a stale complaint only where sufficient cause is shown and delay is condoned by a reasoned order. This is the leading authority on limitation in consumer proceedings and applies with equal force to section 69 of the 2019 Act."
+  }
+]

@@ -170,11 +170,13 @@ export default function ChatPage() {
         ) : (
           <>
             <div>
-              <h2 className="text-sm font-semibold text-slate-900 dark:text-white mb-2">Cited Sections</h2>
+              <h2 className="text-sm font-semibold text-slate-900 dark:text-white mb-2">Cited Sections &amp; Cases</h2>
               {lastCitations.length === 0 ? (
-                <p className="text-xs text-slate-400">No sections were cited for this answer.</p>
+                <p className="text-xs text-slate-400">No sections or cases were cited for this answer.</p>
               ) : (
-                lastCitations.map((c) => <CitationCard key={c.section_id} citation={c} />)
+                lastCitations.map((c) => (
+                  <CitationCard key={c.section_id || c.case_id} citation={c} />
+                ))
               )}
             </div>
             <div>
