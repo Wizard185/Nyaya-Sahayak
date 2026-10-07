@@ -57,7 +57,18 @@ longClient.interceptors.response.use(
 );
 
 export function apiErrorMessage(err, fallback = "Something went wrong. Please try again.") {
-  return err?.response?.data?.detail || fallback;
+  const detail = err?.response?.data?.detail;
+  // FastAPI validation errors (422) send detail as a list of
+  // {loc, msg, ...} objects — rendering that raw crashes React.
+  if (Array.isArray(detail)) {
+    const msgs = detail.map((d) => {
+      const field = Array.isArray(d?.loc) ? d.loc[d.loc.length - 1] : "";
+      const msg = (d?.msg || "").replace(/^Value error, /, "");
+      return field && field !== "body" ? `${field}: ${msg}` : msg;
+    });
+    return msgs.filter(Boolean).join("; ") || fallback;
+  }
+  return typeof detail === "string" && detail ? detail : fallback;
 }
 
 // ---------------------------------------------------------------------------

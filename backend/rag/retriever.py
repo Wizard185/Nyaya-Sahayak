@@ -140,6 +140,22 @@ def _reciprocal_rank_fusion(dense_hits: List[dict], sparse_hits: List[dict], k: 
     return results
 
 
+# State laws only apply in their state. Without this, a deposit question from
+# anywhere in India pulls in Tamil Nadu tenancy sections (they match "security
+# deposit" best) and crowds out the central Transfer of Property Act.
+_STATE_ACT_KEYWORDS = {
+    "Tamil Nadu Tenancy Act": re.compile(
+        r"tamil\s*nadu|\bTN\b|chennai|madras|coimbatore|madurai|tiruchirappalli|trichy|salem|tirunelveli|vellore|erode|tiruppur",
+        re.IGNORECASE,
+    ),
+}
+
+
+def _state_act_applies(act: str, query: str) -> bool:
+    pattern = _STATE_ACT_KEYWORDS.get(act)
+    return pattern is None or bool(pattern.search(query))
+
+
 class HybridRetriever:
     def __init__(self):
         self._pinecone_index = None
@@ -217,9 +233,10 @@ class HybridRetriever:
 
     def search_acts(self, query: str, n: int = 6) -> List[dict]:
         """ACT KB: 'what law applies?' — statute/section text."""
-        dense_hits = self._dense_search(query, ACTS_NAMESPACE, n=10)
-        sparse_hits = self._acts_sparse.search(query, n=10)
+        dense_hits = self._dense_search(query, ACTS_NAMESPACE, n=15)
+        sparse_hits = self._acts_sparse.search(query, n=15)
         fused = _reciprocal_rank_fusion(dense_hits, sparse_hits, k=60)
+        fused = [d for d in fused if _state_act_applies(d.get("act", ""), query)]
         return [self._act_hit(d) for d in fused[:n]]
 
     def search_cases(self, query: str, n: int = 3) -> List[dict]:

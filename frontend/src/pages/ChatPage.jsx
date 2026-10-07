@@ -39,7 +39,9 @@ export default function ChatPage() {
     getChat(chatId)
       .then((chat) => {
         setMessages(chat.messages);
-        const lastAssistant = [...chat.messages].reverse().find((m) => m.role === "assistant");
+        const lastAssistant = [...chat.messages]
+          .reverse()
+          .find((m) => m.role === "assistant" && m.kind !== "clarification");
         setLastCitations(lastAssistant?.citations || null);
         setLastFlags(lastAssistant?.hallucination_flags || []);
       })
@@ -76,8 +78,11 @@ export default function ChatPage() {
 
       const assistantMsg = await postMessage(targetChatId, text, language);
       setMessages((prev) => [...prev.filter((m) => m.id !== "loading"), assistantMsg]);
-      setLastCitations(assistantMsg.citations || []);
-      setLastFlags(assistantMsg.hallucination_flags || []);
+      // Follow-up questions carry no sources — keep showing the last answer's.
+      if (assistantMsg.kind !== "clarification") {
+        setLastCitations(assistantMsg.citations || []);
+        setLastFlags(assistantMsg.hallucination_flags || []);
+      }
     } catch (err) {
       setMessages((prev) => prev.filter((m) => m.id !== "loading"));
       showToast(apiErrorMessage(err, "Something went wrong while getting your answer."), "error");

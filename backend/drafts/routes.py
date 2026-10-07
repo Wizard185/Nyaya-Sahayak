@@ -20,11 +20,13 @@ from auth.security import get_current_user
 from db.mongo import drafts_collection
 from document_gen.template_engine import find_template, render_template, search_templates
 from llm.drafting import polish_narrative
-from qa.service import GENERATION_TIMEOUT_SECONDS
-
 router = APIRouter(prefix="/api", tags=["drafts"])
 
 DRAFT_OUTPUT_PATH = os.getenv("DRAFT_OUTPUT_PATH", "/tmp/nyaya_drafts")
+# Per narrative field. Kept well under the frontend's request timeout: on a
+# slow CPU-only Ollama a long polish would otherwise fail the whole draft,
+# so past this the user's own wording is used instead.
+DRAFT_POLISH_TIMEOUT_SECONDS = float(os.getenv("DRAFT_POLISH_TIMEOUT_SECONDS", "120"))
 
 
 class TemplateSummary(BaseModel):
@@ -104,7 +106,7 @@ async def create_draft(req: CreateDraftRequest, user: dict = Depends(get_current
             try:
                 field_values[field["key"]] = await asyncio.wait_for(
                     asyncio.to_thread(polish_narrative, field_values[field["key"]], field["label"]),
-                    timeout=GENERATION_TIMEOUT_SECONDS,
+                    timeout=DRAFT_POLISH_TIMEOUT_SECONDS,
                 )
             except Exception:
                 # Fall back to the user's original wording if the LLM polish

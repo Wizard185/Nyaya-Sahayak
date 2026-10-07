@@ -1,4 +1,4 @@
-import { Copy, Scale } from "lucide-react";
+import { Copy, MessageCircleQuestion, Scale } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import { useToast } from "../context/ToastContext";
 import HallucinationBadge from "./HallucinationBadge";
@@ -39,7 +39,12 @@ export default function ChatBubble({ message }) {
         ) : (
           <>
             <div className="flex items-center justify-between gap-2 mb-1">
-              {message.detected_language && message.detected_language !== "en" ? (
+              {message.kind === "clarification" ? (
+                <span className="text-xs text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-500/10 rounded px-1.5 py-0.5 flex items-center gap-1">
+                  <MessageCircleQuestion size={12} />
+                  A few questions first — reply below
+                </span>
+              ) : message.detected_language && message.detected_language !== "en" ? (
                 <span className="text-xs text-teal-600 dark:text-teal-400 bg-teal-50 dark:bg-teal-500/10 rounded px-1.5 py-0.5">
                   Translated from {LANGUAGE_LABELS[message.detected_language] || message.detected_language}
                 </span>

@@ -2,38 +2,364 @@
   {
     "id": "bail_application",
     "name": "Bail Application",
-    "aliases": ["bail", "anticipatory bail", "regular bail", "application for bail"],
+    "aliases": [
+      "bail",
+      "anticipatory bail",
+      "regular bail",
+      "application for bail"
+    ],
     "description": "Application seeking regular bail before a Sessions/Magistrate court.",
     "docx_template": "bail_application.docx",
     "fields": [
-      { "key": "court_name", "label": "Court Name", "type": "text", "placeholder": "e.g. Court of the Sessions Judge, Bengaluru" },
-      { "key": "case_no", "label": "Case / Sessions Number", "type": "text" },
-      { "key": "fir_no", "label": "FIR Number", "type": "text" },
-      { "key": "police_station", "label": "Police Station", "type": "text" },
-      { "key": "sections_charged", "label": "Sections Charged (e.g. IPC 420, 406)", "type": "text" },
-      { "key": "applicant_name", "label": "Applicant Name", "type": "text" },
-      { "key": "applicant_address", "label": "Applicant Address", "type": "textarea" },
-      { "key": "filed_against", "label": "Filed Against (e.g. State of Karnataka)", "type": "text" },
-      { "key": "date_of_arrest", "label": "Date of Arrest / FIR", "type": "text" },
-      { "key": "grounds_for_bail", "label": "Grounds for Bail", "type": "textarea", "narrative": true, "placeholder": "Briefly explain why bail should be granted, in your own words" },
-      { "key": "filing_place", "label": "Filing Place", "type": "text" },
-      { "key": "filing_date", "label": "Filing Date", "type": "text" }
+      {
+        "key": "court_name",
+        "label": "Court Name",
+        "type": "text",
+        "placeholder": "e.g. Court of the Sessions Judge, Bengaluru"
+      },
+      {
+        "key": "case_no",
+        "label": "Case / Sessions Number",
+        "type": "text"
+      },
+      {
+        "key": "fir_no",
+        "label": "FIR Number",
+        "type": "text"
+      },
+      {
+        "key": "police_station",
+        "label": "Police Station",
+        "type": "text"
+      },
+      {
+        "key": "sections_charged",
+        "label": "Sections Charged (e.g. BNS 318, 316 — or IPC 420, 406 for older FIRs)",
+        "type": "text"
+      },
+      {
+        "key": "applicant_name",
+        "label": "Applicant Name",
+        "type": "text"
+      },
+      {
+        "key": "applicant_address",
+        "label": "Applicant Address",
+        "type": "textarea"
+      },
+      {
+        "key": "filed_against",
+        "label": "Filed Against (e.g. State of Karnataka)",
+        "type": "text"
+      },
+      {
+        "key": "date_of_arrest",
+        "label": "Date of Arrest / FIR",
+        "type": "text"
+      },
+      {
+        "key": "grounds_for_bail",
+        "label": "Grounds for Bail",
+        "type": "textarea",
+        "narrative": true,
+        "placeholder": "Briefly explain why bail should be granted, in your own words"
+      },
+      {
+        "key": "filing_place",
+        "label": "Filing Place",
+        "type": "text"
+      },
+      {
+        "key": "filing_date",
+        "label": "Filing Date",
+        "type": "text"
+      }
     ]
   },
   {
     "id": "affidavit",
     "name": "Affidavit",
-    "aliases": ["sworn statement", "general affidavit", "affidavit of facts"],
+    "aliases": [
+      "sworn statement",
+      "general affidavit",
+      "affidavit of facts"
+    ],
     "description": "General sworn affidavit of facts for use before a court, notary, or government office.",
     "docx_template": "affidavit.docx",
     "fields": [
-      { "key": "deponent_name", "label": "Deponent Name", "type": "text" },
-      { "key": "deponent_relation", "label": "Relation (e.g. S/o Ram Kumar)", "type": "text" },
-      { "key": "deponent_age", "label": "Age", "type": "text" },
-      { "key": "deponent_address", "label": "Address", "type": "textarea" },
-      { "key": "statement_content", "label": "Statement of Facts", "type": "textarea", "narrative": true, "placeholder": "Describe the facts you are swearing to, in your own words" },
-      { "key": "place", "label": "Place", "type": "text" },
-      { "key": "date", "label": "Date", "type": "text" }
+      {
+        "key": "deponent_name",
+        "label": "Deponent Name",
+        "type": "text"
+      },
+      {
+        "key": "deponent_relation",
+        "label": "Relation (e.g. S/o Ram Kumar)",
+        "type": "text"
+      },
+      {
+        "key": "deponent_age",
+        "label": "Age",
+        "type": "text"
+      },
+      {
+        "key": "deponent_address",
+        "label": "Address",
+        "type": "textarea"
+      },
+      {
+        "key": "statement_content",
+        "label": "Statement of Facts",
+        "type": "textarea",
+        "narrative": true,
+        "placeholder": "Describe the facts you are swearing to, in your own words"
+      },
+      {
+        "key": "place",
+        "label": "Place",
+        "type": "text"
+      },
+      {
+        "key": "date",
+        "label": "Date",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "id": "deposit_legal_notice",
+    "name": "Legal Notice — Security Deposit Refund",
+    "aliases": [
+      "legal notice",
+      "deposit",
+      "security deposit",
+      "rent deposit",
+      "landlord",
+      "tenant",
+      "refund",
+      "notice to landlord"
+    ],
+    "description": "Notice to a landlord demanding refund of a withheld security deposit after vacating.",
+    "docx_template": "deposit_legal_notice.docx",
+    "fields": [
+      {
+        "key": "tenant_name",
+        "label": "Your Name",
+        "type": "text"
+      },
+      {
+        "key": "tenant_address",
+        "label": "Your Current Address",
+        "type": "textarea"
+      },
+      {
+        "key": "landlord_name",
+        "label": "Landlord / Owner Name",
+        "type": "text"
+      },
+      {
+        "key": "landlord_address",
+        "label": "Landlord Address",
+        "type": "textarea"
+      },
+      {
+        "key": "premises_address",
+        "label": "Address of the Rented Premises",
+        "type": "textarea"
+      },
+      {
+        "key": "agreement_date",
+        "label": "Rent Agreement Date",
+        "type": "text",
+        "placeholder": "e.g. 1 June 2022"
+      },
+      {
+        "key": "deposit_amount",
+        "label": "Deposit Amount (Rs.)",
+        "type": "text",
+        "placeholder": "e.g. 50,000"
+      },
+      {
+        "key": "vacated_date",
+        "label": "Date You Vacated",
+        "type": "text"
+      },
+      {
+        "key": "dispute_details",
+        "label": "What Happened",
+        "type": "textarea",
+        "narrative": true,
+        "placeholder": "e.g. Landlord says I damaged the walls, but it was only normal wear and tear after 3 years; no repair bills shown"
+      },
+      {
+        "key": "response_days",
+        "label": "Days Given to Refund",
+        "type": "text",
+        "placeholder": "e.g. 15"
+      },
+      {
+        "key": "notice_date",
+        "label": "Notice Date",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "id": "rti_application",
+    "name": "RTI Application",
+    "aliases": [
+      "rti",
+      "right to information",
+      "information request",
+      "pio",
+      "public information officer"
+    ],
+    "description": "Request for information from a government office under Section 6 of the RTI Act, 2005.",
+    "docx_template": "rti_application.docx",
+    "fields": [
+      {
+        "key": "public_authority",
+        "label": "Department / Public Authority",
+        "type": "text",
+        "placeholder": "e.g. Office of the Executive Engineer, BBMP"
+      },
+      {
+        "key": "authority_address",
+        "label": "Office Address",
+        "type": "textarea"
+      },
+      {
+        "key": "applicant_name",
+        "label": "Your Name",
+        "type": "text"
+      },
+      {
+        "key": "applicant_address",
+        "label": "Your Address",
+        "type": "textarea"
+      },
+      {
+        "key": "applicant_contact",
+        "label": "Phone / Email (optional)",
+        "type": "text"
+      },
+      {
+        "key": "information_sought",
+        "label": "Information You Want",
+        "type": "textarea",
+        "narrative": true,
+        "placeholder": "List each piece of information as a separate point"
+      },
+      {
+        "key": "period",
+        "label": "Period the Information Covers",
+        "type": "text",
+        "placeholder": "e.g. April 2024 to March 2025"
+      },
+      {
+        "key": "fee_details",
+        "label": "Fee Payment Details",
+        "type": "text",
+        "placeholder": "e.g. Rs. 10 paid by IPO No. ___ / online receipt No. ___"
+      },
+      {
+        "key": "bpl_status",
+        "label": "Below Poverty Line? (Yes/No)",
+        "type": "text",
+        "placeholder": "No"
+      },
+      {
+        "key": "place",
+        "label": "Place",
+        "type": "text"
+      },
+      {
+        "key": "date",
+        "label": "Date",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "id": "consumer_complaint",
+    "name": "Consumer Complaint",
+    "aliases": [
+      "consumer",
+      "consumer forum",
+      "consumer court",
+      "defective product",
+      "deficiency in service",
+      "refund",
+      "complaint"
+    ],
+    "description": "Complaint before the District Consumer Commission under Section 35 of the Consumer Protection Act, 2019.",
+    "docx_template": "consumer_complaint.docx",
+    "fields": [
+      {
+        "key": "district",
+        "label": "District",
+        "type": "text",
+        "placeholder": "e.g. BENGALURU URBAN"
+      },
+      {
+        "key": "complainant_name",
+        "label": "Your Name",
+        "type": "text"
+      },
+      {
+        "key": "complainant_address",
+        "label": "Your Address",
+        "type": "textarea"
+      },
+      {
+        "key": "opposite_party_name",
+        "label": "Seller / Company Name",
+        "type": "text"
+      },
+      {
+        "key": "opposite_party_address",
+        "label": "Seller / Company Address",
+        "type": "textarea"
+      },
+      {
+        "key": "product_or_service",
+        "label": "Product or Service",
+        "type": "text",
+        "placeholder": "e.g. a Samsung refrigerator, model ___"
+      },
+      {
+        "key": "purchase_date",
+        "label": "Date of Purchase",
+        "type": "text"
+      },
+      {
+        "key": "amount_paid",
+        "label": "Amount Paid (Rs.)",
+        "type": "text"
+      },
+      {
+        "key": "complaint_facts",
+        "label": "What Went Wrong",
+        "type": "textarea",
+        "narrative": true,
+        "placeholder": "Describe the defect or poor service and what the seller said when you complained"
+      },
+      {
+        "key": "relief_sought",
+        "label": "Relief You Want",
+        "type": "textarea",
+        "placeholder": "e.g. Refund of Rs. 45,000 with interest, Rs. 20,000 compensation for harassment"
+      },
+      {
+        "key": "place",
+        "label": "Place",
+        "type": "text"
+      },
+      {
+        "key": "date",
+        "label": "Date",
+        "type": "text"
+      }
     ]
   }
 ]

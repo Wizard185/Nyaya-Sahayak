@@ -55,6 +55,16 @@ _ACT_ALIASES = {
     "rtiact": "rti",
     "righttoinformationact": "rti",
     "righttoinformationact2005": "rti",
+    "bnss": "bnss",
+    "bharatiyanagariksurakshasanhita": "bnss",
+    "bharatiyanagariksurakshasanhita2023": "bnss",
+    "tpa": "tpa",
+    "transferofpropertyact": "tpa",
+    "transferofpropertyact1882": "tpa",
+    "tamilnadutenancyact": "tnta",
+    "tamilnadutenancyact2017": "tnta",
+    "tamilnaduregulationofrightsandresponsibilitiesoflandlordsandtenantsact": "tnta",
+    "tamilnaduregulationofrightsandresponsibilitiesoflandlordsandtenantsact2017": "tnta",
 }
 
 

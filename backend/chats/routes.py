@@ -32,6 +32,9 @@ class MessageOut(BaseModel):
     citations: List[dict] = []
     hallucination_flags: List[str] = []
     detected_language: str = "en"
+    # "answer", or "clarification" when the assistant asked follow-up
+    # questions instead of answering.
+    kind: str = "answer"
     created_at: datetime
 
 
@@ -72,6 +75,7 @@ def _message_out(doc: dict) -> MessageOut:
         citations=doc.get("citations", []),
         hallucination_flags=doc.get("hallucination_flags", []),
         detected_language=doc.get("detected_language", "en"),
+        kind=doc.get("kind", "answer"),
         created_at=doc["created_at"],
     )
 
@@ -129,6 +133,19 @@ async def post_message(chat_id: str, req: PostMessageRequest, user: dict = Depen
     chat = await _get_owned_chat(chat_id, user)
     now = datetime.now(timezone.utc)
 
+    # Recent messages, oldest first, so the model can ask follow-up
+    # questions and then use the user's replies. content_en is the English
+    # text the model actually saw/wrote (older messages predate it).
+    cursor = messages_collection().find({"chat_id": chat["_id"]}).sort("created_at", -1).limit(10)
+    history = [
+        {
+            "role": doc["role"],
+            "content": doc.get("content_en", doc["content"]),
+            "kind": doc.get("kind", "answer"),
+        }
+        async for doc in cursor
+    ][::-1]
+
     user_msg = {
         "chat_id": chat["_id"],
         "user_id": user["_id"],
@@ -139,15 +156,21 @@ async def post_message(chat_id: str, req: PostMessageRequest, user: dict = Depen
         "detected_language": "en",
         "created_at": now,
     }
-    await messages_collection().insert_one(user_msg)
+    user_insert = await messages_collection().insert_one(user_msg)
 
-    result = await run_qa(req.query, req.language)
+    result = await run_qa(req.query, req.language, history)
+
+    await messages_collection().update_one(
+        {"_id": user_insert.inserted_id}, {"$set": {"content_en": result["query_en"]}}
+    )
 
     assistant_msg = {
         "chat_id": chat["_id"],
         "user_id": user["_id"],
         "role": "assistant",
         "content": result["answer"],
+        "content_en": result["answer_en"],
+        "kind": result["kind"],
         "citations": result["citations"],
         "hallucination_flags": result["hallucination_flags"],
         "detected_language": result["detected_language"],

@@ -17,6 +17,8 @@ pymongo==4.17.0
 certifi>=2024.2.2
 
 passlib[bcrypt]==1.7.4
+# passlib 1.7.4 breaks on bcrypt>=4.1 (500 on every signup/login)
+bcrypt==4.0.1
 python-jose[cryptography]==3.5.0
 
 deep-translator==1.11.4
