@@ -27,6 +27,10 @@ DRAFT_OUTPUT_PATH = os.getenv("DRAFT_OUTPUT_PATH", "/tmp/nyaya_drafts")
 # slow CPU-only Ollama a long polish would otherwise fail the whole draft,
 # so past this the user's own wording is used instead.
 DRAFT_POLISH_TIMEOUT_SECONDS = float(os.getenv("DRAFT_POLISH_TIMEOUT_SECONDS", "120"))
+# The polish loads the full chat LLM into memory. On a low-RAM, CPU-only
+# machine that can freeze the whole system, so it can be switched off —
+# drafts are then rendered from the user's own wording, with no LLM call.
+DRAFT_POLISH_ENABLED = os.getenv("DRAFT_POLISH_ENABLED", "true").lower() == "true"
 
 
 class TemplateSummary(BaseModel):
@@ -102,7 +106,7 @@ async def create_draft(req: CreateDraftRequest, user: dict = Depends(get_current
 
     field_values = dict(req.field_values)
     for field in template["fields"]:
-        if field.get("narrative") and field_values.get(field["key"], "").strip():
+        if DRAFT_POLISH_ENABLED and field.get("narrative") and field_values.get(field["key"], "").strip():
             try:
                 field_values[field["key"]] = await asyncio.wait_for(
                     asyncio.to_thread(polish_narrative, field_values[field["key"]], field["label"]),

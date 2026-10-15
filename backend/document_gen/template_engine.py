@@ -11,7 +11,7 @@ import json
 import os
 from typing import Dict, List, Optional
 
-from docxtpl import DocxTemplate
+from docxtpl import DocxTemplate, Listing
 
 _TEMPLATES_DIR = os.path.join(os.path.dirname(__file__), "..", "corpus", "templates")
 _MANIFEST_PATH = os.path.join(_TEMPLATES_DIR, "manifest.json")
@@ -59,8 +59,16 @@ def render_template(template_id: str, field_values: Dict[str, str], output_path:
     docx_path = os.path.join(_TEMPLATES_DIR, template["docx_template"])
 
     doc = DocxTemplate(docx_path)
-    context = {f["key"]: field_values.get(f["key"], "") for f in template["fields"]}
-    doc.render(context)
+    context = {}
+    for f in template["fields"]:
+        value = (field_values.get(f["key"]) or "").strip()
+        # Listing keeps the user's line breaks (e.g. a dated list of events)
+        # instead of collapsing them into one line. Empty values stay plain
+        # strings so templates can fall back with {{ x or '______' }}.
+        context[f["key"]] = Listing(value) if "\n" in value else value
+    # autoescape: values like "M/s A & B Traders" would otherwise produce
+    # invalid document XML.
+    doc.render(context, autoescape=True)
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     doc.save(output_path)
