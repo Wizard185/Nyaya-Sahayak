@@ -57,7 +57,7 @@ build/
 .yarn/
 .pnp.*
 .yarn-integrity
-
+rag_eval_results.csv
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
