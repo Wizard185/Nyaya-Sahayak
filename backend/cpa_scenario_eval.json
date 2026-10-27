@@ -1,0 +1,1110 @@
+[
+  {
+    "id": "CPAQA_001",
+    "question": "Ravi in Pune ordered a laptop worth Rs 42,000 from an online retailer that sells its own inventory and paid in full by UPI. The order page promised delivery within five days. Twenty-five days later the laptop has not arrived, the retailer keeps postponing the date, and it refuses to refund the money until 'stock arrives'. What can Ravi do under the Consumer Protection Act, 2019?",
+    "answer": "Ravi is a 'consumer' under section 2(7). He bought goods for consideration, and the Explanation to section 2(7) expressly covers online purchases. Failing to deliver within the promised window, and then holding on to the price, is a shortfall in the performance the retailer undertook under the contract. That is a 'deficiency' under section 2(11). Ravi can file a complaint before the District Commission under section 35, including electronically. Under section 34(2)(d) he can file where he resides, so he need not file where the retailer is based. If the Commission finds the allegation proved, it may order the retailer under section 39(1) to return the price with interest (clause (c)), pay compensation for loss or harassment (clause (d)), and pay costs (clause (m)). These remedies are discretionary and depend on proof. Ravi should keep the order confirmation, the promised delivery date, the payment proof and all chat or email exchanges. It also helps to show that he gave the retailer a reasonable chance to deliver or refund before filing.",
+    "reference_sections": [
+      "CPA_2_7",
+      "CPA_2_11",
+      "CPA_34",
+      "CPA_35",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_002",
+    "question": "Meera's order for a pair of earphones on a shopping app was marked 'delivered', but she never received the parcel. Her building's CCTV shows no delivery agent arriving at the time shown in the app. The platform says the courier partner is responsible and closes her ticket. Is there a consumer remedy, and against whom?",
+    "answer": "An online buyer is a consumer under section 2(7). Delivery is part of the service the seller and platform undertook. Marking an undelivered order as delivered and refusing to investigate can be a 'deficiency' under section 2(11), and so can withholding information from the consumer. The platform is an 'electronic service provider' under section 2(17). Meera can name the seller, the platform and, if known, the courier as opposite parties. The District Commission can then decide who was responsible. Under section 38 it can require an electronic service provider to produce information, documents or records, such as the delivery OTP log, GPS data or proof of delivery. If deficiency is proved, the Commission may order refund with interest, compensation and costs under section 39(1)(c), (d) and (m). The CCTV footage, the delivery-status screenshots and her ticket history will be central evidence. The outcome depends on whether the delivery records support or contradict the 'delivered' status.",
+    "reference_sections": [
+      "CPA_2_11",
+      "CPA_2_17",
+      "CPA_38",
+      "CPA_39",
+      "CPA_2_7"
+    ]
+  },
+  {
+    "id": "CPAQA_003",
+    "question": "Sunil bought a mixer-grinder from an online seller whose listing promised a 10-day return window. On day two the motor emitted smoke and stopped working. The seller rejected his return request saying 'opened products cannot be returned'. Does this refusal have any legal consequence?",
+    "answer": "A motor that fails within two days of normal use points to a 'defect' under section 2(10), meaning a fault or shortcoming in quality or standard. Section 2(47)(viii) treats as an unfair trade practice the refusal to take back defective goods and refund the price within the period stated in the bill or receipt, or within thirty days if no period is stated. Here the listing itself promised ten days. A blanket 'opened products cannot be returned' policy cannot override that statutory protection for defective goods, because a product usually has to be opened to discover a defect. If the defect is disputed and cannot be determined without testing, the District Commission may send a sample to an appropriate laboratory under section 38. If the defect is proved, the Commission may order removal of the defect, replacement, or refund of the price with interest, plus compensation and costs under section 39(1)(a)-(c), (d) and (m). Sunil should preserve the product, photographs or video of the fault, and the rejection message.",
+    "reference_sections": [
+      "CPA_2_47",
+      "CPA_2_10",
+      "CPA_39",
+      "CPA_38"
+    ]
+  },
+  {
+    "id": "CPAQA_004",
+    "question": "Ananya placed an order for a dining set worth Rs 30,000 on a furniture website and cancelled it within one hour, before dispatch. The site deducted 20% as a 'cancellation fee', even though the fee was not shown at checkout and appears only in a long terms-and-conditions page. Can she challenge the deduction?",
+    "answer": "Imposing an undisclosed charge that puts the consumer at a disadvantage can be challenged in two ways. First, as an unfair contract term under section 2(46)(vi), which covers unreasonable charges, obligations or conditions, or under section 2(46)(ii), which covers penalties wholly disproportionate to the loss caused. A cancellation within an hour, before dispatch, causes the seller little or no loss. Second, burying the fee in terms not shown at checkout may be an unfair or deceptive practice under section 2(47). Ananya can ask the District Commission for a refund of the deduction with interest, plus compensation, under section 39. If she wants the term itself declared null and void, that power sits with the State Commission under sections 47(1)(a)(ii) and 49(2), or with the National Commission. The Consumer Protection (E-Commerce) Rules, 2020 also restrict cancellation charges, but those Rules are not in the Nyaya Sahayak knowledge base and should be checked separately. Her evidence should include the checkout screenshots, which show no fee, and the time of cancellation.",
+    "reference_sections": [
+      "CPA_2_46",
+      "CPA_2_47",
+      "CPA_47",
+      "CPA_49",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_005",
+    "question": "During the COVID-19 lockdown in 2020, many passengers who had booked domestic air tickets for travel during the lockdown found their flights cancelled. The airlines offered only a 'credit shell' for future travel instead of returning their money. Is a passenger whose flight is cancelled by the airline entitled to a refund, and how did the Supreme Court deal with the lockdown cancellations?",
+    "answer": "Air transport is a 'service' under section 2(42). When the service provider cancels the flight, keeping the fare and forcing the passenger to accept only a future credit can be a 'deficiency' under section 2(11), and it may also be an unfair trade practice under section 2(47). In the actual dispute, Pravasi Legal Cell v. Union of India, decided on 1 October 2020, the Supreme Court dealt with the issue in writ proceedings rather than as a consumer complaint. It directed a full refund for tickets booked during the lockdown for travel within the lockdown period. For other bookings it accepted a framework under which a credit shell could be issued. That credit shell was transferable, and any unused amount had to be refunded by 31 March 2021. That outcome came from a court-approved scheme for an exceptional situation. For an ordinary cancellation today, a passenger can still seek refund of the charges paid, with interest and compensation, before a consumer commission under section 39(1)(c) and (d). The result will depend on the fare rules, the reason for cancellation and any applicable regulator requirements, such as DGCA passenger-charter rules, which are not in the knowledge base.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_2_47",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_006",
+    "question": "Imran ordered a branded smartphone worth Rs 28,000 through an online marketplace. When he opened the sealed parcel, on video, he found a bar of soap inside instead of the phone. The third-party seller denies responsibility and the marketplace offers only a 'goodwill' coupon of Rs 500. What remedies does Imran have?",
+    "answer": "Receiving a completely different and worthless item is a failure to supply the goods contracted for. It can be treated as a defect in the goods under section 2(10), read with the complaint grounds in section 2(6), and as a deficiency in the seller's and marketplace's service under section 2(11). The third-party seller is a 'product seller' under section 2(37). The marketplace's own role in fulfilment, customer service and refunds can also be examined. Imran can file a complaint before the District Commission seeking a refund of Rs 28,000 with interest, compensation for harassment and costs under section 39(1)(c), (d) and (m). A Rs 500 coupon does not prevent him from claiming full relief. His continuous unboxing video, the intact seal and the weight recorded on the shipping label are important evidence. Under section 100 the Act is in addition to other laws, so he may also report suspected cheating to the police without losing his consumer remedy.",
+    "reference_sections": [
+      "CPA_2_10",
+      "CPA_2_11",
+      "CPA_39",
+      "CPA_100",
+      "CPA_2_37"
+    ]
+  },
+  {
+    "id": "CPAQA_007",
+    "question": "Kavya returned a dress through a fashion app. The return was picked up and the app confirmed that a refund 'will be credited to the original payment method within 7 working days'. Two months later the money has not been credited and her bank confirms that no refund was ever initiated. What is her legal position?",
+    "answer": "Once the platform accepted the return and promised a refund within a stated time, failing to process it is a shortfall in a service undertaken under the contract. That is a 'deficiency' under section 2(11). Withholding the consumer's money after taking back the goods may also amount to an unfair trade practice under section 2(47). Kavya can file a complaint under section 35, including through electronic filing, before the District Commission. If the claim is proved, the Commission may direct return of the price with interest under section 39(1)(c), compensation for harassment under section 39(1)(d) and costs under section 39(1)(m). The pick-up receipt, the refund confirmation message and her bank's statement that no refund was initiated are her key evidence. The interest rate and compensation amount are for the Commission to decide; they are not fixed by the Act.",
+    "reference_sections": [
+      "CPA_2_11",
+      "CPA_2_47",
+      "CPA_39",
+      "CPA_35"
+    ]
+  },
+  {
+    "id": "CPAQA_008",
+    "question": "Arjun ordered a Rs 650 meal through a food-delivery app. It arrived visibly spoiled and smelled sour. The app accepted his complaint but refunded the amount only as non-withdrawable 'app wallet credits' that expire in 30 days. He wants his money back to his card. Can he insist on that?",
+    "answer": "Food is 'goods' under section 2(21), which includes 'food' as defined in the Food Safety and Standards Act, 2006. Spoiled food is a 'defect' in quality under section 2(10). If the complaint is proved, section 39(1)(c) lets the Commission direct return of 'the price' or 'the charges paid', and that ordinarily means the money paid, not credits usable only on the same platform. A term that forces the consumer to accept expiring wallet credits instead of a refund can be challenged as an unreasonable condition under section 2(46)(vi). For a small claim like this, practical steps such as the platform's grievance mechanism or the National Consumer Helpline are often faster. A District Commission complaint remains available. Photographs of the food, the order details and the refund message are important evidence. If he became ill, medical records would also support a claim for compensation.",
+    "reference_sections": [
+      "CPA_2_21",
+      "CPA_2_10",
+      "CPA_2_46",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_009",
+    "question": "Users of a ride-hailing app complained that refunds for disputed rides were given only as coupons for future rides, and that no invoices or receipts were issued for auto-rickshaw rides. Complaints of this kind against Ola were received in large numbers in 2024. What consumer-law issues arise, and what did the Central Consumer Protection Authority (CCPA) do?",
+    "answer": "Section 2(47)(vii) makes it an unfair trade practice not to issue a bill, cash memo or receipt for goods sold or services rendered. A refund policy that allows only platform coupons restricts the consumer's choice and can also be challenged as unfair. Where the problem affects consumers as a class, complaints may be sent to the District Collector, a regional Commissioner or the CCPA under section 17. Section 18 empowers the CCPA to protect consumers as a class and prevent unfair trade practices. Section 20 lets it order the discontinuation of unfair practices after a hearing. In October 2024 the CCPA directed Ola to let consumers choose between a refund to their bank account and a coupon, and to issue invoices or receipts for auto rides. This is based on press reports of the CCPA order; the order text itself was not reviewed. That was a regulatory direction for consumers as a class. An individual passenger can still file a complaint before the District Commission for refund and compensation under section 39 based on their own facts.",
+    "reference_sections": [
+      "CPA_2_47",
+      "CPA_17",
+      "CPA_18",
+      "CPA_20"
+    ]
+  },
+  {
+    "id": "CPAQA_010",
+    "question": "Deepak pre-ordered a smartphone listed at Rs 9,999 on an online store and paid in full. Two days later the store cancelled the order unilaterally, citing a 'pricing error' (the usual price is Rs 39,999), and refunded the money after three weeks without interest. Deepak wants the commission to force the store to sell him the phone at Rs 9,999. Is that likely?",
+    "answer": "Under section 2(46)(iv), a contract term letting the trader terminate the contract unilaterally without reasonable cause can make the contract unfair. But a genuine and obvious pricing error may be a reasonable cause, and the Commission will look at whether the mistake was apparent and how the store handled it. The reliefs in section 39(1) are things like removing defects, replacing goods, refunding the price with interest, compensation, discontinuing unfair practices and costs. They are not framed as orders to complete a sale at a mistaken price, so compelling delivery at Rs 9,999 is unlikely. What Deepak can more realistically claim is interest for the three weeks his money was held, compensation for any proven loss or harassment, and costs under section 39(1)(c), (d) and (m). He may also argue that a delayed refund without explanation was itself a deficiency under section 2(11). If the store advertised the price as a deliberate 'bargain' it never meant to honour, section 2(47)(ii) on bargain-price advertisements would also be relevant. That would need evidence such as repeated identical 'errors' or promotional banners.",
+    "reference_sections": [
+      "CPA_2_46",
+      "CPA_2_11",
+      "CPA_39",
+      "CPA_2_47"
+    ]
+  },
+  {
+    "id": "CPAQA_011",
+    "question": "A business sent documents abroad through an international courier. The consignment note it signed limited the courier's liability for loss to US$100. The consignment was lost and the sender claimed its full loss before the consumer forum. Is the courier bound only up to the contractual limit, and how did the Supreme Court decide this in Bharathi Knitting Co. v. DHL?",
+    "answer": "Courier services are a 'service' under section 2(42), and losing a consignment can be a 'deficiency' under section 2(11). In Bharathi Knitting Co. v. DHL Worldwide Express, decided on 9 May 1996 under the Consumer Protection Act, 1986, the Supreme Court held that the sender who signed the consignment note was bound by its terms. It upheld the National Commission's award limited to the US$100 cap and dismissed the appeal. Later decisions, including NCDRC rulings, have distinguished that case where the limitation clause was in fine print the consumer did not sign or was not made aware of. Under the 2019 Act, a consumer can argue that such a term is an 'unfair contract' under section 2(46). For example, it may impose an unreasonable condition under section 2(46)(vi). A declaration that the term is void must be sought from the State or National Commission under sections 49(2) and 59(2). Whether the sender is a 'consumer' at all is a separate question. Under section 2(7), a business sending goods for commercial purposes may fall outside the definition. Whether a cap binds therefore depends on how the term was disclosed, whether the sender agreed to it and whether it is unfair. The outcome is not automatic.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_2_46",
+      "CPA_49",
+      "CPA_2_7"
+    ]
+  },
+  {
+    "id": "CPAQA_012",
+    "question": "Fatima ordered packaged snacks through a quick-commerce app. Two packets were past their 'use by' date. She did not notice, ate one packet and was treated in hospital for food poisoning. Can she claim compensation, and on what basis?",
+    "answer": "Packaged food is 'goods' under section 2(21), and selling food past its use-by date is a 'defect' under section 2(10). Because Fatima suffered illness, she may bring a product liability action under Chapter VI. Section 2(22) defines 'harm' to include personal injury, illness and the mental agony that goes with them. A product seller who is not the manufacturer is liable under section 86(e) if it failed to exercise reasonable care in inspecting or maintaining the product and that failure was the proximate cause of the harm. Selling expired stock fits that clause. She may claim refund, medical expenses and compensation under section 39(1)(c), (d) and (e). She will need the packets or photographs showing the dates, the order invoice, and medical records linking the illness to the food. Section 100 keeps other remedies open, so she can also complain to the food-safety authorities. Whether the seller, the platform or the manufacturer is ultimately liable depends on who controlled storage and dispatch.",
+    "reference_sections": [
+      "CPA_2_21",
+      "CPA_2_10",
+      "CPA_2_22",
+      "CPA_86",
+      "CPA_39",
+      "CPA_100"
+    ]
+  },
+  {
+    "id": "CPAQA_013",
+    "question": "Rahul booked and prepaid a hotel room in Goa through an online travel portal. When he arrived at night, the hotel said it had no booking and no rooms. He had to pay Rs 9,000 for another hotel. The portal blames the hotel and the hotel blames the portal. Whom can Rahul sue, and where?",
+    "answer": "Hotel accommodation ('boarding or lodging') is expressly a 'service' under section 2(42). A confirmed, prepaid booking that is not honoured is a 'deficiency' under section 2(11). The portal is an electronic service provider under section 2(17), and it also undertook to secure the booking. Rahul can name both the portal and the hotel as opposite parties, and the District Commission will decide liability on the evidence, which may be joint. Under section 34(2)(d) he can file in the District Commission where he resides or works, rather than in Goa. Possible reliefs include refund of the booking amount, the extra Rs 9,000 he paid, compensation for inconvenience and costs under section 39(1)(c), (d) and (m). Useful evidence includes the booking confirmation and payment, any reply from the hotel, and the receipt for the alternative hotel.",
+    "reference_sections": [
+      "CPA_2_11",
+      "CPA_2_17",
+      "CPA_34",
+      "CPA_39",
+      "CPA_2_42"
+    ]
+  },
+  {
+    "id": "CPAQA_014",
+    "question": "Flat buyers in Gurugram cancelled their booking. The developer relied on a clause in the agreement allowing it to forfeit 20% of the Basic Sale Price as 'earnest money' on cancellation. Can a developer forfeit such an amount, and what did the Supreme Court hold in Godrej Projects Development Ltd. v. Anil Karlekar?",
+    "answer": "Forfeiture clauses are tested against fairness. Section 2(46)(ii) treats as an unfair contract term a penalty for breach that is wholly disproportionate to the loss actually caused. Section 2(46)(vi) covers unreasonable charges or conditions. The State and National Commissions may declare unfair terms null and void under sections 49(2) and 59(2). In Godrej Projects Development Ltd. v. Anil Karlekar, decided on 3 February 2025, the Supreme Court recognised that a reasonable forfeiture of earnest money is not itself a penalty. It held, however, that the agreement before it was one-sided and that forfeiting 20% of the Basic Sale Price was excessive and arbitrary. The developer's appeal was allowed only in part. Reports differ on the exact amount the Court allowed to be forfeited, so that figure should be taken from the judgment itself. Whether a buyer is entitled to a refund of forfeited money therefore depends on the size of the forfeiture, how one-sided the agreement is, and any applicable real-estate regulations. A commission may order refund of the excess with interest under section 39(1)(c).",
+    "reference_sections": [
+      "CPA_2_46",
+      "CPA_2_47",
+      "CPA_49",
+      "CPA_59",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_015",
+    "question": "Shreya's annual subscription to a streaming service auto-renewed for Rs 1,499 without any reminder. Cancelling requires navigating five screens. She asked for a refund the same day she was charged and was told 'renewals are non-refundable'. Does she have a remedy?",
+    "answer": "Selling digital services over an electronic network is 'e-commerce' under section 2(16), and Shreya is a consumer of that service. Renewing without reminder, combined with deliberately obstructive cancellation, may be an unfair method or deceptive practice under section 2(47). A blanket 'no refund' term for a renewal disputed the same day may be an unreasonable condition under section 2(46)(vi). She may seek a refund with interest and compensation before the District Commission under section 39. Because such practices usually affect many users, she can also report them to the CCPA under section 17. The CCPA's Guidelines for Prevention and Regulation of Dark Patterns, 2023 treat subscription traps as a dark pattern, but those Guidelines are not in the knowledge base. The result will depend on what the sign-up flow disclosed about auto-renewal and how promptly she objected.",
+    "reference_sections": [
+      "CPA_2_16",
+      "CPA_2_47",
+      "CPA_2_46",
+      "CPA_17",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_016",
+    "question": "Nikhil requested a return of defective shoes on day 3 of a 7-day return window. The platform scheduled a pickup three times and its agent never came. On day 9 the platform rejected his return saying 'the return window has expired'. What can he do?",
+    "answer": "The return window lapsed because of the platform's own repeated failure to collect the goods. A trader cannot rely on a time limit that its own default caused to expire. The missed pickups are a deficiency in the service undertaken under section 2(11). Refusing to take back defective goods and refund the price within the stipulated period, or within thirty days where none is stated, is an unfair trade practice under section 2(47)(viii). Nikhil is a consumer under section 2(7) as an online buyer. He can seek a refund or replacement, compensation and costs under section 39. He should keep the app notifications showing his return request date, each pickup slot and each missed pickup, along with evidence of the defect.",
+    "reference_sections": [
+      "CPA_2_11",
+      "CPA_2_47",
+      "CPA_39",
+      "CPA_2_7"
+    ]
+  },
+  {
+    "id": "CPAQA_017",
+    "question": "Pooja bought a phone listed as 'brand new, sealed' from an online seller. On setting it up she found photos and accounts belonging to someone else, scratches on the frame and a battery-health reading of 81%. The seller offers only a Rs 1,000 discount. What is the legal position?",
+    "answer": "Section 2(47)(i) expressly makes it an unfair trade practice to falsely represent re-built, second-hand, renovated, reconditioned or old goods as new. A phone containing another person's data and showing wear was evidently used. The mismatch with the 'brand new' description is also a 'defect' under section 2(10), since the goods fall short of the standard the trader claimed. Pooja, a consumer under section 2(7), can seek a refund of the full price with interest or a genuinely new replacement, plus compensation, under section 39(1)(b)-(d). She can also ask the Commission to direct the seller to discontinue the practice under section 39(1)(g). A Rs 1,000 discount does not take away her right to full relief. She should preserve screenshots of the listing and of the previous user's data (without misusing it), photos of the scratches and the battery-health reading.",
+    "reference_sections": [
+      "CPA_2_47",
+      "CPA_2_10",
+      "CPA_39",
+      "CPA_2_7"
+    ]
+  },
+  {
+    "id": "CPAQA_018",
+    "question": "Vikram's sofa, bought online for Rs 55,000, was delivered with a cracked wooden frame and a torn seat cushion. The seller offers only to send a carpenter to repair it, while Vikram wants a brand-new replacement or a full refund. Will a consumer commission necessarily order replacement?",
+    "answer": "A cracked frame and torn upholstery at delivery are a 'defect' under section 2(10). But section 39(1) gives the Commission several options. It may order removal of the defect (clause (a)), replacement with new goods free from defect (clause (b)), or return of the price with interest (clause (c)). It may also award compensation and costs. Which one it chooses depends on how serious the defect is, whether a repair would restore the product to the promised standard, and how the seller behaved. Replacement is therefore not automatic. A structural crack in a new frame may well justify replacement or refund rather than repair, but the Commission decides. If the defect is disputed, it can be assessed through expert or laboratory examination under section 38. Refusing to take back defective goods and refund within the stipulated or thirty-day period may also be an unfair trade practice under section 2(47)(viii). Delivery-time photographs or video and the delivery acknowledgement are important evidence.",
+    "reference_sections": [
+      "CPA_2_10",
+      "CPA_39",
+      "CPA_2_47",
+      "CPA_38"
+    ]
+  },
+  {
+    "id": "CPAQA_019",
+    "question": "Sneha bought two concert tickets online for Rs 6,000 plus a Rs 600 'convenience fee'. The organiser cancelled the concert and refunded only the Rs 6,000 ticket price. The ticketing platform says the convenience fee is non-refundable 'as the booking service was provided'. Can Sneha recover the fee?",
+    "answer": "Entertainment and the platform's booking facility are both 'services' under section 2(42). When the event is cancelled by the provider, the consumer gets no benefit from the booking. Keeping a fee charged only to enable attendance at an event that never happened can be a deficiency under section 2(11). It can also be challenged as an unfair practice under section 2(47). Section 39(1)(c) lets the Commission direct return of 'the price, or as the case may be, the charges paid', which can include ancillary fees, with interest. Sneha can name both the organiser and the platform as opposite parties. The Commission will look at what the platform disclosed about the fee before purchase and whether it did any real work beyond processing the booking. For a small claim, the platform's grievance process or the National Consumer Helpline may resolve it faster. The commission remedy remains available.",
+    "reference_sections": [
+      "CPA_2_11",
+      "CPA_2_42",
+      "CPA_39",
+      "CPA_2_47"
+    ]
+  },
+  {
+    "id": "CPAQA_020",
+    "question": "Ajay lives in Lucknow and bought shoes worth Rs 3,000 online from a seller located in Gujarat. The shoes fell apart within a week and the seller ignores him. He asks: where can he file a consumer complaint, can he file online, how long does he have, and will the commission accept it?",
+    "answer": "As an online buyer, Ajay is a consumer under section 2(7). Under section 34(2)(d) he may file before the District Commission where he resides or personally works for gain, which is Lucknow. He does not have to file where the seller is. Section 35 allows complaints to be filed electronically, and the e-Daakhil portal is used in practice. The complaint must be accompanied by the prescribed fee; under the applicable Rules there is currently no fee for low-value complaints, but the fee schedule should be checked. Under section 69 the complaint must be filed within two years from the date the cause of action arose. Delay beyond that can be condoned only for sufficient cause, with reasons recorded. Under section 36 the Commission ordinarily decides admissibility within twenty-one days of filing. If it does not decide within that period, the complaint is deemed admitted. It cannot reject a complaint without first hearing the complainant. He should attach the invoice, photographs of the defect and his messages to the seller.",
+    "reference_sections": [
+      "CPA_34",
+      "CPA_35",
+      "CPA_36",
+      "CPA_69",
+      "CPA_2_7"
+    ]
+  },
+  {
+    "id": "CPAQA_021",
+    "question": "Lakshmi's refrigerator stopped cooling three times within its one-year warranty. Each time the authorised service centre 'repaired' it, but the problem returned within weeks. The manufacturer refuses replacement, saying the warranty covers 'repair only'. Can she get a replacement or refund?",
+    "answer": "Recurring failure of the same function shortly after repairs suggests a 'defect' in quality under section 2(10), possibly a manufacturing defect. The warranty is an 'express warranty' under section 2(20). Its wording matters, but it does not limit the reliefs a Commission can grant once a defect is proved. Section 39(1) allows the Commission to order removal of the defect, replacement with new goods free from defect, or refund of the price with interest, plus compensation and costs. Where repeated repairs have failed, a Commission may consider replacement or refund more appropriate than yet another repair, but this is a matter for its discretion. If the defect cannot be determined without analysis, the Commission may refer the product to an appropriate laboratory under section 38. If the repairs themselves were faulty, the service centre may be liable as a product service provider under section 85. Job sheets from each repair visit will be key evidence.",
+    "reference_sections": [
+      "CPA_2_10",
+      "CPA_2_20",
+      "CPA_38",
+      "CPA_39",
+      "CPA_85"
+    ]
+  },
+  {
+    "id": "CPAQA_022",
+    "question": "A car buyer kept facing the same defect during the warranty period despite repeated visits to the dealer. The manufacturer's warranty said its only obligation was to repair or replace defective parts. The High Court ordered replacement of the whole car. Is a buyer entitled to a new car in such a case, and what did the Supreme Court decide in Maruti Udyog Ltd. v. Susheel Kumar Gabgotra?",
+    "answer": "A recurring defect within warranty is a 'defect' under section 2(10). The warranty is an 'express warranty' under section 2(20). In Maruti Udyog Ltd. v. Susheel Kumar Gabgotra, decided on 29 March 2006 under the 1986 Act, the Supreme Court held that the warranty clause referred to replacing the defective part, not the car. It held the High Court was not justified in directing replacement of the vehicle, and it allowed the appeal in part. The Court directed replacement of the defective part free of cost and awarded compensation for the inconvenience. The amount is reported in secondary sources and should be checked in the judgment. Under the 2019 Act, the Commission still chooses among the reliefs in section 39(1): removing the defect, replacement, refund, compensation and costs. Replacing the whole product is not automatic where the defect can be cured by replacing a part. If the defect amounts to a manufacturing defect that causes harm, the manufacturer may also face product liability under section 84.",
+    "reference_sections": [
+      "CPA_2_10",
+      "CPA_2_20",
+      "CPA_39",
+      "CPA_84"
+    ]
+  },
+  {
+    "id": "CPAQA_023",
+    "question": "A driver's car, sold with front airbags, crashed on a highway. The airbags did not deploy and he suffered head, chest and dental injuries. The manufacturer argued that it was not a type of collision in which airbags would deploy. Can the manufacturer be held liable, and what happened in Hyundai Motor India Ltd. v. Shailendra Bhatnagar?",
+    "answer": "Under the 2019 Act this would be a product liability claim. 'Product liability' under section 2(34) is the manufacturer's or seller's responsibility to compensate for harm caused by a defective product. 'Harm' under section 2(22) includes personal injury. Under section 84 a manufacturer is liable for a manufacturing or design defect, for failing to conform to an express warranty (section 2(20)), or for failing to give adequate instructions or warnings. Liability for breach of an express warranty arises even without negligence. In Hyundai Motor India Ltd. v. Shailendra Bhatnagar, decided on 20 April 2022 on a claim that arose under the 1986 Act, the Supreme Court dismissed the manufacturer's appeal. The consumer forums had directed replacement of the car and payment of compensation, and that order stood. The Court observed that failing to provide an airbag system meeting the safety expectations of a reasonably prudent car buyer should attract punitive damages. It also noted that the owner's manual did not warn that the airbags would not deploy in a collision of this kind. Under section 39(1)(d) a Commission may award punitive damages where it thinks fit. Every claim still depends on evidence about the collision and the product.",
+    "reference_sections": [
+      "CPA_2_34",
+      "CPA_84",
+      "CPA_2_22",
+      "CPA_39",
+      "CPA_2_20"
+    ]
+  },
+  {
+    "id": "CPAQA_024",
+    "question": "Geeta bought an unbranded pressure cooker from a neighbourhood shop. The safety valve failed, the lid blew off and she suffered burns. The packaging names only an 'importer' with an incomplete address, and the actual manufacturer cannot be identified. Against whom can she bring a claim?",
+    "answer": "Geeta can bring a 'product liability action' under sections 2(35) and 83, which is a complaint claiming compensation for harm caused by a defective product. Her burns are 'harm' under section 2(22). A product liability action may be brought against the manufacturer, the product service provider or the product seller. The definition of 'product seller' in section 2(37) covers anyone who imports, sells or distributes a product in the course of business, which includes both the importer and the shop. Under section 86(d), a product seller who is not the manufacturer is liable where the manufacturer's identity is unknown, or where the manufacturer cannot be served or is beyond Indian law. Section 86(e) also applies where the seller failed to take reasonable care in inspecting the product. The seller can defend under section 87(1) if the cooker was misused, altered or modified when the harm occurred, so the manner of use will be examined. Medical records, the cooker itself and the purchase bill are key evidence. Separate standards rules for pressure cookers also exist, but they are outside the knowledge base.",
+    "reference_sections": [
+      "CPA_83",
+      "CPA_86",
+      "CPA_87",
+      "CPA_2_22",
+      "CPA_2_37",
+      "CPA_2_35"
+    ]
+  },
+  {
+    "id": "CPAQA_025",
+    "question": "Karan's electric scooter battery caught fire while charging overnight, damaging his parking area. The manufacturer says he used a third-party charger that the manual expressly prohibits. Karan says the original charger had failed and the manual's warning was in tiny print. How will liability be assessed?",
+    "answer": "Fire damage to property other than the product is 'harm' under section 2(22)(i), so Karan may bring a product liability action under section 83. Under section 84 the manufacturer is liable for a manufacturing or design defect, or for failing to give adequate instructions and warnings. Under section 87(1), a product seller is not liable if the product was misused, altered or modified at the time of harm. Under section 87(3), a manufacturer is not liable for failing to warn about a danger that is obvious or commonly known. The central questions are factual. Was the fire caused by a defect in the battery or by the third-party charger? Was the warning adequate and reasonably visible? Was the substitution reasonable after the original charger failed? The Commission may rely on expert or laboratory analysis under section 38. Karan should preserve the burnt battery, both chargers, the manual and photographs. Because causation is disputed, a firm conclusion is not possible without technical evidence.",
+    "reference_sections": [
+      "CPA_84",
+      "CPA_87",
+      "CPA_2_22",
+      "CPA_83",
+      "CPA_38"
+    ]
+  },
+  {
+    "id": "CPAQA_026",
+    "question": "Farmers who sowed seeds supplied by a seed corporation suffered crop failure and low yields. They filed consumer complaints. The corporation argued that the Seeds Act, 1966 governed seed quality to the exclusion of consumer fora, and that farmers were not consumers. How should such complaints be approached, and what did the Supreme Court decide in National Seeds Corporation Ltd. v. M. Madhusudhan Reddy?",
+    "answer": "A farmer who buys seeds to cultivate his own land for a livelihood can be a 'consumer' under section 2(7). The Explanation excludes from 'commercial purpose' goods used exclusively for earning a livelihood by self-employment. Seeds that fail to germinate or yield as claimed may suffer from a 'defect' under section 2(10). Section 100 provides that the 2019 Act is in addition to, and not in derogation of, other laws. A special statute such as the Seeds Act does not by itself oust the consumer remedy. In National Seeds Corporation Ltd. v. M. Madhusudhan Reddy, decided on 16 January 2012 under the 1986 Act, the Supreme Court dismissed the corporation's appeals. It found nothing in the Seeds Act and Rules that excluded the Consumer Protection Act, and the compensation awarded to the farmers was upheld. Defect must still be proved, through seed samples tested under section 38, agricultural officers' reports or other evidence. The Commission may then award compensation under section 39(1)(d).",
+    "reference_sections": [
+      "CPA_2_7",
+      "CPA_2_10",
+      "CPA_100",
+      "CPA_38",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_027",
+    "question": "An electronics retailer sold Neha a laptop advertised in store as having a '2-year comprehensive warranty'. The manufacturer's warranty was actually one year. In month 18 the motherboard failed. The manufacturer refuses service and the retailer says 'contact the brand'. Who is responsible?",
+    "answer": "The retailer's in-store promise of a two-year warranty is its own 'express warranty' under section 2(20), independent of the manufacturer's. Representing that goods carry a warranty they do not have, or a warranty with no reasonable prospect of being honoured, is an unfair trade practice under section 2(47)(i). A motherboard failure in month 18 is a 'defect' under section 2(10). Neha can file against the retailer, and also the manufacturer, and seek repair, replacement or refund plus compensation under section 39. If the defect had caused harm such as a fire, section 86(c) would make a product seller liable where it made an express warranty independent of the manufacturer's and the product failed to conform to it. Her proof of the two-year promise, such as the bill, a written warranty card, an advertisement or a store display, is crucial. Without it the case becomes much harder.",
+    "reference_sections": [
+      "CPA_2_20",
+      "CPA_2_47",
+      "CPA_2_10",
+      "CPA_39",
+      "CPA_86"
+    ]
+  },
+  {
+    "id": "CPAQA_028",
+    "question": "A technician from the authorised service partner of a water-purifier brand installed Harish's new purifier. The inlet pipe was badly fitted, and it burst overnight, flooding his flat and ruining a wooden floor and a sofa. The brand says the technician is a third-party contractor. Is anyone liable?",
+    "answer": "A person who provides service in respect of a product, such as installation, is a 'product service provider' under section 2(38). Under section 85 that provider is liable in a product liability action where the service was faulty or deficient, or where there was negligence that caused harm. Damage to the floor and sofa, which is property other than the product itself, is 'harm' under section 2(22)(i). Harish can bring a product liability action under section 83 against the service partner. He can also name the brand, which arranged the installation through its authorised network. The Commission will decide whether the brand bears responsibility for its authorised partner on the facts. Compensation may be awarded under section 39(1)(e), along with costs. Photographs of the burst fitting, the installation job card and repair estimates for the floor and sofa will be needed to prove both negligence and the amount of loss.",
+    "reference_sections": [
+      "CPA_2_38",
+      "CPA_85",
+      "CPA_2_22",
+      "CPA_39",
+      "CPA_83"
+    ]
+  },
+  {
+    "id": "CPAQA_029",
+    "question": "A buyer paid for a new car at a dealership but was given a vehicle manufactured two years earlier that had already run several hundred kilometres. The consumer forums held both the dealer and the manufacturer jointly liable. Is the manufacturer automatically liable for its dealer's conduct, and what did the Supreme Court hold in Tata Motors Ltd. v. Antonio Paulo Vaz?",
+    "answer": "Passing off an old or used vehicle as new is an unfair trade practice under section 2(47)(i), which covers falsely representing old or second-hand goods as new. The selling dealer is plainly answerable for it. A 'trader' under section 2(45) includes the manufacturer of goods, but that does not make a manufacturer automatically liable for every independent act of its dealer. In Tata Motors Ltd. v. Antonio Paulo Vaz, decided on 18 February 2021 under the 1986 Act, the Supreme Court found the dealership relationship was principal-to-principal. It held that, unless the manufacturer's knowledge of the dealer's wrongdoing was pleaded and proved, liability could not be fastened on the manufacturer. It allowed the manufacturer's appeal. A buyer in a similar situation should therefore claim primarily against the dealer, seeking refund or replacement and compensation under section 39. If the manufacturer is to be joined, specific facts showing its knowledge or involvement must be pleaded and supported.",
+    "reference_sections": [
+      "CPA_2_47",
+      "CPA_2_45",
+      "CPA_39",
+      "CPA_2_7"
+    ]
+  },
+  {
+    "id": "CPAQA_030",
+    "question": "Priya used a hair dye and developed a severe allergic reaction requiring treatment. The pack clearly instructed users to do a patch test 48 hours before use, and she admits she skipped it. Can she succeed in a product liability claim against the manufacturer?",
+    "answer": "An allergic reaction requiring treatment is 'harm' under section 2(22). A product liability action under section 83 against the manufacturer would usually rest on section 84(1)(e), failure to give adequate instructions or warnings, or on a manufacturing or design defect. Here the pack carried a clear patch-test instruction. If the warning was adequate, legible and in a language she could understand, a failure-to-warn claim is weak. Her own failure to follow the instruction will weigh against her. Section 87 also limits liability in failure-to-warn cases, including for dangers the user ought to have known. Her claim could still succeed if she shows the dye was defective, for example contaminated or with a composition different from what was labelled, or that the warning was inadequate in prominence or content. That would need medical evidence and possibly laboratory analysis of the product. On the facts given, success is doubtful unless such evidence exists.",
+    "reference_sections": [
+      "CPA_84",
+      "CPA_87",
+      "CPA_2_22",
+      "CPA_83"
+    ]
+  },
+  {
+    "id": "CPAQA_031",
+    "question": "Manoj bought a sealed one-litre bottle of packaged drinking water and noticed a dead insect floating inside before opening it. He did not drink it. The manufacturer says that since he suffered no harm there is no case. Is he right?",
+    "answer": "Not entirely. Manoj may not have a product liability claim. 'Harm' under section 2(22) requires things like personal injury, illness or damage to other property, and expressly excludes harm caused to the product itself. But section 2(6)(ii) separately allows a complaint that goods bought suffer from one or more defects. An insect inside a sealed bottle is a fault in quality and purity, which is a 'defect' under section 2(10). The District Commission may have the sealed bottle examined by a laboratory under section 38. If the defect is proved, it may order refund, compensation for mental agony and costs, and direct discontinuation of unsafe practices under section 39. Any compensation where nothing was consumed is likely to be modest and is entirely at the Commission's discretion. Keeping the bottle sealed, with its batch number and purchase receipt, is essential.",
+    "reference_sections": [
+      "CPA_2_6",
+      "CPA_2_10",
+      "CPA_38",
+      "CPA_39",
+      "CPA_2_22"
+    ]
+  },
+  {
+    "id": "CPAQA_032",
+    "question": "Rohit paid Rs 8,500 at a local store for running shoes of a well-known international brand, which the shopkeeper assured him were 'original'. The brand's authorised store later confirmed they were counterfeit. He was not injured. What remedies are available, and does the criminal provision on spurious goods apply?",
+    "answer": "Goods falsely claimed to be genuine are 'spurious goods' under section 2(43). Offering spurious goods for sale is an unfair trade practice under section 2(47)(vi). Rohit can seek a refund with interest, compensation and costs before the District Commission under section 39, and an order to stop the practice. Section 91, which punishes manufacturing, storing, selling or distributing spurious goods, is framed by reference to consequences for the consumer. Its clauses (a) to (c) deal with injury not amounting to grievous hurt, grievous hurt and death. On these facts, with no injury, the offence tiers in section 91 do not squarely apply. Section 100 preserves other laws, so the brand owner's trade mark remedies and any criminal complaint for cheating remain separate options. The authorised store's written confirmation and his purchase bill are key evidence.",
+    "reference_sections": [
+      "CPA_2_43",
+      "CPA_2_47",
+      "CPA_91",
+      "CPA_39",
+      "CPA_100"
+    ]
+  },
+  {
+    "id": "CPAQA_033",
+    "question": "Suresh's split air-conditioner compressor failed 14 months after purchase, two months after the one-year warranty ended. The technician's report says the failure was caused by a manufacturing defect in the compressor. The manufacturer refuses help because the warranty has expired. Is the expiry of the warranty fatal to his claim?",
+    "answer": "Not necessarily. The Act protects consumers against 'defects' under section 2(10), meaning faults in quality or standard required by law, by contract or as claimed by the trader. The protection is not confined to the warranty period. If the defect existed at the time of sale and simply showed itself after the warranty ended, a consumer can still complain. The burden is on Suresh to prove that it was an inherent defect rather than ordinary wear or improper use. The technician's report, and if needed a laboratory or expert examination under section 38, will be key. Under section 69 the complaint must be filed within two years of the cause of action, which here would ordinarily run from the failure. If he proves the defect, the Commission may order repair, replacement of the compressor, compensation or other relief under section 39. Post-warranty claims are fact-sensitive and a favourable outcome is not guaranteed.",
+    "reference_sections": [
+      "CPA_2_10",
+      "CPA_38",
+      "CPA_69",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_034",
+    "question": "A plastic toy marketed for 'all ages' had small parts that detached easily. A three-year-old swallowed one and was hospitalised. The packaging carried no choking warning or age restriction. Who can file a claim for the child, and what remedies may follow?",
+    "answer": "Because the consumer is a minor, a parent or legal guardian can be the complainant under section 2(5). The child's injury and hospitalisation are 'harm' under section 2(22). In a product liability action, the manufacturer is liable under section 84 for a design defect, and under section 84(1)(e) for failing to give adequate warnings about improper use. Marketing a toy with detachable small parts for 'all ages' without a choking warning engages both. Section 39 allows compensation for the harm. It also allows orders not to offer hazardous goods for sale, to withdraw them, or to stop manufacturing them (clauses (h)-(j)). Where many children are at risk, the CCPA may order a recall and reimbursement under section 20. Medical records, the toy and its packaging are key evidence. Toy safety standards under other laws may also apply but are outside the knowledge base.",
+    "reference_sections": [
+      "CPA_84",
+      "CPA_2_5",
+      "CPA_2_22",
+      "CPA_39",
+      "CPA_20"
+    ]
+  },
+  {
+    "id": "CPAQA_035",
+    "question": "Anil bought a used car directly from a private individual through an online classifieds website. He later discovered that the odometer had been rolled back by about 60,000 km. The seller is an ordinary salaried person who sold his own car once. Can Anil file a consumer complaint against him?",
+    "answer": "The facts make a consumer complaint difficult. Complaints about unfair trade practices under section 2(6)(i) are directed at a 'trader' or 'service provider'. A 'trader' under section 2(45) is a person who sells or distributes goods for sale, and a 'product seller' under section 2(37) acts 'in the course of business'. A private individual selling his own car once ordinarily does neither. If the seller was actually a dealer posing as an individual, the position changes: tampering with the odometer would then be a false representation of the goods' standard or condition and an unfair trade practice under section 2(47)(i). Otherwise, section 100 preserves other remedies, such as a civil suit for misrepresentation and a criminal complaint for cheating. Whether the classifieds website bears any responsibility would depend on its terms and role, and that needs further facts. Anil should gather evidence of the seller's dealings, including whether he has listed other cars, along with service records showing the true mileage.",
+    "reference_sections": [
+      "CPA_2_45",
+      "CPA_2_37",
+      "CPA_2_6",
+      "CPA_100",
+      "CPA_2_47"
+    ]
+  },
+  {
+    "id": "CPAQA_036",
+    "question": "A bank customer in Assam lost Rs 94,204.80 through unauthorised online transactions after a fraudster, posing as customer care, persuaded him to download a mobile app. He reported the fraud promptly. The bank refused to reimburse him, saying he had been careless. Is a bank responsible in such cases, and what happened in State Bank of India v. Pallabh Bhowmick?",
+    "answer": "Banking is expressly a 'service' under section 2(42). A bank's failure to secure its systems, or to act on a prompt fraud report as required, can be a 'deficiency' under section 2(11). The RBI's circular of 6 July 2017 on customer liability in unauthorised electronic banking transactions links the customer's liability to how quickly the fraud is reported and whether the customer was negligent. That circular is not in the knowledge base. In the actual dispute, the Gauhati High Court directed SBI to refund the full amount, relying on the RBI framework and the customer's prompt reporting. The Supreme Court, by order dated 3 January 2025, dismissed SBI's special leave petition. It observed that banks must remain vigilant and cannot shift responsibility for unauthorised transactions that are reported promptly. That case arose in writ proceedings, not before a consumer commission. Under section 100 a customer can also approach a consumer commission and seek refund, interest and compensation under section 39. The outcome depends on proof of timely reporting and on whether the customer shared credentials such as an OTP. Sharing them may shift liability to the customer.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_39",
+      "CPA_100"
+    ]
+  },
+  {
+    "id": "CPAQA_037",
+    "question": "A bank broke open a customer's locker for alleged non-payment of rent and re-allotted it, even though the customer said the dues had been paid. He was not given back the ornaments that had been inside. Can banks disclaim responsibility for lockers, and what did the Supreme Court decide in Amitabha Dasgupta v. United Bank of India?",
+    "answer": "Providing safe-deposit lockers is a banking 'service' under section 2(42). Breaking open a locker without following due process, and failing to account for its contents, can be a serious 'deficiency' under section 2(11). In Amitabha Dasgupta v. United Bank of India, decided on 19 February 2021 under the 1986 Act, the Supreme Court held that a bank cannot wash its hands of its duty of care over lockers. It found that breaking open the locker without following the required procedure was a deficiency in service. It directed the bank to pay Rs 5 lakh as compensation and Rs 1 lakh as litigation costs. It also directed the RBI to frame comprehensive regulations on locker management within six months. A customer today can seek compensation and costs under section 39(1)(d) and (m). Proving the value of the locker's contents is often the hardest part, so inventories, photographs or other evidence of what was kept in the locker matter.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_038",
+    "question": "An insured truck was stolen. The owner lodged an FIR the next day but informed the insurer about a week later, saying he had been busy searching for the vehicle. The insurer repudiated the claim for 'delayed intimation', a breach of a policy condition. Can a genuine theft claim be rejected only for late intimation, and what did the Supreme Court hold in Om Prakash v. Reliance General Insurance?",
+    "answer": "Insurance is a 'service' under section 2(42). Wrongful repudiation of a genuine claim can be a 'deficiency' under section 2(11). In Om Prakash v. Reliance General Insurance Co. Ltd., decided on 4 October 2017 under the 1986 Act, the Supreme Court held that the condition requiring prompt intimation to the insurer should not be used to defeat a genuine claim, particularly where the delay is explained. It directed the insurer to settle the claim. In Gurshinder Singh v. Shriram General Insurance Co. Ltd., decided on 24 January 2020, a three-judge bench held that if a theft claim is found genuine, mere delay in intimating the insurer cannot be a ground to deny it. Gurshinder Singh also stressed that a promptly lodged FIR is important. Later decisions have treated a delayed FIR as relevant to whether the claim is genuine. A consumer in a similar position may seek the claim amount with interest and compensation under section 39. The outcome will depend on how promptly the FIR was filed and on there being no other valid ground for repudiation.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_39",
+      "CPA_2_7"
+    ]
+  },
+  {
+    "id": "CPAQA_039",
+    "question": "A traveller bought an overseas mediclaim policy after disclosing his health details. He suffered a heart attack on arrival in the USA. The insurer rejected his claim on the ground that he had a pre-existing condition, pointing out that he was taking cholesterol-lowering medicine. Was the repudiation lawful, and what did the Supreme Court decide in Manmohan Nanda v. United India Assurance?",
+    "answer": "Health insurance is a 'service' under section 2(42), and wrongful repudiation can be a 'deficiency' under section 2(11). In Manmohan Nanda v. United India Assurance Co. Ltd., decided on 6 December 2021, the Supreme Court held the repudiation unlawful and set aside the NCDRC's view. It reasoned that the purpose of an overseas mediclaim policy is to indemnify sudden and unexpected illness abroad. It held that once the insurer has assessed the proposer's medical condition and issued the policy, it cannot reject a claim by citing a pre-existing condition that was disclosed. It also held that a sudden illness not expressly excluded must be indemnified. Under section 39 a consumer in a comparable case may seek the claim amount, interest and compensation. The result still depends on the exact disclosures made, the questions in the proposal form and the specific exclusion clauses in the policy. Genuine concealment of material facts can justify repudiation.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_040",
+    "question": "After the accidental death of the policyholder, his family claimed under two life insurance policies with accidental death benefits. The insurer repudiated the claims, alleging that the deceased had deliberately concealed several other insurance policies he held. Who bears the burden of proving concealment, and what did the Supreme Court decide in Mahakali Sujatha v. Future Generali India Life Insurance?",
+    "answer": "On the policyholder's death, his legal heir or legal representative can be the 'complainant' under section 2(5). Life insurance is a 'service' under section 2(42), and wrongful repudiation can be a 'deficiency' under section 2(11). In Mahakali Sujatha v. Branch Manager, Future Generali India Life Insurance Co. Ltd., decided on 10 April 2024, the Supreme Court held that the burden lies on the insurer to prove the alleged non-disclosure. It also found that, even assuming the other policies existed, not disclosing them was not suppression of a material fact on those facts. It set aside the NCDRC's order and directed the insurer to pay the claims under both policies with interest. The interest rate should be taken from the judgment. Whether a particular non-disclosure is 'material' depends on the proposal form questions and the nature of the risk. A family in a similar situation may seek the sum assured, interest and compensation under section 39.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_2_5",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_041",
+    "question": "A child admitted to a private hospital was given an intravenous injection by a nurse without a sensitivity test. He suffered a cardiac arrest and permanent brain damage. His parents, who had engaged and paid the hospital, sought compensation for the child and for themselves. Are the parents also 'consumers', and how did the Supreme Court decide Spring Meadows Hospital v. Harjol Ahluwalia?",
+    "answer": "Medical services for payment are a 'service' under section 2(42). Under section 2(7)(ii), a 'consumer' includes the person who hires the service and any beneficiary of it who uses it with that person's approval. Under section 2(5), the parent or legal guardian of a minor may be the complainant. Negligent treatment by hospital staff can be a 'deficiency' under section 2(11), and a hospital is answerable for its employees. In Spring Meadows Hospital v. Harjol Ahluwalia, decided on 25 March 1998 under the 1986 Act, the Supreme Court upheld the National Commission's finding of negligence against the hospital and its staff. It held that the parents who hired the services were themselves consumers, and it upheld compensation to the parents for their mental agony in addition to the child's compensation. The exact amounts should be taken from the judgment. Under section 39 a Commission may award compensation for loss and injury today, but negligence must be established on the evidence.",
+    "reference_sections": [
+      "CPA_2_7",
+      "CPA_2_5",
+      "CPA_2_11",
+      "CPA_39",
+      "CPA_2_42"
+    ]
+  },
+  {
+    "id": "CPAQA_042",
+    "question": "A woman died after being treated with an excessive dosage of steroids and given inadequate supportive care at a private hospital. Her husband sued the hospital and the treating doctors, and the National Commission awarded compensation that he considered inadequate. How do consumer fora assess compensation in death cases caused by medical negligence, and what did the Supreme Court do in Dr. Balram Prasad v. Dr. Kunal Saha?",
+    "answer": "Negligent medical treatment is a 'deficiency' in a 'service' under sections 2(11) and 2(42). Under section 2(5), a deceased consumer's legal heir or representative may pursue the complaint. Section 39(1)(d) allows compensation for loss or injury caused by negligence, and punitive damages in suitable cases. In Dr. Balram Prasad v. Dr. Kunal Saha, decided on 24 October 2013 under the 1986 Act, the Supreme Court substantially increased the compensation the National Commission had awarded. Reports put the enhanced award at about Rs 5.96 crore with interest at 6%, but secondary sources give somewhat different totals, so the exact figure should be taken from the judgment. The Court made the hospital and the doctors liable in different shares. It considered loss of income, the victim's qualifications and earning prospects, medical and litigation expenses, and inflation. A Commission today would similarly assess pecuniary loss, non-pecuniary loss and costs on the evidence. Large awards depend on proof of the deceased's earning capacity and actual expenses.",
+    "reference_sections": [
+      "CPA_2_11",
+      "CPA_2_42",
+      "CPA_39",
+      "CPA_2_5"
+    ]
+  },
+  {
+    "id": "CPAQA_043",
+    "question": "A widow alleged that her husband died because of negligent care at a hospital. The National Commission dismissed her complaint because she had not made the individual treating doctors and nurses parties. Is impleading the individual doctors essential, and who must prove what? What did the Supreme Court decide in Savita Garg v. Director, National Heart Institute?",
+    "answer": "Hospital care for consideration is a 'service' under section 2(42), and negligent treatment can be a 'deficiency' under section 2(11). Under section 2(5), a deceased patient's legal heir can complain. In Savita Garg v. Director, National Heart Institute, decided on 12 October 2004 under the 1986 Act, the Supreme Court held that a complaint should not be dismissed merely because the treating doctors or nurses were not made parties. A hospital that admits a patient is responsible for the care its staff provide. The Court also held that the hospital is best placed to show what treatment was given and that there was no negligence. It allowed the appeal and sent the complaint back to the National Commission to be decided afresh. Under section 38 a Commission decides on affidavits and documents, and may summon records, so the hospital's case papers become central. The complainant must still set out the alleged negligence and how it caused the harm.",
+    "reference_sections": [
+      "CPA_2_11",
+      "CPA_2_42",
+      "CPA_38",
+      "CPA_2_5"
+    ]
+  },
+  {
+    "id": "CPAQA_044",
+    "question": "A patient was injured by the alleged negligence of a private doctor whom she had paid for consultation. Another patient was treated free of charge at a government hospital that charges nobody. Do both fall within consumer law, and what did the Supreme Court lay down in Indian Medical Association v. V.P. Shantha?",
+    "answer": "Section 2(42) defines 'service' widely but excludes any service rendered free of charge or under a contract of personal service. In Indian Medical Association v. V.P. Shantha, decided on 13 November 1995 under the 1986 Act, the Supreme Court held that medical services provided by doctors and hospitals for consideration are a 'service', so patients can complain of deficiency before consumer fora. It drew a distinction for free treatment. Services rendered entirely free at a hospital that charges no one are outside the definition. Where a hospital treats some patients for payment and others free, the free services are not excluded. Payment by an insurer or employer on the patient's behalf also counts as consideration. On these facts, the paying patient is a consumer under section 2(7) and may allege deficiency under section 2(11). The patient treated at a wholly free government hospital likely falls outside consumer jurisdiction and would need other remedies. In 2024 the Supreme Court questioned whether V.P. Shantha was correct when deciding the advocates' case. Reports indicate the Court later declined to reconsider it, but the current position should be confirmed before relying on it.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_7",
+      "CPA_2_11"
+    ]
+  },
+  {
+    "id": "CPAQA_045",
+    "question": "A patient died after surgery to remove an abdominal tumour. His family alleged that the surgeon had chosen the wrong surgical approach and that this amounted to negligence. The hospital produced evidence that the approach was an accepted one. Is a doctor negligent simply because the patient did not survive or because another approach was possible? What did the Supreme Court hold in Kusum Sharma v. Batra Hospital?",
+    "answer": "For a complaint of 'deficiency' under section 2(11) in medical 'service' under section 2(42), the question is whether the doctor fell below the standard of a reasonably competent practitioner. A bad outcome alone does not answer it. In Kusum Sharma v. Batra Hospital & Medical Research Centre, decided on 10 February 2010 under the 1986 Act, the Supreme Court dismissed the family's appeal and upheld the National Commission's finding of no negligence. The Court applied the Bolam principle. A doctor is not negligent merely because a different procedure could have been chosen, if the one adopted is accepted as proper by a responsible body of medical opinion. Nor is a doctor negligent merely because treatment failed. A complainant therefore needs evidence that the choice or execution of treatment fell below accepted standards, such as expert opinion, medical literature or clear departures visible in the hospital's records. The Commission considers that evidence under section 38. Where negligence is obvious on the face of the record, expert evidence may be less critical.",
+    "reference_sections": [
+      "CPA_2_11",
+      "CPA_2_42",
+      "CPA_38"
+    ]
+  },
+  {
+    "id": "CPAQA_046",
+    "question": "Farhan ported his mobile number from Telecom A to Telecom B. Telecom A kept generating monthly bills for three months after the port was completed, and then sent recovery agents who called his family and employer. Telecom A ignores his written complaints. What is his remedy?",
+    "answer": "Telecom is expressly listed as a 'service' under section 2(42) of the 2019 Act. Billing a customer for a period after the number has been ported out is a fault in the manner of performing the service, and so is using coercive recovery calls to third parties. Both can be a 'deficiency' under section 2(11). Farhan may file before the District Commission where he resides or works, under section 34(2)(d). He can ask the Commission to quash the bills, award compensation for harassment and mental agony, and order costs under section 39. Proof that the port completed on a particular date, the bills raised afterwards, call logs from the recovery agents and his written complaints are important. The Supreme Court has held that a statutory arbitration remedy under the Telegraph Act does not bar a consumer complaint against a telecom provider (see the record on Vodafone Idea Cellular Ltd. v. Ajay Kumar Agarwal). Telecom regulator rules are not in the knowledge base.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_39",
+      "CPA_34"
+    ]
+  },
+  {
+    "id": "CPAQA_047",
+    "question": "Divya's home broadband was down for 18 days of a month for which she had prepaid. Despite repeated complaints, the provider only gave ticket numbers and later refused a pro-rata refund, citing a term that says 'no refunds under any circumstances'. Is the term enforceable against her?",
+    "answer": "Internet service is a 'service' under section 2(42), and an 18-day unresolved outage is a 'deficiency' under section 2(11). A term barring refunds 'under any circumstances', even where the provider itself fails to deliver the service, may be an unreasonable condition that disadvantages the consumer under section 2(46)(vi). A District Commission can grant relief for the deficiency by ordering return of the charges for the outage period with interest, compensation and costs under section 39(1)(c), (d) and (m). If Divya wants the term itself formally declared null and void, sections 49(2) and 59(2) give that power to the State and National Commissions. Her complaint ticket numbers, dates of outage and the provider's responses are the core evidence. A Commission will also look at whether the outage was due to causes beyond the provider's control.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_2_46",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_048",
+    "question": "Ramesh's health insurer rejected his hospitalisation claim, saying he did not disclose a past episode of kidney stones. The proposal form never asked about kidney ailments, and the episode was minor and unrelated to the current treatment for a fracture. What should a consumer commission consider?",
+    "answer": "Health insurance is a 'service' under section 2(42), and wrongful repudiation can be a 'deficiency' under section 2(11). An insured person's duty of disclosure is generally judged by the questions actually asked and by whether the undisclosed fact was material to the risk. An unrelated past condition the form did not ask about, which has no connection to a fracture, would ordinarily be a weak ground for repudiation. Where non-disclosure is alleged, the insurer usually carries the burden of proving it. The Commission will examine the proposal form, the policy exclusions and the medical records. If repudiation is found wrongful, it may award the claim amount, interest and compensation under section 39. Under section 100 Ramesh may also approach the Insurance Ombudsman, though he should not pursue both forums at the same time on identical claims. Insurance regulations themselves are not in the knowledge base.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_39",
+      "CPA_100"
+    ]
+  },
+  {
+    "id": "CPAQA_049",
+    "question": "Preeti took a personal loan from a finance company. When she offered to repay it early and pay the prepayment charge stated in the agreement, the company refused to accept early repayment. It then demanded a 'foreclosure administration fee' that is not mentioned anywhere in the agreement. Does consumer law help her?",
+    "answer": "Financing is a 'service' under section 2(42). Section 2(46)(iii) expressly lists 'refusing to accept early repayment of debts on payment of applicable penalty' as a term or practice that makes a contract unfair. Demanding a charge beyond what the parties agreed may also be a complaint under section 2(6)(iv), which covers charging a price in excess of what was agreed. Preeti can seek a direction to accept repayment on the agreed terms, refund of any excess charged and compensation. Complaints against unfair contracts are expressly given to the State Commission under section 47(1)(a)(ii), where the consideration paid does not exceed ten crore rupees. Under section 49(2) the State Commission may declare unfair terms null and void. Lending is also regulated by the RBI, whose directions are outside the knowledge base. She should keep the loan agreement, the prepayment schedule and the written refusal.",
+    "reference_sections": [
+      "CPA_2_46",
+      "CPA_2_6",
+      "CPA_47",
+      "CPA_49",
+      "CPA_2_42"
+    ]
+  },
+  {
+    "id": "CPAQA_050",
+    "question": "Residents of a colony suffered repeated high-voltage surges from the local electricity distribution company. In Mohan's home the surges damaged his television, refrigerator and inverter. He had complained in writing about the fluctuations several times before the damage. Can he claim compensation as a consumer?",
+    "answer": "Supply of electrical energy is expressly a 'service' under section 2(42). Persistent voltage surges after written complaints, and failure to maintain supply within acceptable limits, can be a 'deficiency' under section 2(11). The negligence alleged is the failure to act on known problems. Mohan may file before the District Commission and seek compensation for the damaged appliances and costs under section 39. He will need evidence of causation: his earlier written complaints, any records of the surges (such as neighbours' complaints or the utility's logs, which the Commission may call for under section 38), repair or technician reports, and proof of the appliances' value. Disputes about statutory assessments or theft-of-electricity proceedings under the Electricity Act, 2003 raise separate questions of maintainability. This scenario concerns quality of supply, which is generally within consumer jurisdiction.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_39",
+      "CPA_38"
+    ]
+  },
+  {
+    "id": "CPAQA_051",
+    "question": "A flat buyer's agreement let the builder charge 18% interest on the buyer's delayed payments, while the buyer could get only 9% if he terminated for the builder's default. Possession was delayed by years and the buyer sought a refund. The builder said the buyer was bound by the signed agreement. Can one-sided terms bind a buyer, and what did the Supreme Court hold in Pioneer Urban Land & Infrastructure Ltd. v. Govindan Raghavan?",
+    "answer": "In Pioneer Urban Land & Infrastructure Ltd. v. Govindan Raghavan, decided on 2 April 2019 under the 1986 Act, the Supreme Court held that including one-sided and unfair clauses in a builder-buyer agreement is an unfair trade practice. A buyer who had no real option but to sign on the dotted line is not bound by such clauses. The Court upheld the buyer's right to a refund with interest on account of the long delay. The 2019 Act now deals with this directly. Section 2(46) defines an 'unfair contract' to include terms imposing disproportionate penalties on the consumer (clause (ii)) and unreasonable charges or conditions (clause (vi)). Under sections 49(2) and 59(2) the State and National Commissions may declare such terms null and void. Section 2(47) continues to cover unfair trade practices. A buyer today may seek a refund with interest and compensation under section 39. Each agreement is assessed on its own terms, so the specific asymmetry must be shown.",
+    "reference_sections": [
+      "CPA_2_46",
+      "CPA_2_47",
+      "CPA_49",
+      "CPA_59",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_052",
+    "question": "Apartment buyers faced long delays in possession and asked for a refund. The developer relied on terms in its buyer's agreement that were heavily loaded in its own favour to resist a refund. The National Commission ordered refunds and the developer appealed. What did the Supreme Court decide in Ireo Grace Realtech v. Abhishek Khanna, and how does it apply today?",
+    "answer": "In Ireo Grace Realtech Pvt. Ltd. v. Abhishek Khanna, decided on 11 January 2021, a three-judge bench of the Supreme Court held that a developer cannot compel apartment buyers to be bound by one-sided contractual terms. It held that including one-sided and unreasonable clauses in an apartment buyer's agreement is an unfair trade practice. It dismissed the developer's appeal against the NCDRC's order directing refunds to the buyers. Delay in delivering possession beyond the agreed period is a 'deficiency' under section 2(11). Under the 2019 Act, one-sided terms can be challenged as an 'unfair contract' under section 2(46), and as an unfair trade practice under section 2(47). A buyer in a similar situation may seek a refund with interest and compensation under section 39. Interest and compensation are for the Commission to fix. They depend on the length of the delay, the amounts paid and the developer's conduct.",
+    "reference_sections": [
+      "CPA_2_46",
+      "CPA_2_11",
+      "CPA_39",
+      "CPA_2_47"
+    ]
+  },
+  {
+    "id": "CPAQA_053",
+    "question": "A bike-taxi and auto aggregator ran advertisements promising 'Guaranteed Auto' and 'Auto in 5 min or get Rs 50'. The terms, in tiny print, said that any compensation came from individual drivers, and it was given as app coins. Is this a misleading advertisement, and what action did the CCPA take against Rapido?",
+    "answer": "A 'misleading advertisement' under section 2(28) includes one that gives a false guarantee, is likely to mislead consumers about the nature of a service, or deliberately conceals important information. An unqualified headline promise of Rs 50, contradicted by barely readable terms limiting who pays and in what form, fits these elements. Section 21 empowers the CCPA, after investigation and a hearing, to order discontinuation or modification of a false or misleading advertisement and to impose a penalty of up to ten lakh rupees on the advertiser. In August 2025, according to reports of the CCPA's order, the Authority imposed a penalty of Rs 10 lakh on Roppen Transportation Services (Rapido). It directed Rapido to discontinue the advertisements and to reimburse consumers who had claimed the offer and not received the promised benefit. An order under section 21 can be appealed to the National Commission within thirty days under section 24. An individual consumer can also seek compensation before a District Commission for an unfair trade practice under section 2(47).",
+    "reference_sections": [
+      "CPA_2_28",
+      "CPA_21",
+      "CPA_2_47",
+      "CPA_24",
+      "CPA_18"
+    ]
+  },
+  {
+    "id": "CPAQA_054",
+    "question": "A coaching institute advertised that hundreds of its students had cleared the UPSC Civil Services Examination and displayed toppers' photographs. It did not disclose that many of those candidates had taken only a mock-interview or test-series programme rather than its full course. Is this lawful, and how has the CCPA dealt with such advertisements, for example in StudyIQ's case?",
+    "answer": "An 'advertisement' under section 2(1) includes publicity on websites, print, hoardings and social media. Under section 2(28)(iv), an advertisement that deliberately conceals important information is misleading. The important information here is which course the successful candidates actually took. Implying that an institute's full course produced the results can also mislead consumers about the quality of the service. Section 18 tasks the CCPA with preventing misleading advertisements. Under section 21 it may order discontinuation and impose penalties of up to ten lakh rupees, and up to fifty lakh rupees for subsequent contraventions. In 2024 the CCPA, as reported, penalised StudyIQ IAS Rs 7 lakh, among several coaching institutes, for misleading claims about UPSC results and directed it to discontinue such advertisements. Students who enrolled relying on such claims may also complain individually. Whether coaching is treated as a consumer service depends on the nature of the institute and the case law, which is unsettled for educational institutions.",
+    "reference_sections": [
+      "CPA_2_28",
+      "CPA_21",
+      "CPA_18",
+      "CPA_2_1"
+    ]
+  },
+  {
+    "id": "CPAQA_055",
+    "question": "A teleshopping channel advertised a 'set of 2 gold jewellery', 'magnetic knee support' and 'acupressure yoga slippers' with exaggerated claims. Separately, a toothpaste brand ran advertisements in which dentists practising abroad 'recommended' it, along with claims such as 'World's No.1 sensitivity toothpaste'. How does consumer law treat such advertising, and what did the CCPA do in the Naaptol and Sensodyne matters?",
+    "answer": "Under section 2(28), an advertisement is misleading if it falsely describes a product, gives a false guarantee, misleads about the product's nature or quality, or deliberately conceals important information. An 'endorsement' under section 2(18) includes depicting an individual, such as a dentist, so that consumers believe the advertisement reflects that person's opinion. Under section 21 the CCPA can order discontinuation or modification, impose penalties on manufacturers and endorsers, and bar endorsers. In early 2022, as reported, the CCPA penalised Naaptol Rs 10 lakh and directed it to stop the misleading teleshopping advertisements. It also ordered discontinuation of the Sensodyne advertisements featuring foreign dentists and found the 'worldwide' and 'No.1' claims unsubstantiated. A Rs 10 lakh penalty on GSK was later reported, and GSK reportedly appealed. Appeals against CCPA orders lie to the National Commission under section 24. Separately, section 89 makes causing a false or misleading advertisement prejudicial to consumers a criminal offence. Under section 92, a court can take cognizance of that offence only on a complaint by the CCPA.",
+    "reference_sections": [
+      "CPA_2_28",
+      "CPA_21",
+      "CPA_2_18",
+      "CPA_24",
+      "CPA_89"
+    ]
+  },
+  {
+    "id": "CPAQA_056",
+    "question": "A restaurant automatically added a 10% 'service charge' to every bill and told a diner who objected that it was mandatory. Can a restaurant compel payment of a service charge, and what did the Delhi High Court decide on the CCPA's 2022 guidelines in National Restaurant Association of India v. Union of India?",
+    "answer": "Section 18 empowers the CCPA to prevent unfair trade practices and to issue guidelines protecting consumers' interests. In July 2022 the CCPA issued guidelines stating that hotels and restaurants cannot automatically or by default add a service charge to the bill. In National Restaurant Association of India v. Union of India, decided on 28 March 2025, the Delhi High Court upheld those guidelines and dismissed the challenges by restaurant associations. It held that a service charge is a voluntary payment by the consumer and cannot be made compulsory. Reports state that appeals against that judgment were listed before a Division Bench, so its current status should be checked. Under the Act, compelling an undisclosed or involuntary charge can be an unfair trade practice under section 2(47). It may also be a complaint of a price above what was displayed or agreed under section 2(6)(iv). The diner may ask the restaurant to remove the charge, report it to the National Consumer Helpline or the CCPA under section 17, or seek a refund and compensation before the District Commission under section 39.",
+    "reference_sections": [
+      "CPA_2_47",
+      "CPA_18",
+      "CPA_17",
+      "CPA_2_6",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_057",
+    "question": "A social-media influencer with two million followers posted videos claiming a herbal tea made her 'lose 10 kg in 10 days, guaranteed'. She did not disclose that she was paid to promote it. Asha bought a three-month supply worth Rs 4,500 and saw no effect. Who is accountable, and what can Asha do?",
+    "answer": "The influencer's posts are an 'endorsement' under section 2(18). A guaranteed rapid weight-loss claim, which is likely to be false or unsubstantiated and was made without disclosing a paid promotion, may make the advertisement misleading under section 2(28). Under section 21 the CCPA can order the advertisement withdrawn, impose penalties on the manufacturer and the endorser, and bar the endorser from endorsements for a period. An endorser escapes penalty only if she exercised due diligence to verify the claims. For Asha personally, section 2(47)(i) treats as an unfair trade practice a guarantee of efficacy not based on an adequate or proper test. The burden of proving that an adequate test was done lies on the person raising that defence. Asha may seek a refund and compensation from the manufacturer and seller under section 39, and a corrective-advertisement order under section 39(1)(l). Whether the influencer can be made a party to her individual complaint depends on her role. Health-product advertising may also be regulated under other laws outside the knowledge base.",
+    "reference_sections": [
+      "CPA_2_18",
+      "CPA_21",
+      "CPA_2_47",
+      "CPA_2_28",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_058",
+    "question": "An apparel chain advertised 'Buy 1 Get 1 Free' on shirts. Price-history screenshots show that the tag price of the same shirts was raised from Rs 999 to Rs 1,999 one week before the offer. Is this an unfair trade practice?",
+    "answer": "Section 2(47)(iii) expressly covers 'creating the impression that something is being given free of charge when it is fully or partly covered by the amount charged'. Doubling the price just before a 'free' offer is a classic example. Section 2(47)(i) also covers materially misleading the public about the price at which such goods have ordinarily been sold. The promotional material may be a misleading advertisement under section 2(28). A consumer who bought under the offer may seek a refund of the excess, compensation and an order to discontinue the practice before the District Commission under section 39. Because it affects consumers as a class, the practice may also be reported to the CCPA under section 17. Evidence of the earlier price is decisive, such as dated screenshots, old receipts or price tags.",
+    "reference_sections": [
+      "CPA_2_47",
+      "CPA_2_28",
+      "CPA_39",
+      "CPA_17"
+    ]
+  },
+  {
+    "id": "CPAQA_059",
+    "question": "Tarun paid Rs 36,000 upfront for a two-year gym membership. Four months later a spinal injury left him medically unable to exercise, and he also moved cities. The contract says the membership is 'non-cancellable and non-refundable under all circumstances, including medical reasons'. Can he recover anything?",
+    "answer": "A gym's training services are a 'service'. A term that forfeits the entire fee for twenty months of unused service, even where the consumer is medically unable to continue, can be challenged as an 'unfair contract'. It may be a penalty wholly disproportionate to the loss caused under section 2(46)(ii), or an unreasonable condition under section 2(46)(vi). The gym's real loss from an early exit is usually much less than the full remaining fee. Complaints that a contract is unfair lie before the State Commission under section 47(1)(a)(ii), which may declare such terms void under section 49(2). Tarun may also seek a pro-rata refund as relief under section 39. A Commission might allow the gym a reasonable deduction for administration or the period used. Medical certificates and proof of relocation will be important. The outcome is not guaranteed and depends on the Commission's view of reasonableness.",
+    "reference_sections": [
+      "CPA_2_46",
+      "CPA_47",
+      "CPA_49",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_060",
+    "question": "A builder told prospective flat buyers that they could book an apartment only if they also bought a covered parking slot for Rs 4 lakh and a 'club membership' for Rs 1.5 lakh, whether they wanted them or not. Is this compulsory bundling permissible?",
+    "answer": "Section 2(41)(ii) defines a 'restrictive trade practice' to include any trade practice that requires a consumer to buy, hire or avail of goods or services as a condition precedent for buying other goods or services. Forcing purchase of parking and club membership as a precondition for booking a flat fits this definition. Under section 2(6)(i), a consumer may file a complaint alleging that a restrictive trade practice has been adopted. If it is proved, the Commission may order the builder to discontinue the practice and not repeat it under section 39(1)(g), and may award refund and compensation. Depending on the facts, it may also be an unfair trade practice under section 2(47). Real-estate regulation under RERA and state laws on parking may also be relevant but is outside the knowledge base. The booking form and any written conditions showing the bundling are key evidence.",
+    "reference_sections": [
+      "CPA_2_41",
+      "CPA_2_6",
+      "CPA_39",
+      "CPA_2_47"
+    ]
+  },
+  {
+    "id": "CPAQA_061",
+    "question": "A shopping mall ran a 'Scratch & Win' contest for shoppers spending over Rs 2,000, advertising cars and gold coins as prizes. After the contest closed, it never announced any winners, and shoppers who asked were told 'results are confidential'. What does the law say?",
+    "answer": "Section 2(47)(iii) treats as unfair trade practices offering gifts or prizes with the intention of not providing them as offered, and withholding from participants of a prize scheme, on its closure, information about the final results. Conducting a contest to promote sales is also regulated except as prescribed. Refusing to disclose results and apparently not awarding the advertised prizes points strongly to these practices. A participating shopper may complain to the District Commission for compensation and an order to discontinue the practice under section 39(1)(g). Because the conduct affects consumers as a class, a complaint may also go to the District Collector or the CCPA under section 17. Evidence includes the contest advertisement, purchase bills qualifying for entry and written refusals to disclose the results.",
+    "reference_sections": [
+      "CPA_2_47",
+      "CPA_17",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_062",
+    "question": "At a highway dhaba, Vinod was charged Rs 30 for a soft-drink bottle with an MRP of Rs 20, and told the extra was a 'cooling charge'. When he asked for a bill, the owner refused. Can he complain about the overcharge and the refusal to give a bill?",
+    "answer": "Section 2(6)(iv) expressly allows a complaint where a trader charges a price in excess of the price displayed on the goods or package. An MRP printed on the bottle is exactly that, so a 'cooling charge' on top of the MRP is open to challenge. Section 2(47)(vii) makes it an unfair trade practice not to issue a bill, cash memo or receipt for goods sold. Vinod may seek a refund of the excess, compensation and costs under section 39. Commissions sometimes treat such small-value complaints as a deterrent matter, but any award is discretionary. Because the Act is in addition to other laws under section 100, he can also complain to the Legal Metrology authorities about selling above MRP. A photograph of the MRP, a record of payment such as a UPI transaction and a note of the refusal to issue a bill will help.",
+    "reference_sections": [
+      "CPA_2_6",
+      "CPA_2_47",
+      "CPA_39",
+      "CPA_100"
+    ]
+  },
+  {
+    "id": "CPAQA_063",
+    "question": "Within a week of giving her phone number and address to an electronics showroom for a warranty registration, Lata began receiving calls from loan agents and insurance sellers who knew exactly what she had bought. An employee admitted the showroom 'shares leads with partners'. Is this a consumer-law violation?",
+    "answer": "Section 2(47)(ix), new in the 2019 Act, makes it an unfair trade practice to disclose to another person any personal information given in confidence by the consumer, unless the disclosure is in accordance with law. Sharing a warranty registrant's contact and purchase details with marketing 'partners' without valid consent fits this clause. Lata may seek compensation for harassment and an order to discontinue the practice under section 39. If it appears to be widespread, she may also report it to the CCPA under section 17. Section 100 preserves remedies under other laws, such as the Digital Personal Data Protection Act, 2023, which is outside the knowledge base. She should note the dates of her registration and of each call, and record the employee's admission if possible. She should also check whether any consent form she signed authorised sharing.",
+    "reference_sections": [
+      "CPA_2_47",
+      "CPA_39",
+      "CPA_100",
+      "CPA_17"
+    ]
+  },
+  {
+    "id": "CPAQA_064",
+    "question": "A bank's credit-card terms allow it to 'terminate the card at any time without assigning any reason or notice' and to 'revise any fee or interest rate unilaterally with immediate effect'. A cardholder's card was cancelled overnight while she was travelling abroad, with no prior default. What remedies exist against such terms?",
+    "answer": "Section 2(46)(iv) lists as an unfair contract term one 'entitling a party to the contract to terminate such contract unilaterally, without reasonable cause'. Unilateral, immediate fee and rate changes that disadvantage the consumer may also be unreasonable conditions under section 2(46)(vi). Complaints against unfair contracts go to the State Commission where the consideration paid does not exceed ten crore rupees under section 47(1)(a)(ii), and to the National Commission above that under section 58(1)(a)(ii). Under sections 49(2) and 59(2), those Commissions may declare the offending terms null and void. The cardholder may also claim compensation for the sudden cancellation, for example costs incurred abroad. The bank may try to justify the cancellation by showing a reasonable cause, such as suspected fraud. RBI directions on credit cards also govern notice requirements but are outside the knowledge base.",
+    "reference_sections": [
+      "CPA_2_46",
+      "CPA_47",
+      "CPA_49",
+      "CPA_58",
+      "CPA_59"
+    ]
+  },
+  {
+    "id": "CPAQA_065",
+    "question": "A mattress company's television and online advertisements say its product is 'orthopaedic' and 'recommended by doctors across India'. On inquiry, the company cannot name any medical association, study or doctors who endorsed it. What consumer-law issues arise and what relief is possible?",
+    "answer": "Under section 2(47)(i), representing that goods have a sponsorship, approval or benefit they do not have is an unfair trade practice. So is representing that the seller has an approval or affiliation it lacks. An unsubstantiated 'recommended by doctors' claim may make the advertisement misleading under section 2(28), because it falsely describes the product or is likely to mislead about its quality. Through a complaint before a commission, a consumer may obtain orders under section 39 to cease and desist from the misleading advertisement (clause (n)) and to issue a corrective advertisement (clause (l)), along with compensation. The CCPA may also act under section 21 to order discontinuation and impose penalties. The company would need to produce the basis for its claims. If it cannot, the claim is likely to be treated as unsubstantiated.",
+    "reference_sections": [
+      "CPA_2_28",
+      "CPA_2_47",
+      "CPA_39",
+      "CPA_21"
+    ]
+  },
+  {
+    "id": "CPAQA_066",
+    "question": "Homebuyers filed a complaint before the National Commission in 2019 under the Consumer Protection Act, 1986, when the NCDRC's pecuniary limit was above one crore rupees. After the 2019 Act came into force on 20 July 2020 and raised the limits, the NCDRC dismissed the complaint as beyond its new jurisdiction. Was that correct, and what did the Supreme Court decide in Neena Aneja v. Jai Prakash Associates?",
+    "answer": "Sections 34, 47 and 58 of the 2019 Act set new pecuniary limits for the District, State and National Commissions. Section 107 repeals the 1986 Act. It saves things done under it insofar as they are consistent with the new Act, and it preserves the general effect of repeal under section 6 of the General Clauses Act. In Neena Aneja v. Jai Prakash Associates Ltd., decided on 16 March 2021, the Supreme Court held that complaints filed before the 2019 Act came into force continue before the fora that had jurisdiction under the 1986 Act. They are not to be transferred or dismissed because of the new pecuniary limits, since that would defeat the interests of consumers. It set aside the NCDRC's dismissal. The new limits apply to complaints instituted after the 2019 Act came into force. Those limits are themselves revised by rules, so a complainant filing today should check the currently notified values.",
+    "reference_sections": [
+      "CPA_107",
+      "CPA_58",
+      "CPA_47",
+      "CPA_34"
+    ]
+  },
+  {
+    "id": "CPAQA_067",
+    "question": "In a consumer complaint about goods, the opposite party filed its written version 60 days after receiving notice and asked the commission to accept it late. Can a consumer commission accept a written version beyond the statutory time? What did the Constitution Bench hold in New India Assurance v. Hilli Multipurpose Cold Storage, and what is the position under the 2019 Act?",
+    "answer": "In New India Assurance Co. Ltd. v. Hilli Multipurpose Cold Storage Pvt. Ltd., decided on 4 March 2020, a Constitution Bench of the Supreme Court held under section 13(2) of the 1986 Act that a consumer forum has no power to extend the time for filing the written version beyond 45 days from receipt of notice, which was 30 days plus up to 15 more. The Court said its decision would operate prospectively, and later benches have discussed how that applies to earlier delays. Under the 2019 Act, section 38(2)(a) (for goods) and section 38(3)(a) (for services) provide the same structure. The opposite party must give its version within thirty days, extendable by not more than fifteen days. If it fails to act in time, the Commission proceeds to decide the dispute, if necessary on the complainant's evidence. A 60-day-late version would therefore ordinarily not be taken on record. The Commission would decide the complaint on the material available, including ex parte where appropriate.",
+    "reference_sections": [
+      "CPA_38",
+      "CPA_36",
+      "CPA_107"
+    ]
+  },
+  {
+    "id": "CPAQA_068",
+    "question": "A company's insurance claim of about Rs 28 crore was repudiated. It had paid a premium of about Rs 4.44 lakh. It filed its complaint before the National Commission after the 2019 Act came into force, reasoning that the claim exceeded ten crore rupees. How is pecuniary jurisdiction determined under the 2019 Act, and what did the NCDRC hold in Pyaridevi Chabiraj Steels v. National Insurance?",
+    "answer": "Sections 34(1), 47(1)(a)(i) and 58(1)(a)(i) of the 2019 Act measure jurisdiction by 'the value of the goods or services paid as consideration'. That is a change from the 1986 Act, which looked at the value of goods or services and the compensation claimed. In Pyaridevi Chabiraj Steels Pvt. Ltd. v. National Insurance Co. Ltd., decided on 28 August 2020, the National Commission held that only the consideration actually paid, here the insurance premium, determines which Commission has jurisdiction. The amount claimed does not. Since about Rs 4.44 lakh was far below the NCDRC's threshold, it held it had no jurisdiction to entertain the complaint. Note that the knowledge-base text of sections 34, 47 and 58 states the original thresholds of one crore and ten crore rupees. Each section lets the Central Government prescribe other values, and those thresholds have since been revised by rules. The currently notified limits should always be checked. Whether the complainant company was a 'consumer' at all was a separate question not addressed in this summary.",
+    "reference_sections": [
+      "CPA_34",
+      "CPA_47",
+      "CPA_58"
+    ]
+  },
+  {
+    "id": "CPAQA_069",
+    "question": "A builder-buyer agreement contained an arbitration clause. When the buyer filed a consumer complaint about delay, the builder applied to have the dispute referred to arbitration, relying on the 2015 amendment to section 8 of the Arbitration and Conciliation Act. Does an arbitration clause oust the consumer commission's jurisdiction, and what did the Supreme Court decide in Emaar MGF Land v. Aftab Singh?",
+    "answer": "Consumer complaints are a statutory remedy. A consumer may file a 'complaint' under section 2(6), in the manner set out in section 35, before the appropriate Commission. Section 100 states that the Act's provisions are in addition to, and not in derogation of, other laws. In Emaar MGF Land Ltd. v. Aftab Singh, the Supreme Court upheld the NCDRC's view that an arbitration clause in the buyer's agreement does not take away a consumer forum's jurisdiction, even after the 2015 amendment to section 8 of the Arbitration Act. It dismissed the builder's appeal in February 2018 and its review petition on 10 December 2018. The consumer remedy is an additional remedy that the consumer may choose. A buyer facing such an objection today can rely on this reasoning, which later decisions have applied under the 2019 Act. The commission will still decide the complaint on its merits.",
+    "reference_sections": [
+      "CPA_100",
+      "CPA_35",
+      "CPA_2_6"
+    ]
+  },
+  {
+    "id": "CPAQA_070",
+    "question": "A mobile subscriber filed a consumer complaint about wrongful billing and deficient service. The telecom company argued that section 7B of the Indian Telegraph Act, 1885 required such disputes to go to statutory arbitration, so the consumer forum lacked jurisdiction. What did the Supreme Court decide in Vodafone Idea Cellular Ltd. v. Ajay Kumar Agarwal?",
+    "answer": "Under the 2019 Act, 'telecom' is expressly included in the definition of 'service' in section 2(42). Section 100 makes the Act's remedies additional to those under other laws. In Vodafone Idea Cellular Ltd. v. Ajay Kumar Agarwal, decided on 16 February 2022, the Supreme Court dismissed the telecom company's appeal. It held that the existence of a statutory arbitration remedy under section 7B of the Telegraph Act does not bar a consumer complaint. Where a statutory arbitration remedy exists, the consumer may choose between it and the consumer forum. A subscriber can therefore file before the District Commission, including where they reside under section 34(2)(d). They can claim deficiency in service and seek reliefs such as quashing of wrongful bills and compensation. The complaint must still be filed within the limitation period and supported by billing records.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_100",
+      "CPA_34"
+    ]
+  },
+  {
+    "id": "CPAQA_071",
+    "question": "Homebuyers filed consumer complaints over a builder's failure to deliver flats on time. The builder argued that the Real Estate (Regulation and Development) Act, 2016 (RERA), including its section 79 bar on civil courts, meant only the RERA authority could hear the dispute. Does RERA bar consumer complaints, and what did the Supreme Court hold in Imperia Structures v. Anil Patni?",
+    "answer": "In Imperia Structures Ltd. v. Anil Patni, decided on 2 November 2020, the Supreme Court held that RERA does not bar consumer complaints. The section 79 bar applies to civil courts, not to consumer fora, and the remedies under the Consumer Protection Act are additional and concurrent. The Court also held that the developer's obligation is measured from the date of the buyer's agreement, not from the project's later RERA registration. It upheld the National Commission's orders in favour of the buyers. Under the 2019 Act this is reinforced by section 100, which makes the Act's remedies 'in addition to and not in derogation of' other laws. Delay in handing over possession can be a 'deficiency' under section 2(11), and a Commission may order refund with interest and compensation under section 39. A buyer should generally avoid pursuing identical relief in two forums at the same time, because later rulings discuss the consequences of parallel proceedings.",
+    "reference_sections": [
+      "CPA_100",
+      "CPA_2_11",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_072",
+    "question": "Sunita paid an advocate to file her case. The advocate missed several hearings and the case was dismissed for non-prosecution. She wants to file a consumer complaint against the advocate for 'deficiency in service'. Can she, after the Supreme Court's decision in Bar of Indian Lawyers v. D.K. Gandhi PS National Institute of Communicable Diseases?",
+    "answer": "Section 2(42) defines 'service' widely but excludes the rendering of any service 'under a contract of personal service'. In Bar of Indian Lawyers v. D.K. Gandhi PS National Institute of Communicable Diseases, decided on 14 May 2024, the Supreme Court held that services hired from advocates do not fall within the definition of 'service' under the Consumer Protection Act. It reasoned that the professional relationship between an advocate and client involves direct control by the client and is in the nature of a contract of personal service, and that advocates are regulated under the Advocates Act, 1961. It overruled the NCDRC's earlier view to the contrary. Sunita therefore cannot ordinarily maintain a consumer complaint against the advocate. Other options include a complaint for professional misconduct to the State Bar Council, a civil suit for damages, and an application to restore her dismissed case. The judgment also raised doubts about whether the earlier ruling covering medical professionals should be revisited. That question did not change the position on advocates.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_7"
+    ]
+  },
+  {
+    "id": "CPAQA_073",
+    "question": "A stockbroker took an overdraft facility from a bank to support his share-broking business. When a dispute arose over the bank's handling of the facility and the securities pledged, he filed a consumer complaint. The bank argued that he was not a 'consumer'. What did the Supreme Court decide in Shrikant G. Mantri v. Punjab National Bank?",
+    "answer": "Section 2(7)(ii) excludes from the definition of 'consumer' a person who avails of a service 'for any commercial purpose'. The Explanation saves goods bought and used exclusively to earn a livelihood by self-employment. In Shrikant G. Mantri v. Punjab National Bank, decided on 22 February 2022 under the 1986 Act, the Supreme Court upheld the NCDRC's dismissal of the complaint. It held that the overdraft was availed to expand and support the stockbroking business. The relationship between the broker and the bank was purely business-to-business and the service was for a commercial purpose. Treating such business-to-business disputes as consumer disputes would defeat the Act's purpose of speedy redressal for consumers. The test is the dominant purpose of availing the service. Banking is a 'service' under section 2(42), but a borrower who uses a facility for business will generally not be a consumer. The self-employment exception depends on the facts and must be pleaded and shown.",
+    "reference_sections": [
+      "CPA_2_7",
+      "CPA_2_42"
+    ]
+  },
+  {
+    "id": "CPAQA_074",
+    "question": "Mr. and Mrs. Iyer paid Rs 1.2 crore for a flat that the builder has not delivered after six years. They want to claim a refund plus Rs 1.8 crore as compensation, a total claim of Rs 3 crore. In which consumer commission should they file?",
+    "answer": "Under the 2019 Act, pecuniary jurisdiction is decided by 'the value of the goods or services paid as consideration', not by the amount claimed. That follows from sections 34(1), 47(1)(a)(i) and 58(1)(a)(i). Here the relevant figure is the Rs 1.2 crore paid, not the Rs 3 crore claimed. On the thresholds stated in the knowledge-base text of the Act, the District Commission handles up to one crore rupees, the State Commission above one crore up to ten crore, and the National Commission above ten crore. On those figures the State Commission would have jurisdiction. Each section allows the Central Government to prescribe other values. Under the Consumer Protection (Jurisdiction of the District Commission, the State Commission and the National Commission) Rules, 2021, the limits were revised to Rs 50 lakh for the District Commission, Rs 50 lakh to Rs 2 crore for the State Commission, and above Rs 2 crore for the National Commission. On the revised figures the State Commission is still the right forum. The rules are not in the knowledge base, so the currently notified limits should be confirmed before filing. Territorially, they may file where they reside or where the builder carries on business, under section 47(4).",
+    "reference_sections": [
+      "CPA_34",
+      "CPA_47",
+      "CPA_58"
+    ]
+  },
+  {
+    "id": "CPAQA_075",
+    "question": "A District Commission passed an ex parte order directing a furniture company to refund Rs 80,000 with interest and pay Rs 20,000 compensation. The company says it never received notice and wants to challenge the order. What are the procedural options?",
+    "answer": "Under section 38(3)(b)(ii), a District Commission may decide a complaint ex parte on the complainant's evidence where the opposite party fails to appear. The main remedy against a District Commission's order is an appeal to the State Commission under section 41. It must be filed within forty-five days of the order, which may be extended for sufficient cause. The appeal will not be entertained unless the appellant deposits fifty per cent of the amount ordered. Section 40 allows a review application within thirty days, but only for an error apparent on the face of the record, which is narrower than a full challenge on lack of notice. Section 61 expressly provides a power to set aside ex parte orders only for the National Commission. On notice, the company must show that service under section 65 was defective. For example, notice sent by registered post to its proper business address is ordinarily treated as duly served. The outcome depends on the service records.",
+    "reference_sections": [
+      "CPA_41",
+      "CPA_40",
+      "CPA_61",
+      "CPA_38"
+    ]
+  },
+  {
+    "id": "CPAQA_076",
+    "question": "Six months after a District Commission ordered an electronics dealer to refund Rs 45,000 to Kiran, and with no appeal filed, the dealer still has not paid. What can Kiran do to enforce the order?",
+    "answer": "Kiran has two routes. First, under section 71 every order of a District, State or National Commission is enforced by that Commission as if it were a decree of a civil court. Order XXI of the Code of Civil Procedure applies, so she can seek execution, for example by attachment of the dealer's property or bank accounts. Second, under section 72, failing to comply with a Commission's order is an offence. It is punishable with imprisonment of not less than one month and up to three years, or a fine of not less than Rs 25,000 and up to Rs 1 lakh, or both. The Commission has the powers of a Judicial Magistrate of first class and tries the offence summarily. An appeal against an order under section 72 lies as provided in section 73. Kiran should file an execution application and, if she wishes, a complaint under section 72 before the same District Commission, attaching a certified copy of the order and proof of non-payment.",
+    "reference_sections": [
+      "CPA_71",
+      "CPA_72",
+      "CPA_73"
+    ]
+  },
+  {
+    "id": "CPAQA_077",
+    "question": "At the first hearing of a complaint about a defective washing machine, the District Commission suggests mediation. The parties agree on replacement of the machine but cannot agree on compensation. How does mediation work under the 2019 Act, and what happens to the unresolved issue?",
+    "answer": "Under section 37, if the Commission sees elements of a settlement at the first hearing or later, it may direct the parties to give their written consent to mediation within five days. Once they consent, it refers the matter to mediation within five days. Mediation takes place in the consumer mediation cell attached to the Commission, which is established under section 74. Under section 80, where the parties agree on all or only some of the issues, the terms are reduced to writing and signed. The mediator then sends a settlement report to the Commission. Under section 81, the Commission passes an order recording the settlement within seven days. Where the settlement is partial, it records the settled issues and continues to hear the rest. So replacement would be recorded, and compensation would be decided on merits. Under the proviso to section 41, no appeal lies against an order recording a mediated settlement under section 81(1).",
+    "reference_sections": [
+      "CPA_37",
+      "CPA_80",
+      "CPA_81",
+      "CPA_41",
+      "CPA_74"
+    ]
+  },
+  {
+    "id": "CPAQA_078",
+    "question": "Around 300 buyers of the same model of water purifier from one manufacturer all face the same filter-cracking defect within months. They want to file a single complaint rather than 300 separate ones. Is this possible, and what special reliefs may be available?",
+    "answer": "Yes. Under section 35(1)(c), where numerous consumers have the same interest, one or more of them may file a complaint, with the District Commission's permission, on behalf of or for the benefit of all consumers so interested. Section 2(5) includes such consumers as 'complainants'. Section 38 applies the procedure in Order I Rule 8 of the Code of Civil Procedure, which requires notice to all interested persons. Alternatively, a registered voluntary consumer association may file under section 35(1)(b), whether or not the buyers are its members. Beyond individual refunds or replacement, section 39(1)(k) lets the Commission order the trader to pay a sum where loss has been suffered by a large number of consumers who are not conveniently identifiable. That sum must be at least twenty-five per cent of the value of the defective goods sold to such consumers. The forum is chosen by the value of goods paid for, which may take the claim beyond the District Commission's limit. Evidence of a common defect, such as lab reports or service records, will be essential.",
+    "reference_sections": [
+      "CPA_35",
+      "CPA_2_5",
+      "CPA_38",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_079",
+    "question": "Mr. Bhatt filed a consumer complaint against a hospital and died while the case was pending. His daughter wants to continue the case. Can she, and what procedure applies?",
+    "answer": "Section 2(5) defines 'complainant' to include, in case of the death of a consumer, his legal heir or legal representative. Under section 38, where a complainant who is a consumer, or an opposite party, dies, the provisions of Order XXII of the Code of Civil Procedure, 1908 apply. References to the plaintiff and defendant are read as the complainant and opposite party. So the daughter should apply to the Commission to be substituted as the legal representative, within the time Order XXII provides, attaching proof of death and of her status as legal heir. If substitution is not sought in time, the complaint may abate unless the delay is excused. Whether particular personal claims survive can raise questions under general law, but claims for refund, compensation for deficiency and similar reliefs ordinarily continue for the estate.",
+    "reference_sections": [
+      "CPA_2_5",
+      "CPA_38"
+    ]
+  },
+  {
+    "id": "CPAQA_080",
+    "question": "A State Commission, acting on an original complaint worth Rs 1.5 crore, dismissed a homebuyer's claim. In a separate matter, the same State Commission decided an appeal from a District Commission against a consumer. What further appeal routes and time limits apply in each case?",
+    "answer": "For an order passed by the State Commission in its original jurisdiction under section 47(1)(a)(i) or (ii), the aggrieved party may appeal to the National Commission within thirty days under section 51(1). The National Commission may admit a late appeal for sufficient cause. A party required to pay an amount must deposit fifty per cent of it first. For an order passed by the State Commission in appeal, section 51(2) allows a further appeal to the National Commission only if it is satisfied that the case involves a substantial question of law. That question must be precisely stated in the memorandum of appeal. Separately, under section 58(1)(b) the National Commission has revisional jurisdiction over State Commission orders made without jurisdiction or with material irregularity. Only orders passed by the National Commission in its original jurisdiction under section 58(1)(a)(i) or (ii) can be appealed to the Supreme Court under section 67, within thirty days and with a fifty per cent deposit.",
+    "reference_sections": [
+      "CPA_51",
+      "CPA_58",
+      "CPA_67",
+      "CPA_47"
+    ]
+  },
+  {
+    "id": "CPAQA_081",
+    "question": "Domestic pressure cookers that did not conform to mandatory BIS standards were sold in large numbers through an e-commerce marketplace. Can the CCPA act against the marketplace itself, and what action did it take against Amazon in 2022?",
+    "answer": "An online marketplace is an 'electronic service provider' under section 2(17). Section 2(47)(iv) treats as an unfair trade practice permitting the sale of goods while knowing or having reason to believe they do not comply with mandatory safety standards. Section 18 directs the CCPA to protect consumers as a class from unsafe goods and unfair practices. Under section 20, after investigation and a hearing, it may order recall of unsafe goods, reimbursement of the price to purchasers, and discontinuation of unfair practices. In 2022, as reported, the CCPA found that 2,265 non-compliant pressure cookers had been sold through Amazon. It directed Amazon to notify the buyers, recall the cookers, reimburse their price and file a compliance report, and it imposed a penalty of Rs 1 lakh. A similar order was reported against Cloudtail, a seller of such cookers on the platform. Amazon challenged the order before the Delhi High Court. The Court reportedly directed it to deposit the penalty and kept the recall direction in abeyance while the case was pending. The final outcome was not verified. The statutory appeal route against orders under sections 20 and 21 is to the National Commission within thirty days under section 24.",
+    "reference_sections": [
+      "CPA_20",
+      "CPA_2_47",
+      "CPA_2_17",
+      "CPA_24",
+      "CPA_18"
+    ]
+  },
+  {
+    "id": "CPAQA_082",
+    "question": "Ishaan bought a hair-dryer from a third-party seller on a large marketplace. It short-circuited and burnt his hand. The marketplace says it is 'only an intermediary' and that he must pursue the seller. Is the marketplace immune from liability?",
+    "answer": "Not automatically. An online marketplace is an 'electronic service provider' under section 2(17). The definition of 'product seller' in section 2(37) is broad. Its exclusion in clause (c) carves out persons who are not manufacturers, wholesalers, distributors, retailers, direct sellers or electronic service providers, which indicates that an electronic service provider may be a product seller in an appropriate case. Its liability in a product liability action then depends on section 86. Examples include whether it exercised substantial control over the product or its labelling, made its own express warranty, or failed to take reasonable care, and whether the actual manufacturer is unknown or cannot be reached (clause (d)). Separately, the marketplace can be liable for deficiencies in its own service, such as failing to act on complaints. Under section 38 the Commission can order the marketplace to produce seller information and records. Section 94 enables measures, such as the E-Commerce Rules, 2020, that place specific duties on marketplaces. Ishaan should name both the seller and the marketplace. Liability will depend on the marketplace's role on the facts.",
+    "reference_sections": [
+      "CPA_2_17",
+      "CPA_2_37",
+      "CPA_86",
+      "CPA_94",
+      "CPA_38"
+    ]
+  },
+  {
+    "id": "CPAQA_083",
+    "question": "Zoya bought a 'branded' power bank on a marketplace. It swelled and damaged her laptop bag and laptop. The seller's storefront has since disappeared, the listing showed no seller address, and the marketplace says it 'cannot share seller data'. How can she proceed?",
+    "answer": "Damage to the laptop and bag, which is property other than the product, is 'harm' for a product liability action. Under section 86(d), a product seller who is not the manufacturer is liable where the manufacturer's identity is unknown, or where notice cannot be served on the manufacturer. Section 38 empowers the Commission to require an electronic service provider to provide such information, documents or records as it specifies, so the marketplace can be ordered to disclose the seller's details. Under section 65(2), notice may be served on an electronic service provider at the address shown on its platform through its designated nodal officer. Rules framed under section 94 also require marketplaces to display seller information. Zoya should file against the marketplace and the unidentified seller, ask the Commission to direct disclosure of seller details, and preserve the damaged items and her order records. Whether the marketplace itself must pay depends on the identity of the seller once disclosed and on the marketplace's own role.",
+    "reference_sections": [
+      "CPA_86",
+      "CPA_38",
+      "CPA_65",
+      "CPA_94",
+      "CPA_2_17"
+    ]
+  },
+  {
+    "id": "CPAQA_084",
+    "question": "A shopping app shows 'Only 1 left! 27 people are viewing this' on almost every product page. A test by a consumer group found that the stock count never actually changes and that hundreds of units ship daily. Several product pages also carry dozens of identical five-star reviews posted on the same day. Is this lawful?",
+    "answer": "Creating false urgency or scarcity, and publishing fake or manipulated reviews, are deceptive practices adopted to promote sales. They fall within the general definition of an 'unfair trade practice' in section 2(47). They can also make the product page a misleading advertisement under section 2(28), because the representations are likely to mislead consumers. Because the practice affects consumers as a class, a complaint may be sent to the CCPA or other authorities under section 17. Section 18 empowers the CCPA to investigate, issue guidelines and prevent such practices. The Guidelines for Prevention and Regulation of Dark Patterns, 2023 list false urgency as a specified dark pattern, and rules under section 94 regulate e-commerce. Those instruments are not in the knowledge base. A consumer who bought because of the false urgency could also seek relief individually, but would need to show the misrepresentation and some loss. The consumer group's testing data and dated screenshots are key evidence.",
+    "reference_sections": [
+      "CPA_2_47",
+      "CPA_18",
+      "CPA_17",
+      "CPA_94",
+      "CPA_2_28"
+    ]
+  },
+  {
+    "id": "CPAQA_085",
+    "question": "A ticket-booking app displays a movie ticket at Rs 250, but at the final payment step it adds a 'platform fee', a 'convenience fee' and 'GST on fees', bringing the total to Rs 318. These charges are not visible on the earlier screens. Can a consumer challenge this?",
+    "answer": "Advertising a price that excludes mandatory charges revealed only at checkout may deliberately conceal important information. That makes the price display a misleading advertisement under section 2(28)(iv). It may also mislead consumers about the actual price, which is an unfair trade practice under section 2(47). This kind of 'drip pricing' is specifically identified as a dark pattern in the CCPA's 2023 guidelines, which rest on the CCPA's powers and the e-commerce measures enabled by section 94. Those guidelines are not in the knowledge base. An affected consumer may report the practice to the CCPA under section 17, or seek a refund of undisclosed fees and compensation before the District Commission under section 39. Screen recordings of the booking flow showing when each charge first appears are the most useful evidence.",
+    "reference_sections": [
+      "CPA_2_28",
+      "CPA_2_47",
+      "CPA_94",
+      "CPA_17",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_086",
+    "question": "Rakesh raised a complaint about a wrong product with an e-commerce site's grievance officer, whose name was listed on the website. One month later he has had no acknowledgement or response, and his emails bounce back. What does this mean legally?",
+    "answer": "Section 94 empowers the Central Government to prescribe measures to prevent unfair trade practices in e-commerce. Under it, the Consumer Protection (E-Commerce) Rules, 2020 require e-commerce entities to appoint a grievance officer. The officer must acknowledge a consumer complaint within forty-eight hours and redress it within one month. The Rules are not in the knowledge base, so the exact obligations should be checked. Failing to run a functioning grievance mechanism can support a finding of 'deficiency' in the platform's service under section 2(11). Rakesh can file a complaint before the District Commission under section 35, including electronically, against both the seller and the platform, which is an electronic service provider under section 2(17). He should attach his original complaint, the bounced emails and proof of the wrong product. The National Consumer Helpline is a practical intermediate step.",
+    "reference_sections": [
+      "CPA_94",
+      "CPA_2_11",
+      "CPA_35",
+      "CPA_2_17"
+    ]
+  },
+  {
+    "id": "CPAQA_087",
+    "question": "A marketplace listing for a cookware set says 'Made in India' in the title and images. The product arrives with a sticker saying 'Made in China' hidden under the packaging. Rules require the country of origin to be disclosed on e-commerce listings. What consumer-law issues arise?",
+    "answer": "Falsely representing the origin or composition of goods is covered by section 2(47)(i). That clause makes it an unfair trade practice to falsely represent that goods are of a particular standard, quality, composition or style, or to represent characteristics they do not have. The listing may also be a misleading advertisement under section 2(28), since it falsely describes the product. Rules made under section 94, the E-Commerce Rules, 2020, which are not in the knowledge base, require sellers and marketplaces to display the country of origin. A buyer may seek a refund and compensation before the District Commission. Because such mislabelling affects consumers generally, the matter may be reported to the CCPA under section 17. Photographs of the listing and of the label, taken on unboxing, are key evidence. Whether the marketplace or only the seller is responsible will depend on who created the listing content.",
+    "reference_sections": [
+      "CPA_2_47",
+      "CPA_94",
+      "CPA_2_28",
+      "CPA_17"
+    ]
+  },
+  {
+    "id": "CPAQA_088",
+    "question": "Ritu in Jaipur bought a skin-whitening cream through a cross-border e-commerce app. The cream was shipped directly by a seller in another country and caused chemical burns on her face. The app has an Indian entity. Can she sue in India, and against whom?",
+    "answer": "Under section 34(2)(d), Ritu can file before the District Commission where she resides or personally works for gain, so Jaipur. Her injury is 'harm', so she can bring a product liability action under section 83. Where the manufacturer or foreign seller cannot be served, is not subject to Indian law, or an order cannot be enforced against it, section 86(d) makes a product seller who is not the manufacturer liable. This is particularly relevant to the app's Indian entity if it is a product seller or electronic service provider under section 2(17). Under section 65(2), notice may be served on an electronic service provider at the address on its platform through its nodal officer. Practically, enforcing an order against a foreign seller will be difficult, which is why the domestic platform's role matters. Her medical records, the product and its labelling (including ingredients), and the order details are essential. Cosmetics regulation under other laws may also be relevant but is outside the knowledge base.",
+    "reference_sections": [
+      "CPA_86",
+      "CPA_34",
+      "CPA_65",
+      "CPA_2_17",
+      "CPA_83"
+    ]
+  },
+  {
+    "id": "CPAQA_089",
+    "question": "Kamala bought a Rs 12,000 'immunity booster kit' from a neighbour who sells products of a multi-level marketing company. The neighbour said it would 'cure diabetes in three months'. The product had no effect and the company refuses a refund, saying she bought from an 'independent distributor'. Is she a consumer, and does the Act cover direct selling?",
+    "answer": "Yes. The Explanation to section 2(7) states that 'buys any goods' includes purchases through direct selling or multi-level marketing, so Kamala is a consumer. 'Direct selling' under section 2(13) means marketing and selling goods through a network of sellers other than through a permanent retail location. Section 94 empowers the Central Government to prescribe measures to prevent unfair trade practices in direct selling. Rules on direct selling have been notified under it but are not in the knowledge base. A claim that the product would 'cure diabetes' may be a false representation about the benefits or usefulness of goods under section 2(47)(i), or a guarantee of efficacy not based on adequate tests. She may file against both the distributor and the company. The company's argument that the distributor is independent will be tested against how the network operates and the company's own representations. Evidence of the claim made, such as messages or brochures, will be important. Claims to cure diseases may also be prohibited under other laws.",
+    "reference_sections": [
+      "CPA_2_13",
+      "CPA_2_7",
+      "CPA_94",
+      "CPA_2_47"
+    ]
+  },
+  {
+    "id": "CPAQA_090",
+    "question": "An e-commerce app advertised '10% instant cashback up to Rs 2,000 on this phone' on its banner and product page. After Varun bought the phone, the app refused the cashback, citing a condition, hidden in a linked page, that the offer applied only to the first 100 orders of the day. Can Varun claim the cashback?",
+    "answer": "A banner and product page are an 'advertisement' under section 2(1). An offer whose key limiting condition is hidden on a separate page may deliberately conceal important information and so be misleading under section 2(28). Section 2(47)(iii) also treats as an unfair trade practice offering gifts or benefits with the intention of not providing them as offered. Whether Varun succeeds will depend on how visible the '100 orders' condition was before purchase and whether his order actually fell outside it. The platform would need to show its order sequence data. If the Commission finds the condition was not adequately disclosed, or was not applied genuinely, it may order payment of the cashback or a refund of the equivalent amount, compensation, and discontinuation of the practice under section 39. Screenshots of the banner and product page as they appeared at the time of purchase are key evidence.",
+    "reference_sections": [
+      "CPA_2_47",
+      "CPA_2_28",
+      "CPA_39",
+      "CPA_2_1"
+    ]
+  },
+  {
+    "id": "CPAQA_091",
+    "question": "A passenger's train reached Jammu about four hours late. As a result he missed a connecting flight to Srinagar and had to hire a taxi and lose his hotel booking. The railway argued that trains can be delayed for many reasons and that it was not liable. Is the railway liable to compensate for a late train, and what did the Supreme Court decide in Northern Western Railway v. Sanjay Shukla?",
+    "answer": "Rail transport is a 'service' under section 2(42), and unexplained failure to run a train on schedule can be a 'deficiency' under section 2(11). In Northern Western Railway v. Sanjay Shukla, decided on 6 September 2021, the Supreme Court refused to interfere with the consumer fora's orders awarding compensation to the passenger. It held that unless the railway leads evidence explaining the delay and showing that it was beyond its control, it is liable to pay compensation for delay and late arrival. Here the railway had led no such evidence. Reports give differing figures for the amount upheld, so it should be taken from the order itself. Under section 39(1)(d), a Commission can award compensation for proven losses such as missed connections, extra travel and lost bookings. Passengers should keep tickets, records of the delay and receipts for the consequential expenses. If the railway proves a genuine reason beyond its control, the claim may fail.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_092",
+    "question": "A statutory development authority allotted a flat but failed to complete and deliver it for years, causing the allottee considerable harassment. The authority argued that, as a statutory body performing public functions, it was not providing a 'service' under consumer law. What did the Supreme Court hold in Lucknow Development Authority v. M.K. Gupta?",
+    "answer": "In Lucknow Development Authority v. M.K. Gupta, decided under the 1986 Act, the Supreme Court held that housing construction and allotment by a statutory development authority is a 'service' within the Act. Statutory authorities are answerable before consumer fora for deficiencies just like private builders. The Court also recognised that compensation can cover the mental agony and harassment caused by such failures, not only the financial loss. Reports state that it directed the authority to fix responsibility and recover the compensation from the officers responsible. The 2019 Act now expressly names 'housing construction' in the definition of 'service' in section 2(42). Delay or failure in delivery can be a 'deficiency' under section 2(11). Under section 39(1)(c) and (d), a Commission may order a refund with interest and compensation, including for harassment. Compensation for harassment is discretionary and must be justified on the facts.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_11",
+      "CPA_39"
+    ]
+  },
+  {
+    "id": "CPAQA_093",
+    "question": "Flat buyers who had already taken possession, some after executing conveyance deeds, sought compensation from the developer for years of delay in handing over possession. The developer argued that its agreement fixed only a small delay compensation, and that buyers who had taken possession could not claim more. What did the Supreme Court decide in Arifur Rahman Khan v. DLF Southern Homes?",
+    "answer": "In Wg. Cdr. Arifur Rahman Khan v. DLF Southern Homes Pvt. Ltd., decided on 24 August 2020 under the 1986 Act, the Supreme Court held that failure to hand over possession within the agreed period is a deficiency in service, and that flat buyers are entitled to reasonable compensation for the delay. It found the developer's agreement one-sided and held that such contractual terms cannot curtail the consumer fora's power to award just compensation. It also held that buyers who took possession or executed conveyance deeds were not thereby barred from claiming compensation for the delay. Under the 2019 Act, delay is a 'deficiency' under section 2(11) in a 'housing construction' service under section 2(42). One-sided compensation clauses may be challenged as unfair contract terms under section 2(46). Compensation is awarded under section 39(1)(d). The rate the Court fixed should be taken from the judgment. Compensation must bear a reasonable connection to the default and is not automatic at any particular rate.",
+    "reference_sections": [
+      "CPA_2_11",
+      "CPA_2_46",
+      "CPA_39",
+      "CPA_2_42"
+    ]
+  },
+  {
+    "id": "CPAQA_094",
+    "question": "A homebuyer paid large instalments over several years and sought a refund because of delay. The National Commission ordered a refund with interest, but calculated interest only from the date of the last deposit. From what date should interest on a refund run, and what did the Supreme Court hold in Experion Developers v. Sushma Ashok Shiroor?",
+    "answer": "Delay in delivering possession can be a 'deficiency' under section 2(11). Section 39(1)(c) empowers a Commission to direct return of the price or charges paid 'along with such interest on such price or charges as may be decided'. In Experion Developers Pvt. Ltd. v. Sushma Ashok Shiroor, decided on 7 April 2022, the Supreme Court held that the remedies under the Consumer Protection Act and RERA are concurrent and neither excludes the other, consistent with section 100. On interest, it held that interest on refunded amounts should run from the respective dates on which each deposit was made, not from the date of the last deposit. That way the refund is genuinely restitutionary. The rate the Court approved should be confirmed from the judgment, because secondary reports are inconsistent. A buyer seeking a refund should therefore set out a schedule of each payment and its date, so the Commission can compute interest from each deposit date.",
+    "reference_sections": [
+      "CPA_39",
+      "CPA_100",
+      "CPA_2_11"
+    ]
+  },
+  {
+    "id": "CPAQA_095",
+    "question": "A charitable trust that runs a large hospital bought 29 flats from a developer to house its nurses free of charge. When the developer defaulted, the National Commission held that the trust was not a 'consumer' because the flats were bought for a commercial purpose. Was that right, and what test did the Supreme Court lay down in Lilavati Kirtilal Mehta Medical Trust v. Unique Shanti Developers?",
+    "answer": "A 'person' under section 2(31) includes a trust or other association or artificial juridical person, so a trust can be a consumer. Under section 2(7), however, a person who buys goods or avails services for a 'commercial purpose' is excluded. In Lilavati Kirtilal Mehta Medical Trust v. Unique Shanti Developers, decided on 14 November 2019 under the 1986 Act, the Supreme Court held that the question is decided by the dominant purpose of the transaction. The test is whether the purchase has a close and direct nexus with a profit-generating activity. On the facts, providing free accommodation to nurses had no such direct nexus with the trust's profit-making. The Court set aside the NCDRC's view and remanded the matter for fresh consideration. The test is fact-specific. Buying flats for resale or for leasing at a profit would usually be commercial, but buying them as a staff welfare measure may not be.",
+    "reference_sections": [
+      "CPA_2_7",
+      "CPA_2_31"
+    ]
+  },
+  {
+    "id": "CPAQA_096",
+    "question": "A proprietary small-scale industrial unit bought an expensive CNC machine for its manufacturing business and complained that it was delivered late and defective. The consumer forum held the unit was not a 'consumer' because the machine was bought for a commercial purpose. When does the self-employment exception apply, and what did the Supreme Court say in Laxmi Engineering Works v. P.S.G. Industrial Institute?",
+    "answer": "The Explanation to section 2(7) of the 2019 Act states that 'commercial purpose' does not include use of goods bought and used exclusively for earning a livelihood by self-employment. In Laxmi Engineering Works v. P.S.G. Industrial Institute, decided on 4 April 1995 under the 1986 Act, the Supreme Court explained that whether a purchase is for a commercial purpose is a question of fact in each case. A person who buys a machine to earn a livelihood through self-employment, even with the help of one or two others, remains a consumer. The value of the goods alone is not decisive; the purpose of the purchase is. The forum's view that the appellant was not a consumer stood. The Court said that if the appellant filed a civil suit, the time spent bona fide before the consumer forum could be excluded under section 14 of the Limitation Act. A business that buys equipment for large-scale commercial production will generally not qualify. Consumer complaints are subject to the two-year limitation in section 69.",
+    "reference_sections": [
+      "CPA_2_7",
+      "CPA_69"
+    ]
+  },
+  {
+    "id": "CPAQA_097",
+    "question": "A student complained before a consumer forum that a university had wrongly refused to award her degree, which the university said was barred by its rules. The forum granted relief. Can a student approach a consumer commission against a university over such academic matters, and what did the Supreme Court hold in Maharshi Dayanand University v. Surjeet Kaur?",
+    "answer": "Whether education is a 'service' under section 2(42) has been contested. In Maharshi Dayanand University v. Surjeet Kaur, decided on 19 July 2010 under the 1986 Act, the Supreme Court held that a university imparting education and conducting examinations is not a service provider. A student is not a consumer in relation to academic matters such as award of degrees, so the consumer forum lacked jurisdiction. The National Commission has followed this line in later cases. Other decisions have taken different views on ancillary services, such as hostel, transport or refund of fees, and the Supreme Court has admitted appeals on whether education is a service under the 2019 Act. The position is therefore not fully settled. Academic decisions such as degrees, results and eligibility are generally outside consumer jurisdiction. Students in such disputes usually turn to writ remedies or the institution's own grievance mechanisms. Purely commercial services provided by private coaching may be treated differently on their facts.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_7"
+    ]
+  },
+  {
+    "id": "CPAQA_098",
+    "question": "A photography studio was paid Rs 1.2 lakh to cover Neha and Arjun's wedding. It failed to deliver the photos and video, and later admitted that the memory cards had been corrupted and nothing could be recovered. Beyond the refund, can the couple claim compensation for the emotional loss of their wedding memories?",
+    "answer": "Photography for payment is a 'service' under section 2(42), and losing the entire coverage through careless handling is a 'deficiency' under section 2(11). The deficiency includes negligence that causes loss or injury to the consumer. Under section 39(1)(c) the Commission may order a refund of the charges with interest. Under section 39(1)(d) it may award compensation for loss or injury suffered due to the opposite party's negligence. Consumer fora have recognised that such compensation can include non-pecuniary loss such as mental agony where the facts justify it, and the Act also permits punitive damages in suitable circumstances. Because the loss of a one-time event cannot be undone, a Commission may take that into account. The amount, however, is entirely at its discretion, and it will need evidence of the contract, payment and the studio's admission. Costs may also be awarded under section 39(1)(m).",
+    "reference_sections": [
+      "CPA_2_11",
+      "CPA_39",
+      "CPA_2_42"
+    ]
+  },
+  {
+    "id": "CPAQA_099",
+    "question": "Gopal's LPG distributor stopped delivering refills and blocked his connection, claiming unpaid 'pending charges' that Gopal disputes and says were never explained. He has filed a consumer complaint, but the case will take months, and he has no other cooking fuel. Can the commission give him interim relief?",
+    "answer": "Yes. Under section 38, the District Commission may, during the pendency of any proceeding, pass such interim order as is just and proper. LPG supply is a service involving energy supply under section 2(42). Blocking a connection over unexplained disputed charges may be a deficiency under section 2(11), and that will be decided at the final hearing. For interim relief, Gopal should file an application with the complaint explaining the urgency, which is the lack of cooking fuel, and showing a prima facie case, such as his payment records and the absence of any bill explaining the charges. The Commission may direct resumption of supply pending the decision. It may impose conditions, such as depositing part of the disputed amount. Interim relief is discretionary and does not decide the final dispute.",
+    "reference_sections": [
+      "CPA_38",
+      "CPA_2_11",
+      "CPA_2_42"
+    ]
+  },
+  {
+    "id": "CPAQA_100",
+    "question": "Rina signed up for a free 30-day trial of a photo-storage app without paying anything. A bug deleted all her photos. Separately, her friend Sameer lost photos in the same incident while on a paid annual plan. Can both file consumer complaints?",
+    "answer": "The definition of 'service' in section 2(42) excludes 'the rendering of any service free of charge'. A consumer under section 2(7)(ii) is a person who hires or avails of a service 'for a consideration' that has been paid or promised. Rina's purely free trial, with nothing paid or promised, is likely outside the Act. That could change if the trial was tied to a paid purchase, or if she had given payment details and committed to pay after the trial; whether a promise of future payment counts as consideration depends on the sign-up terms. Sameer, who paid for an annual plan, is a consumer. Data loss caused by the provider's bug can be a 'deficiency' under section 2(11), so he may seek a refund and compensation under section 39. Liability-limiting terms in the user agreement may be raised by the provider, but such terms can themselves be examined for fairness. Rina may still have remedies under general contract or data-protection law outside the Act.",
+    "reference_sections": [
+      "CPA_2_42",
+      "CPA_2_7",
+      "CPA_2_11"
+    ]
+  }
+]

@@ -4,28 +4,29 @@ import json
 import time
 import os
 from pathlib import Path
-
 from dotenv import load_dotenv
 
-# Load backend/.env before importing modules that read environment variables.
 BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env", override=True)
 
 from rag.retriever import get_retriever
 from llm.generator import generate_answer
 
+EVAL_FILE = BASE_DIR / "cpa_scenario_eval.json"
+# cpa_scenario_eval.json
+# cpa_retrieval_eval.json
 
-# Prefer cpa_retrieval_eval.json; fall back to the uploaded filename.
-EVAL_FILE = BASE_DIR / "cpa_retrieval_eval.json"
 if not EVAL_FILE.exists():
-    EVAL_FILE = BASE_DIR / "cpa_retrieval_eval(1).json"
+    EVAL_FILE = BASE_DIR / "cpa_retrieval_eval.json"
 
 OUTPUT_FILE = BASE_DIR / "rag_eval_results.csv"
 TOP_K = 6
 
+# Number of questions to evaluate
+NUM_QUESTIONS = 2  # Set to None to evaluate all questions
+
 
 def calculate_metrics(expected, retrieved):
-    """Calculate section-retrieval metrics for one question."""
     expected = set(expected)
     retrieved = set(retrieved)
 
@@ -34,199 +35,202 @@ def calculate_metrics(expected, retrieved):
 
     precision = len(relevant) / len(retrieved) if retrieved else 0.0
     recall = len(relevant) / len(expected) if expected else 0.0
-
-    # Jaccard similarity of expected and retrieved section sets.
-    # This is NOT conventional classification accuracy.
     accuracy = len(relevant) / len(union) if union else 0.0
-
-    # Per-question hit rate: did retrieval find at least one expected section?
     hitrate = 1.0 if relevant else 0.0
 
-    return {
-        "accuracy": accuracy,
-        "precision": precision,
-        "recall": recall,
-        "hitrate": hitrate,
-        "true_positives": len(relevant),
-        "false_positives": len(retrieved - expected),
-        "false_negatives": len(expected - retrieved),
-    }
+    TP = len(relevant)
+    FP = len(retrieved - expected)
+    FN = len(expected - retrieved)
+
+    return accuracy, precision, recall, hitrate, TP, FP, FN
 
 
 def main():
     if not EVAL_FILE.exists():
-        raise FileNotFoundError(
-            f"Evaluation JSON not found in: {BASE_DIR}\n"
-            "Expected cpa_retrieval_eval.json or "
-            "cpa_retrieval_eval(1).json."
-        )
+        raise FileNotFoundError(f"Evaluation file not found: {EVAL_FILE}")
 
-    # Fail early with a clear error if the embedding configuration is missing.
     if not os.getenv("OLLAMA_EMBED_MODEL"):
-        raise EnvironmentError(
-            "OLLAMA_EMBED_MODEL is missing. Check backend/.env."
-        )
+        raise EnvironmentError("OLLAMA_EMBED_MODEL is not set in .env")
 
-    with EVAL_FILE.open("r", encoding="utf-8") as f:
+    with open(EVAL_FILE, "r", encoding="utf-8") as f:
         test_cases = json.load(f)
 
     if not isinstance(test_cases, list):
-        raise ValueError("Evaluation JSON must contain a list of test cases.")
+        raise ValueError("Evaluation JSON must contain a list of test cases")
 
-    print(f"Evaluation file: {EVAL_FILE.name}")
+    # Select the requested number of questions
+    if NUM_QUESTIONS is not None:
+        if NUM_QUESTIONS < 1:
+            raise ValueError("NUM_QUESTIONS must be at least 1 or None")
+        test_cases = test_cases[:NUM_QUESTIONS]
+
+    if not test_cases:
+        raise ValueError("No test cases found in the evaluation file")
+
+    print(f"Evaluation file: {EVAL_FILE}")
     print(f"Embedding model: {os.getenv('OLLAMA_EMBED_MODEL')}")
-    print(f"Top K: {TOP_K}\n")
+    print(f"TOP_K: {TOP_K}")
+    print(f"Questions to evaluate: {len(test_cases)}")
 
-    # Initialize once, outside the loop.
     retriever = get_retriever()
-    rows = []
 
+    results = []
     total_tp = 0
     total_fp = 0
     total_fn = 0
-
-    metric_totals = {
-        "accuracy": 0.0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "hitrate": 0.0,
-    }
-
     successful = 0
+    failed = 0
 
-    for index, case in enumerate(test_cases, start=1):
-        question_id = case.get("id", f"QUESTION_{index:03d}")
-        question = case["question"]
-        reference_answer = case.get("answer", "")
+    for i, case in enumerate(test_cases, start=1):
+        case_id = case.get("id", f"CASE_{i}")
+        question = case.get("question", "")
         expected_sections = case.get("reference_sections", [])
 
-        print(f"[{index}/{len(test_cases)}] {question_id}")
-        start = time.perf_counter()
+        print(f"\n[{i}/{len(test_cases)}] Evaluating {case_id}")
 
         try:
-            # Dense + BM25 + RRF retrieval, as implemented by your retriever.
+            start_time = time.time()
+
             retrieved_chunks = retriever.search_acts(question, n=TOP_K)
 
-            retrieved_sections = list(dict.fromkeys(
+            retrieved_sections = [
                 chunk.get("section_id")
                 for chunk in retrieved_chunks
                 if chunk.get("section_id")
-            ))
+            ]
 
-            # Generate an answer using the retrieved context.
-            generated_answer = generate_answer(
-                question,
-                retrieved_chunks
+            answer = generate_answer(
+                query=question,
+                act_chunks=retrieved_chunks,
+                language="en"
             )
 
-            elapsed = time.perf_counter() - start
+            elapsed_time = time.time() - start_time
 
-            metrics = calculate_metrics(
-                expected_sections,
-                retrieved_sections
+            accuracy, precision, recall, hitrate, TP, FP, FN = (
+                calculate_metrics(expected_sections, retrieved_sections)
             )
 
+            total_tp += TP
+            total_fp += FP
+            total_fn += FN
             successful += 1
 
-            for key in metric_totals:
-                metric_totals[key] += metrics[key]
-
-            total_tp += metrics["true_positives"]
-            total_fp += metrics["false_positives"]
-            total_fn += metrics["false_negatives"]
+            results.append({
+                "id": case_id,
+                "question": question,
+                "expected_sections": "|".join(expected_sections),
+                "retrieved_sections": "|".join(retrieved_sections),
+                "accuracy": accuracy,
+                "precision": precision,
+                "recall": recall,
+                "hitrate": hitrate,
+                "TP": TP,
+                "FP": FP,
+                "FN": FN,
+                "answer": answer,
+                "time_seconds": round(elapsed_time, 2),
+                "status": "success"
+            })
 
             print(
-                f"  Accuracy (Jaccard)={metrics['accuracy']:.2f}, "
-                f"Precision={metrics['precision']:.2f}, "
-                f"Recall={metrics['recall']:.2f}, "
-                f"Hit={metrics['hitrate']:.0f}, "
-                f"Time={elapsed:.2f}s"
+                f"Accuracy: {accuracy:.3f} | "
+                f"Precision: {precision:.3f} | "
+                f"Recall: {recall:.3f} | "
+                f"Hit Rate: {hitrate:.3f}"
             )
 
-            rows.append({
-                "id": question_id,
+        except Exception as e:
+            failed += 1
+            print(f"Error evaluating {case_id}: {e}")
+
+            results.append({
+                "id": case_id,
                 "question": question,
-                "reference_answer": reference_answer,
-                "generated_answer": generated_answer,
-                "expected_sections": json.dumps(expected_sections),
-                "retrieved_sections": json.dumps(retrieved_sections),
-                "accuracy": round(metrics["accuracy"], 4),
-                "precision": round(metrics["precision"], 4),
-                "recall": round(metrics["recall"], 4),
-                "hitrate": round(metrics["hitrate"], 4),
-                "latency_seconds": round(elapsed, 3),
-                "error": "",
-                "answer_correctness_manual": "",
+                "expected_sections": "|".join(expected_sections),
+                "retrieved_sections": "",
+                "accuracy": 0.0,
+                "precision": 0.0,
+                "recall": 0.0,
+                "hitrate": 0.0,
+                "TP": 0,
+                "FP": 0,
+                "FN": 0,
+                "answer": "",
+                "time_seconds": 0.0,
+                "status": f"failed: {e}"
             })
 
-        except Exception as exc:
-            elapsed = time.perf_counter() - start
-            print(f"  ERROR: {exc}")
-
-            rows.append({
-                "id": question_id,
-                "question": question,
-                "reference_answer": reference_answer,
-                "generated_answer": "",
-                "expected_sections": json.dumps(expected_sections),
-                "retrieved_sections": "[]",
-                "accuracy": "",
-                "precision": "",
-                "recall": "",
-                "hitrate": "",
-                "latency_seconds": round(elapsed, 3),
-                "error": str(exc),
-                "answer_correctness_manual": "",
-            })
-
-    columns = [
+    fieldnames = [
         "id",
         "question",
-        "reference_answer",
-        "generated_answer",
         "expected_sections",
         "retrieved_sections",
         "accuracy",
         "precision",
         "recall",
         "hitrate",
-        "latency_seconds",
-        "error",
-        "answer_correctness_manual",
+        "TP",
+        "FP",
+        "FN",
+        "answer",
+        "time_seconds",
+        "status"
     ]
 
-    with OUTPUT_FILE.open(
-        "w", newline="", encoding="utf-8-sig"
-    ) as f:
-        writer = csv.DictWriter(f, fieldnames=columns)
+    with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerows(rows)
+        writer.writerows(results)
 
-    failed = len(test_cases) - successful
+    successful_results = [
+        r for r in results if r["status"] == "success"
+    ]
 
-    print("\n========== FINAL RESULTS ==========")
-    print(f"Total questions:     {len(test_cases)}")
-    print(f"Successful questions: {successful}")
-    print(f"Failed questions:     {failed}")
+    if successful_results:
+        count = len(successful_results)
 
-    if successful:
-        print("\nMacro-average retrieval metrics:")
-        for key, total in metric_totals.items():
-            print(f"{key.title()}: {total / successful:.4f}")
+        macro_accuracy = sum(
+            r["accuracy"] for r in successful_results
+        ) / count
+
+        macro_precision = sum(
+            r["precision"] for r in successful_results
+        ) / count
+
+        macro_recall = sum(
+            r["recall"] for r in successful_results
+        ) / count
+
+        macro_hitrate = sum(
+            r["hitrate"] for r in successful_results
+        ) / count
 
         micro_precision = (
             total_tp / (total_tp + total_fp)
             if total_tp + total_fp else 0.0
         )
+
         micro_recall = (
             total_tp / (total_tp + total_fn)
             if total_tp + total_fn else 0.0
         )
 
-        print(f"\nMicro Precision: {micro_precision:.4f}")
-        print(f"Micro Recall:    {micro_recall:.4f}")
-
-    print(f"\nDetailed results saved to: {OUTPUT_FILE}")
+        print("\n========== EVALUATION SUMMARY ==========")
+        print(f"Questions selected: {len(test_cases)}")
+        print(f"Successful: {successful}")
+        print(f"Failed: {failed}")
+        print(f"Macro Accuracy: {macro_accuracy:.3f}")
+        print(f"Macro Precision: {macro_precision:.3f}")
+        print(f"Macro Recall: {macro_recall:.3f}")
+        print(f"Macro Hit Rate: {macro_hitrate:.3f}")
+        print(f"Micro Precision: {micro_precision:.3f}")
+        print(f"Micro Recall: {micro_recall:.3f}")
+        print(f"Results saved to: {OUTPUT_FILE}")
+    else:
+        print("\nNo questions were evaluated successfully.")
+        print(f"Failed: {failed}")
+        print(f"Results saved to: {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
